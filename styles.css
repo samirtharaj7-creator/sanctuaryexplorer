@@ -405,9 +405,9 @@ button {
   top: 0;
   z-index: 50;
   display: grid;
-  grid-template-columns: minmax(210px, 310px) minmax(0, 1fr);
+  grid-template-columns: max-content minmax(0, 1fr);
   align-items: center;
-  gap: 18px;
+  gap: 24px;
   padding: 28px 30px 22px;
   background: rgba(255, 253, 247, 0.88);
   border-bottom: 1px solid var(--line);
@@ -472,6 +472,8 @@ button {
   align-items: center;
   justify-content: flex-end;
   gap: 8px;
+  min-width: 0;
+  max-width: 100%;
   overflow-x: auto;
   padding: 6px;
   border: 1px solid var(--line);
