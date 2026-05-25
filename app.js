@@ -2415,6 +2415,404 @@ function getChronicleCompanion(storyId, sceneIndex) {
   };
 }
 
+const documentChronicleStories = [
+  {
+    id: "commoner-daily",
+    perspective: "commoner",
+    serviceType: "daily",
+    serviceLabel: "Daily Service",
+    title: "The Common Israelite Who Has Sinned",
+    subtitle: "A hidden silence becomes confession, sacrifice, and the relief of forgiveness.",
+    scenes: [
+      chronicleScene(
+        "The cloud above us",
+        "The Cloud Did Not Comfort Me",
+        "Our tents stood around the tent of meeting, each tribe under its banner, and the cloud of the Lord rested above the sanctuary where all could see. On the day my sin found me out, that sign of His nearness did not comfort me at first; it made me afraid, because the God who lived among us had seen what I had hidden.",
+        "KJV: Numbers 2; Exodus 40:34-38."
+      ),
+      chronicleScene(
+        "The swallowed testimony",
+        "When Fear Closed My Mouth",
+        "A man in our camp had cried out for witnesses, and I had heard what others had not. Fear sealed my mouth, and when I refused to speak what I knew, I learned that I had not merely failed my neighbor; I had made myself guilty before the Lord.",
+        "KJV: Leviticus 5:1."
+      ),
+      chronicleScene(
+        "The law names me",
+        "No Softer Name",
+        "I tried to cover it with reasons: I was afraid, I did not want trouble, I meant no harm. But the law spoke plainly. When a man becomes aware of such guilt, he must confess in what way he has sinned.",
+        "KJV: Leviticus 5:5."
+      ),
+      chronicleScene(
+        "The goat from my flock",
+        "A Whole Life for a Stained One",
+        "I was no ruler, and I brought no bull. From my flock I chose a female goat without defect, sound in limb and clear in eye. Her life was whole, and mine was the life stained by sin.",
+        "KJV: Leviticus 5:6; Leviticus 4:27-28."
+      ),
+      chronicleScene(
+        "The walk inward",
+        "Toward the Gate",
+        "I led her through the ordered camp toward the courtyard gate, past families under their standards and toward the altar before the tabernacle. Even before I reached it, I smelled old smoke in the air and saw the place where sacrifice stood at the threshold of approach to God.",
+        "KJV: Exodus 27:9-19; Leviticus 1:3."
+      ),
+      chronicleScene(
+        "The court",
+        "Blood, Fire, and Waiting People",
+        "The altar rose before me with its horns, and the basin stood between altar and tent while priests moved carefully through duties they dared not handle lightly. Around me others waited with offerings, and the air held prayer, bleating, crackling flame, and grief.",
+        "KJV: Exodus 27:1-8; Exodus 30:18-21."
+      ),
+      chronicleScene(
+        "The place of slaughter",
+        "Sin Does Not End in Talk",
+        "The priest brought me to the place where the offering was slain. My fingers tightened on the goat, and I knew with a sharpness I had never felt before that sin does not end in talk; it ends in blood.",
+        "KJV: Leviticus 1:11; Leviticus 4:29."
+      ),
+      chronicleScene(
+        "My hand upon her head",
+        "The Innocent Beneath My Palm",
+        "I laid my hand on her head and felt the warmth of living flesh beneath my palm. She had done no violence, spoken no lie, hidden no witness. I was the guilty one.",
+        "KJV: Leviticus 4:29; Isaiah 53:6."
+      ),
+      chronicleScene(
+        "The confession",
+        "My Sin Is Mine",
+        "I said, \"O Lord, I heard the call for truth, and I kept back what I knew. I feared man more than I feared You; I let another stand exposed while I guarded myself. My sin is mine, and I confess it before You.\"",
+        "KJV: Leviticus 5:5; Proverbs 28:13."
+      ),
+      chronicleScene(
+        "The stroke",
+        "The Cost Became Visible",
+        "Then I killed her there before the Lord. The moment her life ran out because of my sin, shame pierced me more deeply than the knife had pierced her. I had wanted my sin to stay small; the sanctuary would not let me lie.",
+        "KJV: Leviticus 4:29; Leviticus 17:11."
+      ),
+      chronicleScene(
+        "The priest's work",
+        "Where I Could Not Go",
+        "The priest took some of the blood with his finger, placed it on the horns of the altar of burnt offering, and poured the rest at its base. Then he removed the fat and burned it on the altar. I did not go farther than the court; God had appointed another to carry the ministry forward.",
+        "KJV: Leviticus 4:30-31; Hebrews 5:1."
+      ),
+      chronicleScene(
+        "The word that held me",
+        "Forgiven, Not Hiding",
+        "I stood trembling until the rite was complete, and then I clung to the promise appointed for sinners like me: atonement was made, and I was forgiven. I did not leave loving my sin. I left hating it, yet no longer hiding from the God who had opened a way back to Himself.",
+        "KJV: Leviticus 4:31; Psalm 32:1-5."
+      )
+    ]
+  },
+  {
+    id: "commoner-atonement",
+    perspective: "commoner",
+    serviceType: "atonement",
+    serviceLabel: "Day of Atonement",
+    title: "The Common Israelite on the Day of Atonement",
+    subtitle: "A whole camp waits while confessed sin is cleansed and carried away.",
+    scenes: [
+      chronicleScene(
+        "The evening begins",
+        "The Camp Grows Still",
+        "From the evening of the ninth day we began the sabbath of affliction, and ordinary work fell still in the camp. This day was not like our other appointed times; it opened with restraint, waiting, and the knowledge that atonement would be made before the Lord our God.",
+        "KJV: Leviticus 23:26-32."
+      ),
+      chronicleScene(
+        "A quieter camp",
+        "No One Wanted to Trifle",
+        "The camp that had known trumpet calls, trade, hammering, and children's cries seemed hushed beneath the cloud. No man wished to trifle on the day when those who refused to humble themselves were cut off from their people.",
+        "KJV: Leviticus 23:29-30."
+      ),
+      chronicleScene(
+        "Old sins remembered",
+        "Forgiven, Yet Remembering",
+        "I remembered the goat I had once brought for my own sin, and I gave thanks that the Lord had not cast me away. Yet this day pressed deeper than one man's offering, for the sanctuary itself, the altar, the priests, and the people were all to be cleansed.",
+        "KJV: Leviticus 16:16-19."
+      ),
+      chronicleScene(
+        "Soul laid low",
+        "No Proud Words",
+        "I denied myself and searched my heart. I spoke no proud words that day, for a man standing near the Holy One learns that even forgiven sin is never a light thing.",
+        "KJV: Leviticus 16:29-31; Psalm 139:23-24."
+      ),
+      chronicleScene(
+        "What we knew",
+        "He Could Not Enter as He Pleased",
+        "We knew what Moses had taught us: the high priest must wash, put on holy linen garments, bring a bull for his own house, and take from the congregation two goats and a ram. He could not enter as he pleased; he could enter only as God commanded.",
+        "KJV: Leviticus 16:3-6."
+      ),
+      chronicleScene(
+        "The two goats",
+        "One for the Lord, One for Removal",
+        "Word passed through the people as the two goats were presented before the Lord at the entrance of the tent of meeting. Lots were cast, one for the Lord and one for the live goat of removal.",
+        "KJV: Leviticus 16:7-10."
+      ),
+      chronicleScene(
+        "The Lord's goat",
+        "Blood for Cleansing",
+        "The goat for the Lord was not spared; it was slain for the people's sin offering. Its blood, not the blood of the live goat, was taken for the cleansing work within the sanctuary.",
+        "KJV: Leviticus 16:15-16."
+      ),
+      chronicleScene(
+        "Waiting outside",
+        "The Veil Hid the Work",
+        "I saw nothing behind the veil, and that ignorance deepened the fear of the hour. We knew only that no one else might be in the tent while the high priest went in to make atonement for the Most Holy Place, the tent, and the altar.",
+        "KJV: Leviticus 16:17."
+      ),
+      chronicleScene(
+        "The long silence",
+        "The Burden Confronted",
+        "The camp waited in a silence broken only by low prayers and the rustle of bowed bodies. If the sanctuary had stood in the midst of our uncleanness all year, then this was the day when the burden of that uncleanness was confronted before God.",
+        "KJV: Leviticus 16:16; Daniel 8:14."
+      ),
+      chronicleScene(
+        "The live goat brought near",
+        "Nothing Hidden, Everything Named",
+        "At last the live goat stood before us, and over it the high priest confessed the wickedness, rebellion, and sins of Israel. Both his hands were laid on its head, and I felt, as all Israel felt, that our evil was being named and not hidden.",
+        "KJV: Leviticus 16:20-21."
+      ),
+      chronicleScene(
+        "The wilderness road",
+        "Carried Away",
+        "Then the appointed man led the goat away into the wilderness, and every step seemed to put distance between the camp and our defilement. The goat was not the blood sacrifice that cleansed the sanctuary, yet by God's command it bore the confessed sins away to a remote place.",
+        "KJV: Leviticus 16:21-22."
+      ),
+      chronicleScene(
+        "Clean before the Lord",
+        "Relief Like Cool Water",
+        "When the service was complete, relief moved through me like cool water after heat. We were still a people who had sinned, but the camp was clean, the sanctuary was cleansed, and the God who had said He would dwell among us had not withdrawn His presence.",
+        "KJV: Leviticus 16:30; Exodus 25:8."
+      )
+    ]
+  },
+  {
+    id: "priest-daily",
+    perspective: "priest",
+    serviceType: "daily",
+    serviceLabel: "Daily Service",
+    title: "One Day in the Life of a Priest",
+    subtitle: "Ashes, fire, washing, blood, bread, light, and incense in the daily ministry.",
+    scenes: [
+      chronicleScene(
+        "Before dawn",
+        "Gift and Burden",
+        "I am one of the sons of Aaron, not the high priest, and before dawn I rise to the work given us as both gift and burden. We bear responsibility for the sanctuary, and all of us know that careless nearness to holy things can bring death.",
+        "KJV: Numbers 18:1-7; Leviticus 10:1-3."
+      ),
+      chronicleScene(
+        "Ashes first",
+        "The Night's Offering",
+        "In linen garments I go first to the altar, for the burnt offering has lain there through the night. I lift the ashes, set them beside the altar, then change garments and carry them outside the camp to a clean place.",
+        "KJV: Leviticus 6:8-11."
+      ),
+      chronicleScene(
+        "Fire never out",
+        "A Mercy Kept Burning",
+        "When I return, I lay fresh wood upon the fire. It must not go out; every morning we feed it, and on it we arrange the offerings of the Lord.",
+        "KJV: Leviticus 6:12-13."
+      ),
+      chronicleScene(
+        "The morning lamb",
+        "The Day Begins With Sacrifice",
+        "At the entrance to the tent of meeting the continual burnt offering is made, a lamb in the morning with its grain and drink offerings. The smoke rises where the Lord promised to meet His people and dwell among them.",
+        "KJV: Exodus 29:38-46."
+      ),
+      chronicleScene(
+        "Water before blood",
+        "Cold Water on Priest's Hands",
+        "Before I approach the altar again or enter the tent, I wash my hands and feet at the basin. The water is cold, but it teaches a priest never to touch holy service with common care.",
+        "KJV: Exodus 30:18-21; Exodus 40:30-32."
+      ),
+      chronicleScene(
+        "Lamp, bread, and ordered light",
+        "Inside the Holy Place",
+        "Inside the Holy Place the lampstand stands on the south side and the table on the north, with the bread set before the Lord. The lamps are tended continually, and Sabbath after Sabbath the bread is renewed as a lasting sign before His face.",
+        "KJV: Exodus 26:35; Leviticus 24:2-9."
+      ),
+      chronicleScene(
+        "Incense",
+        "Fragrance With Fear",
+        "Morning and twilight incense rise on the golden altar when the lamps are tended. The fragrance is sweet, yet I never forget that incense offered contrary to God's command once consumed my brothers with judgment.",
+        "KJV: Exodus 30:7-8; Leviticus 10:1-2."
+      ),
+      chronicleScene(
+        "The faces of Israel",
+        "Tears Before Blood",
+        "All day the people come: some with gratitude, some with vows, some with the stunned look of men who have finally stopped arguing with conscience. I learn their tears, their silence, and their shame long before I touch the blood.",
+        "KJV: Leviticus 1-7; Psalm 51:17."
+      ),
+      chronicleScene(
+        "A man with a she-goat",
+        "The Breaking of Pride",
+        "Today a common man came leading a female goat, his face drawn tight as a rope stretched too long. When he laid his hand on the animal and confessed that he had kept back testimony he should have spoken, I heard in his voice the breaking of pride.",
+        "KJV: Leviticus 5:1, 5-6."
+      ),
+      chronicleScene(
+        "Blood and fat",
+        "Mercy Is Costly Too",
+        "He killed the goat at the appointed place, and I took some of its blood to the horns of the altar of burnt offering and poured the rest at its base. I removed the fat and burned it on the altar, and once again I saw that sin is costly, and mercy is costly too.",
+        "KJV: Leviticus 4:30-31."
+      ),
+      chronicleScene(
+        "Bearing what is holy",
+        "No Light Thing",
+        "Because the blood of that offering was not taken into the Holy Place, the holy flesh belonged to the priest who made atonement and was eaten in the sanctuary area. Even this eating is no light thing; God bound it to priestly mediation in ways that keep us humble.",
+        "KJV: Leviticus 6:24-30; Leviticus 10:17-18."
+      ),
+      chronicleScene(
+        "Twilight again",
+        "Wonder at the End of the Day",
+        "By evening I tend the lamps again and smell incense mingling with the day's deep smoke. I am weary in body, but not in wonder, for again and again I have watched the Holy One make room for repentant sinners to remain near Him.",
+        "KJV: Exodus 30:7-8; Hebrews 7:25."
+      )
+    ]
+  },
+  {
+    id: "priest-atonement",
+    perspective: "priest",
+    serviceType: "atonement",
+    serviceLabel: "Day of Atonement",
+    title: "The Priest on the Day of Atonement",
+    subtitle: "The high priest follows the order of Leviticus 16 with trembling obedience.",
+    scenes: [
+      chronicleScene(
+        "Memory of fire",
+        "I May Not Come Whenever I Choose",
+        "I speak now as the high priest, and I do not begin this day lightly. The deaths of Nadab and Abihu stand before me whenever I draw near, for the Lord warned me after their death that I may not come whenever I choose behind the veil.",
+        "KJV: Leviticus 16:1-2."
+      ),
+      chronicleScene(
+        "Linen and water",
+        "Only as God Commands",
+        "Before I clothe myself, I bathe. Today I wear the sacred linen garments appointed for this service, not trusting rank, age, or office, but only the command of God.",
+        "KJV: Leviticus 16:4."
+      ),
+      chronicleScene(
+        "Animals and lots",
+        "Two Goats Before the Lord",
+        "A bull and a ram stand ready for me and my house; from the congregation come two goats and a ram. At the entrance to the tent of meeting I cast lots over the goats, one for the Lord and the other for Azazel, the live goat of removal.",
+        "KJV: Leviticus 16:3, 5, 7-10."
+      ),
+      chronicleScene(
+        "First for my own house",
+        "The Priest Also Needs Atonement",
+        "I do not carry Israel before God as though I myself were clean. I slaughter the bull for my own sin offering first, for even the priest nearest the sanctuary is yet a sinner apart from atonement.",
+        "KJV: Leviticus 16:6, 11."
+      ),
+      chronicleScene(
+        "Coals and incense",
+        "The Cloud Before the Blood",
+        "With a censer full of coals from the altar and two handfuls of finely ground incense, I go behind the curtain. No other man is in the tent; all Israel waits outside while I walk where I dare not walk except by command.",
+        "KJV: Leviticus 16:12-13, 17."
+      ),
+      chronicleScene(
+        "The covered mercy seat",
+        "Fear and Obedience Breathe Together",
+        "I place the incense on the fire before the Lord, and the cloud of fragrance covers the atonement cover above the covenant, so that I may not die. In that hidden place, fear and obedience breathe together.",
+        "KJV: Leviticus 16:13; Exodus 25:21-22."
+      ),
+      chronicleScene(
+        "Blood for the priesthood",
+        "Blood Where Merit Cannot Stand",
+        "I sprinkle some of the bull's blood on and before the atonement cover as I was told. Every drop reminds me that blood must go before me where I cannot go in my own merit.",
+        "KJV: Leviticus 16:14; Hebrews 9:7."
+      ),
+      chronicleScene(
+        "Blood for the people",
+        "The Lord's Goat Within the Veil",
+        "Then I slaughter the goat for the people's sin offering and bring its blood behind the curtain, doing with it as with the bull's blood. Thus atonement is made for the Most Holy Place and for the tent because Israel's uncleanness and rebellion have stood in the midst of God's dwelling.",
+        "KJV: Leviticus 16:15-16."
+      ),
+      chronicleScene(
+        "The sanctuary and altar cleansed",
+        "From Inner Shrine to Altar",
+        "When I come out, I place the blood of bull and goat on the horns of the altar and sprinkle it as commanded to cleanse and consecrate it. The movement of this blood outward marks that the whole sanctuary, from inner shrine to altar, is being purged for the sake of a people among whom the Lord still chooses to live.",
+        "KJV: Leviticus 16:18-19."
+      ),
+      chronicleScene(
+        "Both hands on the live goat",
+        "All the Sins Named",
+        "Only after the sanctuary cleansing do I bring forward the living goat. I lay both my hands on its head and confess over it all the wickedness, rebellion, and sins of the children of Israel, naming without softness what God has judged without confusion.",
+        "KJV: Leviticus 16:20-21."
+      ),
+      chronicleScene(
+        "Sent away and finished",
+        "The Burden Leaves the Camp",
+        "The appointed man leads the goat into the wilderness, carrying the burden far from the camp. I remove the linen garments, bathe, put on my regular garments, offer the burnt offerings for myself and the people, and the carcasses of the sin offerings are taken outside the camp to be burned.",
+        "KJV: Leviticus 16:21-28."
+      ),
+      chronicleScene(
+        "When evening falls",
+        "The Presence Still Rests Among Us",
+        "By the end of the day I am spent, humbled, and afraid to remember how near I have come. Yet gratitude rises stronger than exhaustion: the sanctuary is cleansed, the people are dealt with according to mercy rather than abandonment, and the Presence still rests among us.",
+        "KJV: Leviticus 16:30; Hebrews 9:23-28."
+      )
+    ]
+  }
+];
+
+const documentChronicleCompanionNotes = {
+  "commoner-daily": [
+    { promise: "God sees hidden guilt and still keeps an appointed way back.", meaning: "The story begins with God's presence in the camp, where hidden sin cannot remain safely hidden." },
+    { promise: "Confession begins when fear stops ruling the mouth.", meaning: "Leviticus names failure to testify as real guilt before God, not merely social weakness." },
+    { promise: "The Lord's law wounds excuses so mercy can heal the sinner.", meaning: "The sanctuary does not soften sin's name; it brings the sinner into truthful confession." },
+    { promise: "The innocent victim teaches what guilt has damaged.", meaning: "The unblemished goat stands in contrast to the worshiper's stained conscience." },
+    { promise: "The gate is open, but the approach is still through sacrifice.", meaning: "Access to God is welcomed and ordered; the altar stands at the threshold." },
+    { promise: "No sinner comes into an empty system; priests are already serving mercy.", meaning: "The court joins altar, laver, priesthood, and waiting worshipers in one process of return." },
+    { promise: "Sin's cost becomes visible before relief is spoken.", meaning: "The place of slaughter teaches that guilt cannot be healed by words alone." },
+    { promise: "The guilty hand rests on an innocent life.", meaning: "Hand-laying shows identification, confession, and the burden of substitution." },
+    { promise: "God lets the sinner say the truth without being abandoned.", meaning: "Confession is the doorway where guilt comes into God's appointed mercy." },
+    { promise: "The substitute dies so the sinner can live and hate the sin.", meaning: "The death is reverent, not graphic; it makes sin's seriousness unmistakable." },
+    { promise: "Where the sinner may not go, the priestly service continues.", meaning: "The priest applies blood and burns the fat according to God's command." },
+    { promise: "Forgiveness sends the sinner home honest, not hiding.", meaning: "Atonement is completed by God's provision, bringing relief and changed allegiance." }
+  ],
+  "commoner-atonement": [
+    { promise: "The solemn day begins with hope that God will cleanse what sin has touched.", meaning: "The Day of Atonement is rest, affliction of soul, and appointed cleansing." },
+    { promise: "Holy quiet helps the heart stop treating sin lightly.", meaning: "Israel's stillness reflects the seriousness of standing before the Holy One." },
+    { promise: "Forgiveness was real all year, and cleansing completes the story.", meaning: "The yearly service deals with sanctuary, altar, priests, and people." },
+    { promise: "Humility is the right posture when sin and mercy meet.", meaning: "Afflicting the soul is not despair; it is honest dependence on God." },
+    { promise: "Even the high priest enters only by command.", meaning: "Leviticus 16 guards the Most Holy Place from casual access." },
+    { promise: "God teaches both atonement by blood and final removal.", meaning: "The two goats have distinct ritual roles." },
+    { promise: "The Lord's goat supplies cleansing blood.", meaning: "The live goat does not provide blood atonement; the slain goat's blood cleanses." },
+    { promise: "God works for His people where they cannot see.", meaning: "The congregation waits while the high priest ministers alone inside." },
+    { promise: "The sanctuary bears the burden God has promised to cleanse.", meaning: "The long silence teaches that forgiven sin will not be ignored forever." },
+    { promise: "Sin is named so it can be sent away.", meaning: "Both hands on the live goat dramatize confessed sin placed for removal." },
+    { promise: "The burden carried away is not welcomed back.", meaning: "The wilderness road pictures final separation from confessed sin." },
+    { promise: "Clean before the Lord means mercy has answered guilt and removal.", meaning: "The day ends with assurance that God still dwells among His people." }
+  ],
+  "priest-daily": [
+    { promise: "The priest serves because God permits nearness by mercy.", meaning: "Daily ministry is a gift and burden, not a casual religious task." },
+    { promise: "Even ashes belong to holy order.", meaning: "The priest begins with the remains of sacrifice and carries them as God commands." },
+    { promise: "Mercy is kept burning before the people wake.", meaning: "The continual fire shows ongoing covenant provision." },
+    { promise: "The day opens under an accepted substitute.", meaning: "The morning lamb frames Israel's daily life with atonement." },
+    { promise: "Clean hands must serve holy mercy.", meaning: "The laver teaches priestly cleansing before altar or tent ministry." },
+    { promise: "Forgiven people are sustained by light and bread.", meaning: "The Holy Place ministry shows that grace feeds and illuminates." },
+    { promise: "Sweet incense rises with holy fear.", meaning: "The golden altar links prayer with appointed mediation, not presumption." },
+    { promise: "The priest meets people before he handles their offerings.", meaning: "The sanctuary is not abstract; it receives real tears and shame." },
+    { promise: "Pride breaks where confession touches the substitute.", meaning: "The individual sin offering brings personal guilt into God's appointed process." },
+    { promise: "Sin is costly, and mercy is costly too.", meaning: "Blood and fat are handled exactly because God has made a way for atonement." },
+    { promise: "Priestly mediation humbles the one who serves.", meaning: "Eating certain sin offerings belongs to the priestly bearing of holy responsibility." },
+    { promise: "The day closes with the same wonder with which it began.", meaning: "Evening lamp and incense keep Israel's life before God." }
+  ],
+  "priest-atonement": [
+    { promise: "Holy access is mercy, never entitlement.", meaning: "The warning after Nadab and Abihu governs the high priest's approach." },
+    { promise: "The highest priest comes low before God.", meaning: "Bathing and linen garments teach dependence, cleansing, and humility." },
+    { promise: "God's order distinguishes blood atonement from removal.", meaning: "Bull, ram, two goats, and lots establish the Leviticus 16 sequence." },
+    { promise: "The mediator himself needs atonement.", meaning: "The bull is first offered for the priest and his house." },
+    { promise: "Incense prepares the way before blood is sprinkled.", meaning: "The cloud covers the mercy seat so the priest may live." },
+    { promise: "The mercy seat is approached only by God's covering mercy.", meaning: "Fear and obedience meet in the hidden presence of God." },
+    { promise: "Blood goes where human merit cannot stand.", meaning: "Bull blood is sprinkled for the priestly house." },
+    { promise: "The people's blood ministry cleanses the sanctuary.", meaning: "The Lord's goat blood is brought within the veil for Israel's uncleanness and sins." },
+    { promise: "God cleanses His dwelling from the inside outward.", meaning: "The sanctuary and altar are purged according to God's command." },
+    { promise: "Only after cleansing is sin placed on the live goat.", meaning: "The live goat bears confessed sins away; it is not the blood sacrifice." },
+    { promise: "The burden leaves, and the priest returns to ordinary service.", meaning: "Removal, washing, changing garments, burnt offerings, and burning outside the camp complete the rite." },
+    { promise: "God remains with a cleansed people.", meaning: "The day ends in humility, exhaustion, and gratitude for mercy rather than abandonment." }
+  ]
+};
+
+chronicleStories.splice(0, chronicleStories.length, ...documentChronicleStories);
+Object.keys(chronicleStoryMap).forEach(key => delete chronicleStoryMap[key]);
+chronicleStories.forEach(story => {
+  chronicleStoryMap[story.id] = story;
+});
+Object.keys(chronicleCompanionNotes).forEach(key => delete chronicleCompanionNotes[key]);
+Object.assign(chronicleCompanionNotes, documentChronicleCompanionNotes);
+
 const focusTimeline = [
   {
     id: "457bc",
