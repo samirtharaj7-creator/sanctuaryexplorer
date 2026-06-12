@@ -54,25 +54,25 @@ const articles = {
     color: "linear-gradient(135deg, #cf5636, #812d1e)",
     icon: iconSvg.flame,
     structure: [
-      "The altar stood immediately inside the courtyard gate, teaching that access to God begins with sacrifice.",
-      "Its bronze surface endured fire and blood, picturing judgment borne by a substitute rather than by the sinner.",
-      "Horns at the corners marked power, mercy, and refuge for the repentant worshiper."
+      "The altar was the first object a worshiper met after entering the court. Before he saw the tent, the lamp, the bread, or the ark, he saw fire and blood. The order matters: God begins the journey back with mercy provided at terrible cost.",
+      "Its bronze-covered wood stood in the open court where every sacrifice was visible. The sinner could not pretend that guilt was harmless; the altar made sin concrete, public, and costly.",
+      "The horns at the four corners suggested strength, refuge, and the reach of atonement. Blood touched the altar because God was teaching that life must answer death, and that the answer would be supplied through a substitute."
     ],
     process: [
-      "The sinner brought an unblemished animal and laid hands on its head, confessing guilt and identifying with the substitute.",
-      "The sacrifice was slain and the blood was applied by the priest, showing that forgiveness rests on life given in place of life.",
-      "The offering ascended in fire, pointing to full surrender and acceptance before God."
+      "The worshiper brought an unblemished animal and laid his hands on its head. In that quiet gesture he stopped defending himself and identified with the substitute God had provided.",
+      "The animal was slain, and the priest applied the blood according to the offering. The worshiper did not manage his own guilt after confession; priestly ministry carried the sacrifice forward before God.",
+      "Fire consumed the offering, and the smoke rose from the court. What had been a scene of guilt became a sign of acceptance: the sinner could leave knowing God had received the substitute."
     ],
     fulfillment: [
-      "Christ is the true burnt offering, giving Himself wholly to the Father and bearing the penalty of sin.",
-      "The altar stands at the beginning of the sanctuary path because the cross is the beginning of restoration.",
-      "The fire calls believers to present themselves as living sacrifices, not to earn grace, but because grace has claimed the whole life."
+      "The altar points most directly to Christ's cross. Jesus did not merely teach about sacrifice; He became the Lamb who bore sin in the sinner's place.",
+      "Every flame on the altar declared that forgiveness is free to the sinner because it is costly to the Substitute. The cross preserves both truths: God is merciful, and sin is not treated lightly.",
+      "The altar also explains why Christian surrender is a response, not a payment. Believers offer themselves to God because Christ has already offered Himself for them."
     ],
     applications: [
-      "Begin with the cross: assurance rests on Christ's completed sacrifice, not on spiritual performance.",
-      "Confession is not despair; it is the honest act of placing guilt where God has provided healing.",
-      "A surrendered life is the grateful response to a Substitute who held nothing back.",
-      "The altar keeps worship centered on mercy before it becomes centered on growth."
+      "When guilt feels heavy, begin where the sanctuary begins: with the sacrifice God has provided.",
+      "Confession is not humiliation for its own sake; it is letting God place your sin on the Substitute instead of leaving it on you.",
+      "A life given to God grows naturally out of a heart that knows it has been spared.",
+      "The altar keeps every other spiritual lesson rooted in mercy."
     ],
     citations: "Exodus 27:1-8; Leviticus 1; John 1:29; Romans 12:1"
   },
@@ -83,25 +83,25 @@ const articles = {
     color: "linear-gradient(135deg, #4b7cf0, #2448a5)",
     icon: iconSvg.water,
     structure: [
-      "The laver stood between altar and tabernacle, joining sacrifice to cleansing.",
-      "Its water was used by priests before entering the holy place or ministering at the altar.",
-      "The placement teaches that justification and renewal belong together in the restored life."
+      "The laver stood between the altar and the tabernacle entrance. A priest could not move from sacrifice into holy service without stopping at water.",
+      "Scripture gives no exact dimensions for the laver, but it gives its purpose clearly: priests washed their hands and feet before altar ministry or before entering the tent.",
+      "Its placement is gentle and searching. Forgiveness at the altar is not the end of God's work in a person; grace also cleanses the hands that serve and the feet that walk."
     ],
     process: [
-      "The priest washed hands and feet before service, recognizing that holy work requires cleansed action and walk.",
-      "The washing followed sacrifice; cleansing flows from atonement rather than replacing it.",
-      "The repeated washing pointed to a continuing life of dependence on God's renewing grace."
+      "The priest washed repeatedly, not because the altar had failed, but because holy service required a continually cleansed life.",
+      "Hands and feet are practical symbols. God was not speaking only about religious feeling; He was claiming the priest's actions, habits, movement, and daily work.",
+      "The washing came after the sacrifice. That order matters: cleansing does not replace atonement; it flows from it."
     ],
     fulfillment: [
-      "Christ cleanses His people through the washing of regeneration and the renewing work of the Spirit.",
-      "Baptism becomes a visible entrance into the death, burial, and resurrection life of Jesus.",
-      "The laver points beyond external ritual to a heart made clean before God."
+      "The laver points to Christ's cleansing ministry through the Spirit. He does not only forgive the record; He begins renewing the person.",
+      "Baptism gathers this meaning into a visible act: the old life is buried with Christ, and a washed life rises to walk with Him.",
+      "The laver keeps transformation in its proper place. We are not cleansed in order to persuade God to love us; we are cleansed because His sacrifice has already opened the way."
     ],
     applications: [
-      "Receive cleansing as a gift, not as a self-improvement project.",
-      "Let baptism remain a living memory of belonging to Christ.",
-      "Bring ordinary habits, speech, and choices under the renewing work of the Spirit.",
-      "Move from forgiveness into transformation without losing the joy of assurance."
+      "Ask God to wash what your words, hands, and feet actually touch each day.",
+      "Let baptism remain a living memory, not merely a past ceremony.",
+      "Do not separate pardon from renewal; the same grace that accepts you also restores you.",
+      "When you stumble after forgiveness, return to the cleansing Christ provides instead of hiding in shame."
     ],
     citations: "Exodus 30:17-21; Titus 3:5; Romans 6:3-4; Hebrews 10:22"
   },
@@ -112,25 +112,25 @@ const articles = {
     color: "linear-gradient(135deg, #f2be3f, #b87820)",
     icon: iconSvg.lamp,
     structure: [
-      "The lampstand was beaten from pure gold and stood in the holy place, giving continual light.",
-      "Its seven lamps suggest completeness, Spirit-filled witness, and a light sustained by sacred oil.",
-      "The holy place had no ordinary window; ministry there depended on God-given illumination."
+      "The lampstand stood on the south side of the Holy Place, giving light where there was no ordinary window.",
+      "It was made from beaten pure gold, shaped into branches, bowls, blossoms, and lamps. Its beauty was not decorative excess; it taught that God's light is living, ordered, and fruitful.",
+      "The Holy Place ministry depended on this light. Without it, the table, the incense altar, and the priestly work would be hidden in darkness."
     ],
     process: [
-      "Priests tended the lamps daily so the light would not go out.",
-      "Oil supplied the flame, picturing the Spirit as the source of spiritual vision and witness.",
-      "The light shone on the table and incense altar, joining illumination, nourishment, and prayer."
+      "The priests tended the lamps morning and evening. Light in the sanctuary was not left to chance; it was guarded as part of daily ministry.",
+      "Oil supplied the flame, teaching that true spiritual light is received, not manufactured. Human cleverness cannot replace the Spirit's illumination.",
+      "The lampstand shone on bread and incense, joining three experiences that belong together: seeing, being fed, and praying in God's presence."
     ],
     fulfillment: [
-      "Christ is the light of the world and gives His Spirit to make His people a witnessing community.",
-      "The church shines by union with Christ, not by self-generated brilliance.",
-      "Revelation's lampstands show that sanctuary imagery continues in Christ's heavenly ministry and His care for the churches."
+      "Jesus is the Light of the world, and He gives the Spirit so His people can see truth and bear witness without pretending to be the source of light.",
+      "The lampstand helps explain Christian witness. The church shines only as it remains supplied by Christ; disconnected from Him, the most polished witness grows dim.",
+      "Revelation's lampstands show that this symbol continues after the cross: Christ still walks among His people, tending their light and calling them to faithful witness."
     ],
     applications: [
-      "Ask for the Spirit's light before handling Scripture, service, or conflict.",
-      "Witness is sustained by daily tending, not occasional enthusiasm.",
-      "A community becomes luminous when it reflects Christ instead of performing for attention.",
-      "Darkness is answered by faithful flame, one day at a time."
+      "Ask for the Spirit before you open Scripture, make decisions, or try to help someone else.",
+      "Do not confuse brightness with noise. Sanctuary light is steady, tended, and useful.",
+      "Let your witness be supplied by communion with Christ rather than pressure to appear impressive.",
+      "When life feels dark, look for the daily tending of God rather than a sudden display."
     ],
     citations: "Exodus 25:31-40; Zechariah 4:1-6; John 8:12; Revelation 1:12-20"
   },
@@ -141,25 +141,25 @@ const articles = {
     color: "linear-gradient(135deg, #b47834, #3d3021)",
     icon: iconSvg.bread,
     structure: [
-      "The table held twelve loaves before the Lord, representing the covenant people continually sustained in God's presence.",
-      "The bread was renewed regularly, teaching dependence on fresh provision from God.",
-      "Its location in the holy place links nourishment with priestly fellowship and covenant faithfulness."
+      "The table stood on the north side of the Holy Place, opposite the lampstand. It held twelve loaves before the Lord, one for each tribe of Israel.",
+      "The bread was not placed there because God needed food. It was a covenant sign that His people lived continually before His face and depended on His provision.",
+      "Its golden table, crown-like border, and regular renewal made ordinary bread speak of holy fellowship: God feeds, remembers, and sustains His people."
     ],
     process: [
-      "The priests placed the bread before the Lord as a continual memorial.",
-      "The bread was eaten by priests in a holy place, showing fellowship with God through His provision.",
-      "The twelve loaves kept every tribe symbolically present before the Lord."
+      "Every Sabbath the bread was arranged before the Lord, and the old bread was eaten by the priests in a holy place.",
+      "The twelve loaves kept all Israel symbolically present before God. No tribe was forgotten, and no tribe sustained itself.",
+      "The bread connected worship with daily dependence. Israel did not live by harvest alone, but by the word and care of the God who gave the harvest."
     ],
     fulfillment: [
-      "Jesus identifies Himself as the bread of life, the true nourishment sent from heaven.",
-      "Scripture feeds the believer because it bears witness to Christ.",
-      "The table shows that sanctification is not only cleansing from sin, but also daily feeding on divine life."
+      "Jesus calls Himself the Bread of Life. He is not only the sacrifice that removes guilt; He is the living nourishment that keeps the soul alive.",
+      "Scripture feeds believers because it brings them to Christ. The Word is not a pantry of religious facts; it is bread for people who cannot live by themselves.",
+      "The table shows that sanctification is more than avoiding sin. It is being steadily nourished in God's presence until the heart learns to trust His provision."
     ],
     applications: [
-      "Treat Scripture as daily bread, not occasional information.",
-      "Remember that God's people are carried before Him together, not as isolated spiritual consumers.",
-      "Let Christ nourish desire, imagination, endurance, and obedience.",
-      "Return to the table when the soul grows thin."
+      "Come to Scripture as a hungry person, not merely as a researcher.",
+      "Remember that God's people stand before Him together; faith is personal, but never isolated.",
+      "Let Christ feed your endurance, imagination, obedience, and hope.",
+      "When the soul feels thin, return to the table instead of trying to live on yesterday's strength."
     ],
     citations: "Exodus 25:23-30; Leviticus 24:5-9; Deuteronomy 8:3; John 6:35"
   },
@@ -170,25 +170,25 @@ const articles = {
     color: "linear-gradient(135deg, #f3d96f, #c79329)",
     icon: iconSvg.cloud,
     structure: [
-      "The incense altar stood before the veil, nearest to the Most Holy Place.",
-      "Its fragrant cloud rose continually, symbolizing accepted prayer and priestly intercession.",
-      "Its position teaches that prayer brings the worshiper near the throne, though access depends on mediation."
+      "The incense altar stood directly before the inner veil, closer to the ark than any other object in the Holy Place.",
+      "It was smaller than the bronze altar, but its location gave it great weight. The fragrance rose at the boundary of the throne room.",
+      "This altar taught Israel that prayer is not a casual religious impulse. Prayer comes near to God through priestly mediation and on the basis of atoning blood."
     ],
     process: [
-      "The priest burned incense morning and evening while lamps were tended.",
-      "The altar was connected with blood atonement, showing that prayer is accepted through sacrifice.",
-      "On the Day of Atonement, incense covered the mercy seat with a cloud as the high priest entered God's presence."
+      "Morning and evening, when the lamps were tended, incense was burned before the Lord. Light and prayer rose together in the daily rhythm of the sanctuary.",
+      "The incense was specially prepared and not treated as common perfume. God was teaching that worship must be received on His terms, not reshaped into personal preference.",
+      "On the Day of Atonement, incense entered within the veil before the blood was sprinkled, forming a protective cloud before the mercy seat."
     ],
     fulfillment: [
-      "Christ mingles the prayers of His people with the merits of His own righteousness.",
-      "Prayer rises because the living High Priest represents us before the Father.",
-      "The incense altar teaches bold nearness without casual presumption."
+      "The incense altar points to Christ's intercession. Our prayers rise because the living High Priest represents us, not because our words are strong enough on their own.",
+      "Revelation pictures incense with the prayers of the saints, showing that heaven treats the prayers of God's people as precious when they are brought through Christ.",
+      "The altar teaches bold nearness without casual presumption. We may come close, but we come through the Mediator."
     ],
     applications: [
-      "Pray from acceptance, not from panic.",
-      "Let intercession become part of daily sanctuary rhythm.",
-      "Bring weak prayers to a strong Mediator.",
-      "Reverence and intimacy belong together before God's throne."
+      "Bring weak prayers to a strong Mediator; do not wait until your words feel worthy.",
+      "Let prayer become a morning-and-evening rhythm, not only an emergency exit.",
+      "Pray for others as part of priestly love, carrying their names before God.",
+      "Hold reverence and intimacy together: the throne is holy, and Christ has made it approachable."
     ],
     citations: "Exodus 30:1-10; Leviticus 16:12-13; Psalm 141:2; Revelation 8:3-4"
   },
@@ -199,28 +199,28 @@ const articles = {
     color: "linear-gradient(135deg, #d9ad38, #8d541e)",
     icon: iconSvg.shield,
     structure: [
-      "The chest was acacia wood overlaid inside and out with gold, signifying purity, glory, and covenant permanence.",
-      "The mercy seat formed the golden lid where God's glory was manifested between the cherubim.",
-      "The law inside the ark revealed the foundation of God's government, while the mercy seat above it proclaimed grace.",
-      "The manna and Aaron's rod witnessed to God's provision and chosen priestly authority."
+      "The ark stood in the Most Holy Place as the throne-room center of the sanctuary. It was acacia wood overlaid with gold, combining durability, beauty, and covenant permanence.",
+      "Inside the ark were the testimony of God's law, and later reminders of His provision and priestly authority. The ark did not hide God's government; it placed His law at the heart of His dwelling.",
+      "Above the law was the mercy seat, the golden cover where blood was applied on the Day of Atonement. The arrangement is the gospel in furniture: God's law is not ignored, but mercy stands above the broken law through atoning blood.",
+      "The cherubim over the mercy seat marked this as throne imagery. The sanctuary was not merely a religious classroom; it was the place where the King chose to dwell with His people."
     ],
     process: [
-      "The inhabiting glory dwelt above the mercy seat, and no one entered this room except the high priest.",
-      "On the Day of Atonement, blood was brought into the Most Holy Place and applied before the ark.",
-      "The sanctuary was cleansed, showing the final removal of sin from God's dwelling and people.",
-      "Justice and mercy met at the throne, vindicating God's character before the universe."
+      "No ordinary priest entered the Most Holy Place. The high priest entered only on the Day of Atonement, and only with incense and blood.",
+      "Blood was sprinkled before and upon the mercy seat, teaching that the final answer to sin had to reach the very throne of God's government.",
+      "The Day of Atonement did not create forgiveness for the first time; it cleansed the sanctuary from the accumulated problem of confessed sin.",
+      "At the ark, judgment and mercy were not enemies. God's throne revealed both the seriousness of sin and the depth of His saving grace."
     ],
     fulfillment: [
-      "The Ark points to the heavenly throne where Christ ministers as Priest and King.",
-      "Law and blood meet in Christ: He upholds God's righteousness while saving sinners by mercy.",
-      "The manna, law, and budding rod converge in Jesus, the living Word, bread of life, and resurrected Priest.",
-      "The final cleansing of the sanctuary points to Christ's closing work before His return."
+      "The ark points beyond the earthly tent to the heavenly throne where Christ ministers as Priest and King.",
+      "Law and blood meet in Jesus. He does not save by lowering God's righteousness; He saves by bearing sin and upholding the truth of God's character.",
+      "The manna, the law, and Aaron's rod find their deepest meaning in Christ: He is the living Bread, the embodied Word, and the risen Priest whose life cannot be overthrown.",
+      "The final cleansing of the sanctuary points to Christ's closing work before His return, when sin is not only forgiven but finally removed from the universe."
     ],
     applications: [
-      "Live in the presence: God calls His people to reverent confidence before His throne.",
-      "Rest in covenant assurance: the law is not a threat over Christ, but a promise written by the Spirit.",
-      "Have confidence in judgment: when Christ's blood covers the record, mercy speaks with authority.",
-      "Trust divine power: God can bring life out of dead situations, as He did with the budding rod."
+      "Do not be afraid of God's throne when you come through Christ. The mercy seat is not decoration; it is the place where grace speaks.",
+      "Let God's law become a promise of restored life rather than a weapon of despair.",
+      "Read judgment through the mercy seat: truth is revealed, sin is answered, and Christ's people are defended by His blood.",
+      "Trust the God who can bring life out of dead wood, dry places, and hopeless histories."
     ],
     citations: "Exodus 25:10-22; Leviticus 16; Hebrews 8-9; Daniel 8:14; Revelation 11:19"
   },
@@ -231,25 +231,25 @@ const articles = {
     color: "linear-gradient(135deg, #e69b2d, #71431d)",
     icon: iconSvg.shield,
     structure: [
-      "The gate was the only entrance into the courtyard, teaching that fellowship with God begins by entering the way He provides.",
-      "The entrance curtain used blue, purple, scarlet, and fine linen, visually announcing heaven, royalty, sacrifice, and righteousness.",
-      "Its broad opening faced the worshiper before the altar, making grace both exclusive in direction and generous in invitation."
+      "The courtyard gate was the only entrance into the sanctuary court. A worshiper did not climb over the linen fence or choose a private opening; he entered through the way God provided.",
+      "Its colored curtain - blue, purple, scarlet, and fine linen - announced the sanctuary story before a word was spoken: heaven, kingship, sacrifice, and righteousness were all gathered at the entrance.",
+      "The gate was broad enough to welcome the repentant, but specific enough to teach that access to God is not self-invented. Grace is generous, yet it has a defined way."
     ],
     process: [
-      "The worshiper came through the gate with a sacrifice, not as a spectator but as one seeking reconciliation.",
-      "Passing the threshold moved the sinner from common ground into sacred space ordered around atonement.",
-      "The first sight beyond the gate was the altar, so entrance immediately confronted both sin and mercy."
+      "The worshiper entered carrying a sacrifice. He did not come as a tourist or a detached observer, but as someone seeking mercy.",
+      "Crossing the threshold moved him from ordinary camp life into a space ordered by God's plan of reconciliation.",
+      "The first sight inside was the altar. The gate welcomed the sinner, but it did not flatter him; it led him immediately to the place where sin and mercy meet."
     ],
     fulfillment: [
-      "Christ is the door; no one comes to the Father except through Him, yet everyone who enters by Him finds salvation.",
-      "The gate's colors converge in Jesus, the heavenly Son, royal Messiah, suffering Substitute, and righteous One.",
-      "The sanctuary path is not vague spirituality; it is a definite way of approach centered on Christ."
+      "Jesus called Himself the door. That image is not narrow in spirit; it is full of invitation. Whoever enters by Him finds salvation.",
+      "The gate's colors gather around Christ: He is the heavenly Son, royal Messiah, suffering Substitute, and righteous One.",
+      "The gate reminds us that Christianity is not vague spirituality. God has opened a real way, and that way is centered in Christ."
     ],
     applications: [
       "Enter by invitation, not entitlement.",
       "Let Christ define the way to God instead of inventing a private route.",
-      "See the altar before the building: forgiveness precedes service.",
-      "Keep the gospel entrance wide in invitation and clear in direction."
+      "Keep the gospel entrance wide in invitation and clear in direction.",
+      "Remember that the first step toward God is not achievement, but coming through the open gate with the sacrifice He has provided."
     ],
     citations: "Exodus 27:16; John 10:7-9; John 14:6; Hebrews 10:19-22"
   },
@@ -260,25 +260,25 @@ const articles = {
     color: "linear-gradient(135deg, #ece4d5, #8b806e)",
     icon: iconSvg.bread,
     structure: [
-      "The outer court was enclosed by linen hangings suspended from posts, separating sacred space from the surrounding camp.",
-      "The white linen suggested purity and righteousness, while the bronze bases grounded the court in judgment and sacrifice.",
-      "The posts created order without hiding the sanctuary's purpose: the entrance remained visible and intentional."
+      "The linen fence formed the outer boundary of the sanctuary court. It separated sacred space from the camp without removing the sanctuary from the people's life.",
+      "The white linen suggested purity, while the bronze bases connected the court to judgment and sacrifice. Holiness and atonement stood together from the outside edge of the sanctuary.",
+      "The posts gave the court order and visibility. Israel could see that God had made a distinct place for approach, but they could also see where the entrance stood."
     ],
     process: [
-      "The fence marked the worshiper's transition from ordinary camp life into God's appointed place of approach.",
-      "Priests served inside the boundary, maintaining the altar, laver, and tabernacle ministry.",
-      "The enclosure taught that grace is welcoming, but it is never careless about holiness."
+      "The worshiper moved from the camp toward a boundary that asked him to take holiness seriously.",
+      "Inside the fence, priests maintained the altar, laver, and tabernacle service. The boundary protected the meaning of the ministry taking place within.",
+      "The fence did not contradict the gate. Together they taught that God welcomes sinners, but He welcomes them into a holy and healing order."
     ],
     fulfillment: [
       "The linen boundary points to the righteousness God gives and the holy life He forms in His people.",
-      "Christ both welcomes sinners and creates a new covenant community set apart for God's presence.",
-      "The court reminds readers that salvation restores order: mercy brings us near and holiness shapes how we live."
+      "Christ does not merely bring sinners near; He creates a community shaped by His presence.",
+      "The court reminds us that salvation restores order. Mercy opens the way, and holiness teaches us how to live near God."
     ],
     applications: [
-      "Respect holiness without turning it into exclusion.",
-      "Let grace create a changed environment around the life.",
-      "Hold together welcome, reverence, forgiveness, and transformation.",
-      "Remember that God's boundaries are restorative, not arbitrary."
+      "Respect holiness without turning it into cold exclusion.",
+      "Let grace create a changed environment around your life: cleaner habits, truer speech, and more reverent worship.",
+      "Hold welcome and reverence together; the sanctuary needs both the open gate and the linen boundary.",
+      "Receive God's boundaries as restorative, not arbitrary."
     ],
     citations: "Exodus 27:9-19; Revelation 19:8; 1 Peter 2:9"
   },
@@ -289,28 +289,28 @@ const articles = {
     color: "linear-gradient(135deg, #f4efe2, #9b6a32)",
     icon: iconSvg.priest,
     structure: [
-      "The priest stood between the worshiper and the sanctuary service, not as a replacement for God, but as the appointed mediator who handled holy things on behalf of the people.",
-      "His linen garments, washing, anointing, and consecration marked him as one set apart for representative ministry.",
-      "In the court he handled sacrifice and cleansing; in the holy place he tended light, bread, and incense; on the Day of Atonement the high priest alone entered the Most Holy Place.",
-      "The priestly office joined compassion and holiness: he served sinners, but he served them in the presence of a holy God."
+      "The priest stood in a place the worshiper could not take for himself. He did not replace God, and he did not erase the sinner's confession; he carried the ministry forward according to God's command.",
+      "His garments, washing, anointing, and consecration taught that mediation is holy work. A priest served people, but he served them before God.",
+      "In the court he handled sacrifice and cleansing. In the Holy Place he tended light, bread, and incense. On the Day of Atonement, the high priest alone entered the Most Holy Place with blood and incense.",
+      "The priestly office joined tenderness and trembling. He worked for guilty people, yet he knew he also needed mercy."
     ],
     process: [
-      "The worshiper brought the offering, confessed over the victim, and the priest applied the blood according to the kind of sacrifice.",
-      "The priest maintained the continual ministry: altar fire, lampstand light, bread before the Lord, and incense morning and evening.",
-      "Before holy service, priests washed at the laver, showing that mediation required purity of walk and action.",
-      "Once a year, the high priest carried blood and incense within the veil, cleansing the sanctuary and representing the whole congregation before God."
+      "The worshiper brought the offering and confessed over the victim. Then the priest applied the blood according to the kind of sacrifice, showing that guilt was not left in the sinner's hands.",
+      "The priest maintained the daily ministry: altar fire, lampstand light, bread before the Lord, and incense morning and evening.",
+      "Before holy service, priests washed at the laver. The act said plainly that mediation required cleansed hands, feet, motives, and movement.",
+      "Once a year, the high priest carried blood and incense within the veil, representing the whole congregation in the cleansing of the sanctuary."
     ],
     fulfillment: [
-      "Christ is the true Priest and High Priest: He does not merely point to atonement; He offers Himself, rises, and ministers the merits of His own sacrifice.",
-      "The earthly priest could sympathize yet needed sacrifice for himself; Christ sympathizes fully but is holy, harmless, undefiled, and able to save to the uttermost.",
-      "The priest moving from court to holy place to Most Holy Place gives a living outline of Christ's work: sacrifice, intercession, judgment, cleansing, and final restoration.",
-      "Because Christ represents humanity before God, believers approach the throne with reverence, confidence, and assurance."
+      "Christ is the true Priest and High Priest. He does not merely point to atonement; He offers Himself, rises, and ministers the merits of His own sacrifice.",
+      "The earthly priest could sympathize, but he also needed sacrifice for himself. Christ sympathizes fully, yet He is sinless and able to save completely.",
+      "The priest's movement through the sanctuary gives a living outline of Christ's work: sacrifice, intercession, judgment, cleansing, and final restoration.",
+      "Because Christ represents humanity before God, believers may approach the throne with reverence, confidence, and assurance."
     ],
     applications: [
-      "Come through mediation: prayer, confession, and worship are received because Christ stands for us.",
-      "Trust the completeness of Christ's ministry, not only His death, but also His living intercession.",
+      "Come through mediation. Prayer, confession, and worship are received because Christ stands for us.",
+      "Trust the whole ministry of Christ, not only His death, but also His living intercession.",
       "Let priestly ministry shape Christian service: compassion for sinners, reverence for holiness, and faithfulness in daily duties.",
-      "Remember that God does not leave guilt unmanaged; He provides a Priest who bears, cleanses, intercedes, and restores."
+      "Remember that God does not leave guilt unmanaged. He provides a Priest who bears, cleanses, intercedes, and restores."
     ],
     citations: "Exodus 28-29; Exodus 30:17-21; Leviticus 8-10; Leviticus 16; Hebrews 4:14-16; Hebrews 7:25-28; Hebrews 8-9"
   },
@@ -321,10 +321,10 @@ const articles = {
     color: "linear-gradient(135deg, #4169b4, #c9573a)",
     icon: iconSvg.shield,
     structure: [
-      "The entrance veil, or door hanging, stood at the opening of the tabernacle itself, separating the courtyard from the Holy Place.",
-      "It was made of blue, purple, scarlet, and fine twined linen, supported by five pillars overlaid with gold and set in bronze sockets.",
-      "Its colors joined heaven, kingship, sacrifice, and righteousness at the doorway into priestly fellowship.",
-      "Unlike the courtyard gate, this veil did not admit every Israelite; it marked the transition from public atonement in the court to priestly ministry within the tent."
+      "The entrance veil stood at the doorway of the tabernacle itself. The altar and laver were behind the worshiper now; this was the threshold into the Holy Place.",
+      "It was woven of blue, purple, scarlet, and fine twined linen, and hung on five pillars. The colors made the entrance beautiful, but also serious.",
+      "Unlike the courtyard gate, this veil did not admit every Israelite. It marked the transition from public atonement in the court to priestly ministry inside the tent.",
+      "The veil said that nearness continues beyond forgiveness, but it continues through cleansing, priestly service, and God's appointed way."
     ],
     meaning: [
       {
@@ -351,16 +351,16 @@ const articles = {
     process: [
       "After sacrifice at the altar and washing at the laver, the priest passed through this entrance to tend the lampstand, table, and incense altar.",
       "The veil taught that nearness to God is progressive: sacrifice opens the way, cleansing prepares the servant, and priestly mediation carries the worship forward.",
-      "The five pillars created a visible threshold, reminding the priest that the Holy Place was not ordinary space but the chamber of continual light, bread, and prayer."
+      "The five pillars created a visible threshold. The priest was entering the chamber of continual light, bread, and prayer, not an ordinary room."
     ],
     fulfillment: [
-      "The entrance veil points to Christ as the only true access into priestly fellowship with God.",
+      "The entrance veil points to Christ as the true access into fellowship with God.",
       "Through Christ, believers move beyond the altar of forgiveness into the life of sanctification: Spirit-given light, daily bread, and intercessory prayer.",
-      "The colors of the veil converge in Jesus: the heavenly Son, royal Messiah, suffering Substitute, righteous Mediator, and the living doorway into fellowship with God.",
-      "Davidson's sanctuary work emphasizes typological movement from earthly symbols to Christ's priestly reality; the entrance veil fits that pattern by turning color, threshold, and priestly access into a single Christ-centered sign."
+      "The colors of the veil converge in Jesus: the heavenly Son, royal Messiah, suffering Substitute, righteous Mediator, and living doorway into fellowship with God.",
+      "The veil reminds us that Christ does not merely pardon from a distance; He brings His people into a life of daily communion and priestly care."
     ],
     applications: [
-      "Do not stop at forgiveness; enter the daily life of fellowship God has opened.",
+      "Do not stop at forgiveness; enter the daily fellowship God has opened.",
       "Approach holy things through Christ, not through familiarity or religious self-confidence.",
       "Let cleansing at the laver shape service inside the sanctuary: clean hands, clean feet, clean ministry.",
       "See sanctification as access to God's provision, not merely pressure to improve."
@@ -375,9 +375,9 @@ const articles = {
     icon: iconSvg.cloud,
     structure: [
       "The inner veil separated the Holy Place from the Most Holy Place, guarding the chamber of the ark and the visible glory of God.",
-      "It was made of blue, purple, scarlet, and fine twined linen, with cherubim woven into it, marking the boundary around God's throne room.",
-      "The veil was not a denial of mercy; it was mercy ordered by holiness, teaching that God's presence is approached through mediation.",
-      "Only the high priest passed beyond this veil, and only on the Day of Atonement, with blood and incense."
+      "It was woven with blue, purple, scarlet, fine linen, and cherubim. The design spoke of heaven, royalty, sacrifice, purity, and guarded throne-room holiness.",
+      "The veil was not a denial of mercy. It was mercy ordered by holiness, teaching that God's presence is approached through mediation.",
+      "Only the high priest passed beyond this veil, and only on the Day of Atonement, with incense and blood."
     ],
     meaning: [
       {
@@ -404,19 +404,19 @@ const articles = {
     process: [
       "In the daily service, the priest ministered before the veil at the altar of incense, bringing the prayers of Israel near to the throne.",
       "On the Day of Atonement, the high priest entered within the veil with incense and blood to cleanse the sanctuary.",
-      "The veil therefore held together two truths: God dwelt with His people, and sin still required mediated access until final cleansing."
+      "The veil held two truths together: God truly dwelt with His people, and sin still required mediated access until final cleansing."
     ],
     fulfillment: [
       "At Christ's death, the temple veil was torn, announcing that access to God rests on His completed sacrifice.",
-      "Hebrews applies veil imagery to Christ's flesh and priestly entrance, showing that the crucified and risen Jesus opens the living way to God.",
+      "Hebrews uses veil imagery to show that the crucified and risen Jesus opens the living way to God.",
       "The inner veil also preserves the sanctuary sequence: Christ's sacrifice opens access, His priesthood ministers that access, and His final work brings cleansing and restoration.",
-      "Gane's work on Leviticus helps clarify why this matters: sanctuary access is not vague religious nearness, but a divinely ordered movement through sacrifice, mediation, impurity management, cleansing, and restoration."
+      "The torn veil does not make God less holy; it shows that Christ has truly answered the barrier sin created."
     ],
     applications: [
       "Approach God boldly because Christ has opened the way.",
       "Keep reverence alive: access is intimate, but it was purchased by blood.",
       "Let prayer rise before the veil with confidence in Christ's mediation.",
-      "Read judgment through the torn veil: God's throne is holy, but the Mediator is for His people."
+      "Read judgment through the torn veil: God's throne is holy, and the Mediator is for His people."
     ],
     citations: "Exodus 26:31-35; Leviticus 16:2, 12-16; Matthew 27:51; Hebrews 6:19-20; Hebrews 9:3-8; Hebrews 10:19-22"
   },
@@ -427,10 +427,10 @@ const articles = {
     color: "linear-gradient(135deg, #f1dfb8, #5a382b)",
     icon: iconSvg.shield,
     structure: [
-      "The tabernacle was covered by layered curtains: fine linen with cherubim, goat hair, ram skins dyed red, and an outer protective covering.",
-      "The inner covering was beautiful and priestly, while the outer covering was durable and plain, protecting the holy dwelling in the wilderness.",
-      "The layers taught that God's glory dwelt among His people in a form both revealed and concealed.",
-      "The coverings also made the sanctuary portable, fitting God's presence to Israel's pilgrim journey."
+      "The tabernacle was covered by layers: fine linen with cherubim, goat hair, ram skins dyed red, and an outer protective covering.",
+      "The innermost layer was beautiful and priestly, seen from within. The outer layer was plain and durable, built for sun, dust, travel, and wilderness life.",
+      "The contrast is important. God's glory was truly present, but it was veiled in a humble tent that could travel with His people.",
+      "The coverings turned the tabernacle into both throne room and shelter. Heaven's pattern was present in the wilderness."
     ],
     meaning: [
       {
@@ -457,20 +457,19 @@ const articles = {
     process: [
       "The coverings were spread over the tabernacle frame, forming a sacred tent over the Holy Place and Most Holy Place.",
       "The innermost linen covering belonged to the interior world of worship, where priestly eyes saw embroidered beauty and cherubic throne imagery.",
-      "The outer layers shielded the dwelling from sun, dust, and weather, preserving the sanctity of the structure during wilderness travel.",
-      "The order of the layers mattered: beauty was not absent, but it was protected beneath coverings that served the journey. The sanctuary was both throne room and tent."
+      "The outer layers shielded the dwelling from sun, dust, and weather, preserving the holy structure during wilderness travel.",
+      "The order of the layers mattered: beauty was not absent, but it was protected beneath coverings that served the journey."
     ],
     fulfillment: [
       "The coverings point to Christ's incarnation: divine glory hidden under humble humanity, yet full of grace and truth.",
       "The red ram-skin layer naturally draws the mind to sacrifice and consecration, while the protective outer layer suggests Christ's ability to preserve His people.",
-      "The contrast between inner beauty and outward plainness reminds readers that God's deepest glory is often veiled beneath humility.",
-      "Andreasen often reads the sanctuary as enacted gospel. In that light, the coverings preach that God's saving presence is real, but clothed in forms humble enough to dwell among sinners.",
-      "Davidson's typological approach also helps here: the coverings are not random details but part of a larger sanctuary pattern that moves from earthly tent to Christ's dwelling presence and heavenly ministry."
+      "The contrast between inner beauty and outward plainness reminds us that God's deepest glory is often veiled beneath humility.",
+      "In Christ, God came near enough to dwell with us, humble enough to be overlooked, and strong enough to shelter His people through the wilderness."
     ],
     applications: [
       "Look for glory beneath humility; God's presence is not always wrapped in outward spectacle.",
       "Trust God's protection over the journey, not only His forgiveness at the altar.",
-      "Let the sanctuary coverings teach reverent hiddenness: some holy things are protected before they are displayed.",
+      "Let the coverings teach reverent hiddenness: some holy things are protected before they are displayed.",
       "Remember that Christ tabernacled among us, bringing God's presence into the dust of human life."
     ],
     citations: "Exodus 26:1-14; Exodus 36:8-19; John 1:14; Hebrews 9:11"
@@ -480,7 +479,7 @@ const articles = {
 const articleEnhancements = {
   altar: {
     summary:
-      "At the altar, the worshiper met the cost of sin and the mercy of substitution. Before any movement toward God could continue, an innocent life was accepted in the sinner's place.",
+      "The altar is where the sanctuary stops speaking in abstractions. Sin is not treated as a small mistake or a private regret; it costs life. Yet the first great lesson is not despair, but mercy: God provides a substitute, receives the blood, and opens the way for the sinner to stand forgiven instead of condemned.",
     keyTexts: "Exodus 27:1-8; Leviticus 1; Leviticus 6:8-13; John 1:29; Romans 12:1.",
     atAGlance: [
       { label: "Location", value: "Inside the gate, before every other sanctuary object." },
@@ -490,7 +489,7 @@ const articleEnhancements = {
   },
   laver: {
     summary:
-      "The laver stood after the altar to show that forgiven service is also cleansed service. The priest washed before approaching the tent, teaching that grace reaches the hands that serve and the feet that walk.",
+      "The laver teaches that God does not merely pardon people and leave them unchanged. After sacrifice, the priest still washed his hands and feet, because forgiven life must become clean life in daily movement, service, speech, and desire. It is a gentle but searching reminder that grace reaches the whole person, not only the record of guilt.",
     keyTexts: "Exodus 30:17-21; Exodus 38:8; Titus 3:5; Romans 6:3-4; Hebrews 10:22.",
     atAGlance: [
       { label: "Location", value: "Between the altar and the tabernacle entrance." },
@@ -500,7 +499,7 @@ const articleEnhancements = {
   },
   lampstand: {
     summary:
-      "The lampstand filled the Holy Place with light that Israel did not create for itself. Its daily flame taught that worship, witness, and spiritual sight depend on the Spirit's continual supply.",
+      "Inside the Holy Place, the lampstand gave light where no ordinary window could. That matters because spiritual sight is not something God's people manufacture by effort or cleverness. The flame had to be tended, supplied, and protected, just as a believing life needs the Spirit's steady light to understand Scripture, endure darkness, and shine without pretending to be the source.",
     keyTexts: "Exodus 25:31-40; Exodus 27:20-21; Zechariah 4:1-6; John 8:12; Revelation 1:12-20.",
     atAGlance: [
       { label: "Location", value: "South side of the Holy Place." },
@@ -510,7 +509,7 @@ const articleEnhancements = {
   },
   shewbread: {
     summary:
-      "The table kept the twelve tribes before God as a remembered and nourished people. The bread taught that covenant life is sustained by God's provision, not by human strength or occasional devotion.",
+      "The table of shewbread makes God's presence feel almost domestic: bread is set before Him, and His people are remembered tribe by tribe. It says that covenant life is not sustained by occasional religious intensity, but by daily provision. God does not only forgive His people at the altar; He feeds them, keeps them before Him, and teaches them to live by every word that comes from Him.",
     keyTexts: "Exodus 25:23-30; Leviticus 24:5-9; Deuteronomy 8:3; John 6:35.",
     atAGlance: [
       { label: "Location", value: "North side of the Holy Place, opposite the lampstand." },
@@ -520,7 +519,7 @@ const articleEnhancements = {
   },
   incense: {
     summary:
-      "The incense altar stood closest to the veil, where fragrance rose toward the throne. It taught that prayer is welcomed because sacrifice and priestly mediation make nearness possible.",
+      "The incense altar brings the sanctuary close to the inner life of prayer. Its fragrance rose near the veil, teaching that weak, trembling, and ordinary prayers can come near the throne because sacrifice and mediation stand beneath them. This article matters because it turns prayer from anxious self-persuasion into trust: the worshiper is heard through the merits of the Priest.",
     keyTexts: "Exodus 30:1-10; Leviticus 16:12-13; Psalm 141:2; Luke 1:9-10; Revelation 8:3-4.",
     atAGlance: [
       { label: "Location", value: "Before the inner veil, closest to the Most Holy Place." },
@@ -530,7 +529,7 @@ const articleEnhancements = {
   },
   ark: {
     summary:
-      "The ark gathered law, mercy, judgment, and covenant into one throne-room lesson. God's government is righteous, yet His mercy seat shows that sinners are not invited near without blood and grace.",
+      "The ark is the sanctuary's throne-room center, where law, mercy, judgment, covenant, and God's presence meet. The law inside the ark shows that God's government is not built on sentiment or compromise. But the mercy seat above the law shows something just as beautiful: sinners are not crushed by the throne when blood and grace speak for them.",
     keyTexts: "Exodus 25:10-22; Leviticus 16; Hebrews 8-9; Daniel 8:14; Revelation 11:19.",
     atAGlance: [
       { label: "Location", value: "Most Holy Place, beyond the inner veil." },
@@ -540,7 +539,7 @@ const articleEnhancements = {
   },
   gate: {
     summary:
-      "The gate announced that God had opened a definite way of return. The sinner did not invent access to holiness; he entered by God's appointed doorway and immediately faced the altar of sacrifice.",
+      "The gate tells the sinner that God has made a way back. It is open, but it is not vague; the worshiper does not climb the fence, invent a private route, or enter on his own terms. He comes through the doorway God provides and immediately meets the altar, learning that welcome is real and that reconciliation still rests on sacrifice.",
     keyTexts: "Exodus 27:16; John 10:7-9; John 14:6; Hebrews 10:19-22.",
     atAGlance: [
       { label: "Location", value: "East side of the courtyard." },
@@ -550,7 +549,7 @@ const articleEnhancements = {
   },
   posts: {
     summary:
-      "The linen fence marked the sanctuary as holy space while leaving the gate visible. It taught that God welcomes sinners, but He welcomes them into ordered, reverent, and transformed nearness.",
+      "The linen fence gave the sanctuary a holy boundary without hiding the invitation of the gate. It matters because God's mercy is not casual nearness; it is ordered nearness, protected by holiness and opened through sacrifice. The fence teaches that grace welcomes the sinner in, then patiently reshapes the life around purity, reverence, and belonging.",
     keyTexts: "Exodus 27:9-19; Revelation 19:8; 1 Peter 2:9.",
     atAGlance: [
       { label: "Dimensions", value: "A 100 by 50 cubit court with linen hangings." },
@@ -560,7 +559,7 @@ const articleEnhancements = {
   },
   priest: {
     summary:
-      "The priest stood as a living reminder that sinners need representation before God. His work of receiving, applying, carrying, and interceding pointed beyond human weakness to the perfect ministry of Christ.",
+      "The priest shows that the sinner is not left alone with guilt after confession. Someone appointed by God receives the offering, handles the blood, carries the ministry forward, and stands between the worshiper and holy things. His weakness makes the lesson even clearer: human priests could only point ahead to the One Priest who would truly bear, cleanse, intercede, and restore.",
     keyTexts: "Exodus 28-29; Leviticus 8-10; Leviticus 16; Hebrews 4:14-16; Hebrews 7:25-28; Hebrews 8-9.",
     atAGlance: [
       { label: "Role", value: "Mediator, representative, teacher, and servant of holy things." },
@@ -570,7 +569,7 @@ const articleEnhancements = {
   },
   entranceVeil: {
     summary:
-      "The entrance veil marked the passage from the courtyard into priestly fellowship. Its colors made the doorway beautiful, teaching that access to light, bread, and incense is holy, royal, and blood-bought.",
+      "The entrance veil is the threshold between forgiveness in the court and ongoing fellowship in the Holy Place. Its colors make access feel beautiful, but also serious: heaven, royalty, sacrifice, and purity meet at the doorway. It teaches that God does not call His people to stop at pardon; He draws them onward into light, bread, prayer, and priestly communion.",
     keyTexts: "Exodus 26:36-37; Exodus 36:37-38; John 10:9; Hebrews 10:19-22.",
     atAGlance: [
       { label: "Location", value: "Doorway from the court into the Holy Place." },
@@ -580,7 +579,7 @@ const articleEnhancements = {
   },
   innerVeil: {
     summary:
-      "The inner veil guarded the throne room and deepened Israel's reverence for God's presence. It showed that final nearness requires blood, incense, priestly mediation, and the cleansing work God Himself provides.",
+      "The inner veil guarded the room of the ark, not because God was unwilling to dwell with His people, but because His presence is holy. It taught Israel to desire nearness without becoming careless with it. Blood, incense, and priestly mediation stood between sin and the throne until God Himself provided the deeper access and final cleansing pictured in the sanctuary.",
     keyTexts: "Exodus 26:31-35; Leviticus 16:2, 12-16; Matthew 27:51; Hebrews 6:19-20; Hebrews 10:19-22.",
     atAGlance: [
       { label: "Location", value: "Between Holy Place and Most Holy Place." },
@@ -590,7 +589,7 @@ const articleEnhancements = {
   },
   coverings: {
     summary:
-      "The coverings preached by layers: beauty within, protection without, sacrifice between, and glory hidden beneath humility. They made God's dwelling both holy and portable for a pilgrim people.",
+      "The coverings make the tabernacle feel like a holy mystery wrapped for a wilderness journey. From outside, the dwelling looked plain and protected; from within, it held beauty, color, and cherubim. The layers matter because they teach how God comes near: His glory is real, but veiled; His presence is beautiful, but protected; His dwelling is holy, yet willing to travel with His pilgrim people.",
     keyTexts: "Exodus 26:1-14; Exodus 36:8-19; John 1:14; Hebrews 9:11.",
     atAGlance: [
       { label: "Layers", value: "Fine linen, goat hair, red ram skins, and outer protection." },
@@ -3057,7 +3056,7 @@ const faqArticles = [
     title: "Should Christians Keep the Feasts?",
     subtitle: "A balanced Adventist answer",
     summary:
-      "The feasts are not binding covenant obligations for Christians, but they remain a rich Christ-centered study of redemption when they are handled as fulfilled types rather than tests of salvation.",
+      "Christians are not required to keep Israel's yearly feasts as covenant law. Still, the feasts are worth studying because they trace the story of redemption and lead the mind to Christ.",
     keyTexts: [
       "Leviticus 23",
       "Colossians 2:16-17",
@@ -3074,17 +3073,17 @@ const faqArticles = [
       {
         label: "Not required",
         text:
-          "Christians should not make feast keeping a condition of righteousness, fellowship, prophetic insight, or end-time faithfulness. The New Testament points believers to Christ, the substance to whom the feast shadows pointed."
+          "No one should make feast keeping a test of righteousness, fellowship, prophetic insight, or readiness for Christ's return. The New Testament points believers to Christ Himself, the reality to whom the feast shadows pointed."
       },
       {
         label: "Still profitable",
         text:
-          "The feasts are worth studying because they organize the story of salvation: sacrifice, resurrection, Spirit-filled witness, judgment, cleansing, and final dwelling with God. They are a Bible study map, not a new yoke."
+          "The feasts still teach beautifully. They arrange the gospel story into memorable movements: sacrifice, resurrection, Spirit-filled mission, judgment, cleansing, harvest, and God dwelling with His people."
       },
       {
         label: "Best use",
         text:
-          "Study them devotionally and typologically. Let Passover teach the cross, Pentecost teach mission, Trumpets teach judgment proclamation, and the Day of Atonement teach Christ's final priestly ministry."
+          "Use the feasts as Bible study windows. Let Passover lead you to the cross, Pentecost to mission, Trumpets to judgment proclamation, and the Day of Atonement to Christ's final priestly work."
       }
     ],
     sections: [
@@ -3113,7 +3112,7 @@ const faqArticles = [
       {
         heading: "5. Why Adventists study them carefully",
         body:
-          "Adventists have a special reason to study the feasts because the sanctuary is central to our understanding of salvation history. Richard Davidson's typological work helps us read the sanctuary patterns as intentional Bible structures that move from type to antitype. Stephen Bohr's feast-calendar studies emphasize the order of the feasts as a prophetic sequence that moves from the cross to final restoration."
+          "Adventists have good reason to study the feasts carefully because the sanctuary is central to our understanding of salvation history. Read typologically, the calendar moves from sacrifice to resurrection, from priestly ministry to judgment, and from cleansing to final restoration."
       },
       {
         heading: "6. Type and antitype",
@@ -3168,7 +3167,7 @@ const faqArticles = [
       {
         heading: "16. Are voluntary feast-themed gatherings wrong?",
         body:
-          "Not necessarily. A church, family, or study group may use Passover, Pentecost, Trumpets, Atonement, or Tabernacles as teaching moments. The issue is the spirit and claim attached to the practice. If it is a Christ-centered study aid, it can be helpful. If it becomes a requirement, identity marker, or measure of end-time faithfulness, it has crossed a dangerous line."
+          "Not necessarily. A church, family, or study group may use Passover, Pentecost, Trumpets, Atonement, or Tabernacles as teaching moments. The key question is what claim is attached to the practice. If it helps people see Christ more clearly, it can be useful. If it becomes a requirement, identity marker, or measure of end-time faithfulness, it has crossed a dangerous line."
       },
       {
         heading: "17. The difference between study and obligation",
@@ -3203,19 +3202,19 @@ const faqArticles = [
     title: "Is the Investigative Judgment Biblical?",
     subtitle: "A Bible study in Daniel, Leviticus, Hebrews, and Revelation",
     summary:
-      "The investigative judgment is the pre-advent phase of Christ's heavenly ministry in which God reveals the truth, cleanses the record of confessed sin, vindicates Christ's saving work, and prepares for the final removal of sin.",
+      "The investigative judgment is the Bible's pre-Advent judgment scene understood through the sanctuary: Christ reveals the truth, cleanses the record of confessed sin, vindicates His saving work, and prepares for sin's final removal.",
     keyTexts: ["Daniel 7:9-14", "Daniel 8:14", "Daniel 9:24-27", "Leviticus 16", "Hebrews 8:1-2", "Hebrews 9:23-24", "Revelation 14:6-7"],
     featured: true,
     quickAnswer: [
       {
         label: "Yes, if defined biblically",
         text:
-          "It is not God trying to learn facts. It is God's public, pre-advent judgment that reveals who belongs to Christ and shows that His saving decisions are righteous."
+          "Yes, when it is defined from the Bible rather than from caricatures. God is not learning facts He did not know; He is opening the record and showing that His decisions in Christ are righteous."
       },
       {
         label: "It is sanctuary-shaped",
         text:
-          "The doctrine grows from the earthly Day of Atonement, Daniel's sanctuary cleansing, Hebrews' heavenly sanctuary, and Revelation's end-time judgment announcement."
+          "It grows out of the Day of Atonement, Daniel's courtroom and sanctuary visions, Hebrews' heavenly sanctuary, and Revelation's announcement that the hour of God's judgment has come."
       },
       {
         label: "It is good news",
@@ -3233,7 +3232,7 @@ const faqArticles = [
       {
         heading: "2. Judgment before reward is biblical",
         body:
-          "Scripture repeatedly places judgment before final reward. Daniel 7 shows the court sitting before the Son of man receives the kingdom. Revelation 14 announces that the hour of God's judgment has come before the harvest of the earth. Revelation 22 says Christ comes with His reward. If the reward is brought at the coming, then a decision concerning that reward precedes the coming."
+          "The Bible often places judgment before final reward. Daniel 7 shows the court sitting before the Son of man receives the kingdom. Revelation 14 announces that the hour of God's judgment has come before the harvest of the earth. Revelation 22 says Christ comes with His reward. If the reward is brought at the coming, then the decision concerning that reward has already been made."
       },
       {
         heading: "3. Daniel 7 gives the courtroom",
@@ -3258,7 +3257,7 @@ const faqArticles = [
       {
         heading: "7. Daniel 8 and 9 give the timeline",
         body:
-          "Daniel 8 gives the 2,300 days but Daniel does not understand the time portion. Gabriel returns in Daniel 9 and tells Daniel to consider the vision. The 70 weeks are determined for Daniel's people, and Daniel 9 gives the starting event: the decree to restore and rebuild Jerusalem. This links the 70 weeks and the 2,300 years to the same 457 BC starting point."
+          "Daniel 8 gives the 2,300 days, but Daniel says he did not understand the vision's time element. In Daniel 9 Gabriel returns and tells him to consider the vision. The 70 weeks are 'determined' for Daniel's people; Adventists understand that period as the first portion marked off from the longer 2,300 years. Daniel 9 also gives the starting event: the decree to restore and rebuild Jerusalem, which places both periods at the same 457 BC starting point."
       },
       {
         heading: "8. Jesus anchors the prophecy",
@@ -3318,7 +3317,7 @@ const faqArticles = [
     title: "What Is the Antitypical Day of Atonement?",
     subtitle: "The earthly cleansing day lifted into Christ's heavenly ministry",
     summary:
-      "It is the final heavenly reality to which Israel's yearly Day of Atonement pointed: Christ cleanses the sanctuary record, reveals the truth, removes sin, and prepares His people for restoration.",
+      "It is the heavenly reality to which Israel's yearly Day of Atonement pointed: Christ brings His priestly ministry to its final cleansing phase, deals with the record of sin, reveals the truth, and prepares His people for restoration.",
     keyTexts: ["Leviticus 16", "Leviticus 23:26-32", "Daniel 7:9-14", "Daniel 8:14", "Hebrews 8:1-2", "Hebrews 9:23-28", "Revelation 14:6-7"],
     sections: [
       {
@@ -3335,7 +3334,7 @@ const faqArticles = [
       {
         heading: "3. Why cleansing was needed",
         body:
-          "Through the daily service, confessed sin was transferred into the sanctuary by sacrifice and priestly blood ministry. The sinner was forgiven, but the sanctuary now bore the record of sin's terrible reality. The Day of Atonement showed that God does not merely forgive sinners while leaving sin permanently lodged in His house. He forgives, cleanses, removes, and restores."
+          "Through the daily service, confessed sin was brought into the sanctuary story by sacrifice and priestly blood ministry. The sinner was forgiven, but the sanctuary now bore the record of sin's terrible reality. The Day of Atonement showed that God does not merely forgive sinners while leaving sin permanently lodged in His house. He forgives, cleanses, removes, and restores."
       },
       {
         heading: "4. Why the word antitypical matters",
@@ -3381,7 +3380,7 @@ const faqArticles = [
     title: "How Do Daniel 7, 8, and 9 Connect?",
     subtitle: "Courtroom, sanctuary cleansing, and the starting date",
     summary:
-      "Daniel 7 gives the judgment courtroom, Daniel 8 gives the sanctuary cleansing and 2,300 days, and Daniel 9 supplies the starting date through the 70-week prophecy.",
+      "Daniel 7 shows the heavenly courtroom, Daniel 8 adds the sanctuary cleansing and the 2,300 days, and Daniel 9 supplies the starting point through the 70-week prophecy.",
     keyTexts: ["Daniel 7:9-14", "Daniel 8:13-14", "Daniel 8:26-27", "Daniel 9:21-27", "Ezra 7", "Mark 1:14-15", "Galatians 4:4"],
     sections: [
       {
@@ -3413,7 +3412,7 @@ const faqArticles = [
       {
         heading: "6. The 70 weeks are cut off",
         body:
-          "Daniel 9 says 70 weeks are determined for Daniel's people and holy city. Adventists understand this determined period as cut off from the longer 2,300-year period. That means the 70 weeks are the first explained portion of the larger prophecy, especially focused on the Jewish nation, Jerusalem, and the coming Messiah."
+          "Daniel 9 says 70 weeks are determined for Daniel's people and holy city. The word carries the idea of being marked off or allotted. Adventists therefore understand the 70 weeks as the first explained portion of the larger 2,300-year prophecy. This is why the two periods share the same starting point."
       },
       {
         heading: "7. Daniel 9 supplies the starting point",
@@ -3449,7 +3448,7 @@ const faqArticles = [
     title: "Does Judgment Mean Salvation by Works?",
     subtitle: "Why evidence is not the same as earning salvation",
     summary:
-      "No. Works do not purchase salvation. In judgment they function as evidence of whether faith in Christ was real, received, and allowed to bear fruit.",
+      "No. Works never buy salvation. In judgment they serve as evidence of whether a person has actually trusted Christ and allowed His grace to bear fruit.",
     keyTexts: ["Ephesians 2:8-10", "Romans 3:24-26", "James 2:17-18", "Matthew 7:16-23", "2 Corinthians 5:10", "Revelation 22:12"],
     sections: [
       {
@@ -3466,7 +3465,7 @@ const faqArticles = [
       {
         heading: "3. Works are evidence, not payment",
         body:
-          "A court may examine evidence without making the evidence the redeemer. Scripture repeatedly connects judgment with deeds because deeds reveal allegiance, faith, repentance, and resistance to grace. Works do not purchase salvation; they show whether the heart has received or rejected Christ."
+          "In an honest court, evidence matters, but evidence is not the savior. Scripture connects judgment with deeds because deeds reveal allegiance, faith, repentance, and resistance to grace. Works do not purchase salvation; they show whether the heart has received or rejected Christ."
       },
       {
         heading: "4. James and living faith",
@@ -3534,7 +3533,7 @@ const faqArticles = [
       {
         heading: "4. Transfer in the daily service",
         body:
-          "Leviticus shows several ways sin was ritually transferred into the sanctuary sphere: through blood applied in holy places, through priestly mediation, and through the priest bearing iniquity in connection with the offering. Roy Gane's ritual studies help clarify that sacrifice did not simply make sin vanish; it moved the case into God's appointed system for final handling."
+          "Leviticus shows several ways sin was ritually moved into the sanctuary sphere: through blood applied in holy places, through priestly mediation, and through the priest bearing iniquity in connection with the offering. The point is not that sin simply vanished at the altar; the case was placed into God's appointed system for final handling."
       },
       {
         heading: "5. Pollution is covenantal, not physical dirt",
@@ -3612,7 +3611,7 @@ const faqArticles = [
       {
         heading: "7. Why Adventists still talk about the feasts",
         body:
-          "Adventists talk about the feasts because they illuminate the sanctuary and the plan of salvation. Stephen Bohr's work on the religious calendar and Davidson's typological studies show how the sequence points from Christ's first advent to His final work. This is study, not re-obligation."
+          "Adventists still talk about the feasts because they illuminate the sanctuary and the plan of salvation. The sequence of the calendar helps trace the movement from Christ's first advent to His final work: sacrifice, resurrection, mission, judgment, cleansing, and restoration. This is study, not re-obligation."
       },
       {
         heading: "8. A practical test",
@@ -3640,7 +3639,7 @@ const faqArticles = [
         heading: "1. Why this question matters",
         wide: true,
         body:
-          "Some argue that because Paul mentioned feast seasons or arranged travel around them, Christians today must keep the feasts. But the evidence must be handled carefully. Paul's missionary life shows cultural sensitivity, Jewish context, and evangelistic strategy. It does not automatically create a universal command for Gentile Christians."
+          "It is easy to overread Paul's travel schedule. Some argue that because Paul mentioned feast seasons or arranged travel around them, Christians today must keep the feasts. But Paul's missionary life shows cultural sensitivity, Jewish context, and evangelistic strategy. It does not automatically create a universal command for Gentile Christians."
       },
       {
         heading: "2. Paul lived in both Jewish and Gentile worlds",
@@ -3755,7 +3754,494 @@ const faqArticles = [
   }
 ];
 
-const faqArticleMap = Object.fromEntries(faqArticles.map(article => [article.id, article]));
+const polishedFaqArticles = [
+  {
+    id: "feasts-keep",
+    category: "Festival Calendar",
+    title: "Should Christians Keep the Feasts?",
+    subtitle: "A careful Adventist answer",
+    summary:
+      "Christians are not under obligation to keep Israel's yearly feast calendar, but the feasts remain a beautiful Bible study map because they point to Christ's sacrifice, resurrection, priestly ministry, judgment, cleansing, and final dwelling with His people.",
+    keyTexts: [
+      "Leviticus 23",
+      "Colossians 2:16-17",
+      "Galatians 4:9-11",
+      "Hebrews 8-10",
+      "1 Corinthians 5:7-8",
+      "Romans 14:5-6",
+      "Revelation 14:6-7"
+    ],
+    featured: true,
+    quickAnswer: [
+      {
+        label: "Not a test",
+        text:
+          "No believer should be judged as less faithful because he or she does not observe the yearly feasts. The New Testament turns our eyes from the shadow to Christ, the living reality."
+      },
+      {
+        label: "Still meaningful",
+        text:
+          "The feasts are not religious clutter. They are a carefully arranged gospel calendar, teaching sacrifice, deliverance, resurrection, mission, judgment, cleansing, harvest, and homecoming."
+      },
+      {
+        label: "Best use",
+        text:
+          "Study them as fulfilled sanctuary lessons. Let them deepen your understanding of Jesus without turning them into a new yoke for the conscience."
+      }
+    ],
+    sections: [
+      {
+        heading: "The real issue",
+        wide: true,
+        body:
+          "The question is not whether the feasts are interesting or whether Christians can learn from them. They are part of Scripture, and Scripture is profitable. The real question is whether the yearly feast calendar still binds Christians as covenant obligation. A balanced answer must honor both sides: God gave the feasts, and they were full of meaning; yet their ritual life belonged to the sanctuary system that pointed forward to Christ."
+      },
+      {
+        heading: "What the feasts were",
+        body:
+          "Leviticus 23 presents more than a list of religious holidays. The feasts shaped Israel's memory, worship, harvest life, family rhythm, and national identity. They involved holy convocations, rest, offerings, priestly service, and sometimes pilgrimage. Israel did not merely hear about redemption; they rehearsed it year after year in the movement of the calendar."
+      },
+      {
+        heading: "Why they are not binding now",
+        body:
+          "The feasts were joined to the earthly sanctuary, animal sacrifices, Levitical priesthood, and ceremonial calendar. Once Christ came as the true Lamb and began His priestly ministry in the heavenly sanctuary, the old system could no longer function as covenant requirement in the same way. To make feast observance a test today is to treat the shadow as though the substance has not arrived."
+      },
+      {
+        heading: "What Colossians is protecting",
+        body:
+          "Colossians 2 does not insult the feasts. It protects believers from being judged by them. Paul calls ceremonial food, drink, festivals, new moons, and sabbath days shadows, while Christ is the body, the substance, the reality. A shadow is useful when it leads you to the person. It becomes harmful when someone insists that standing in the shadow is required after the person has come."
+      },
+      {
+        heading: "What Galatians is warning against",
+        body:
+          "Galatians warns against turning religious observance into a way of securing covenant standing. Paul is not rebuking thoughtful Bible study; he is resisting a system that makes days, months, times, and years part of spiritual bondage. The danger is subtle. A practice may begin as devotion and then quietly become a badge of superiority or a measure of who is truly faithful."
+      },
+      {
+        heading: "What Hebrews adds",
+        body:
+          "Hebrews teaches that Christ's sacrifice is once for all and His priesthood is better than the old priesthood. That does not erase the Old Testament; it tells us how to read it. The feasts should now be read through the cross, resurrection, and heavenly ministry of Jesus. They are not a road back to the old sanctuary order, but a window into the Savior who fulfilled it."
+      },
+      {
+        heading: "How each feast teaches Christ",
+        body:
+          "Passover points to the Lamb of God. Unleavened Bread teaches sincerity and freedom from the old leaven of sin. Firstfruits points to Christ's resurrection. Pentecost points to Spirit-filled mission. Trumpets calls attention to solemn proclamation. The Day of Atonement opens the meaning of judgment and cleansing. Tabernacles looks toward harvest joy and God dwelling with His people forever."
+      },
+      {
+        heading: "Can Christians use feast themes devotionally?",
+        body:
+          "Yes, if the use remains Christ-centered and voluntary. A family may study Passover to help children understand the cross. A church may teach the Day of Atonement to explain Daniel 8:14. A class may trace the whole calendar as a map of redemption. But the moment the practice becomes a requirement, a spiritual ranking system, or a test of end-time loyalty, it has moved away from the gospel."
+      },
+      {
+        heading: "A pastoral answer",
+        wide: true,
+        body:
+          "So should Christians keep the feasts? Not as binding covenant law. But should Christians study them? Absolutely. The feasts are too rich to ignore and too fulfilled to reimpose. The safest path is to let them do what all sanctuary symbols were meant to do: lead the heart to Jesus, the Lamb who died, the Priest who ministers, the Judge who vindicates, and the King who will dwell with His people."
+      }
+    ],
+    relatedLinks: [
+      { label: "Open Festival Calendar", view: "calendar" },
+      { label: "Study Daniel 8:14", view: "focus1844" }
+    ]
+  },
+  {
+    id: "investigative-judgment",
+    category: "1844 Focus",
+    title: "Is the Investigative Judgment Biblical?",
+    subtitle: "A sanctuary study of judgment, cleansing, and assurance",
+    summary:
+      "Yes, when it is understood from Scripture rather than caricature. The investigative judgment is the Bible's pre-Advent judgment and sanctuary cleansing, where God reveals the truth, vindicates Christ's saving work, and prepares the universe for the final removal of sin.",
+    keyTexts: ["Daniel 7:9-14", "Daniel 8:14", "Daniel 9:24-27", "Leviticus 16", "Hebrews 8:1-2", "Hebrews 9:23-24", "Revelation 14:6-7"],
+    featured: true,
+    quickAnswer: [
+      {
+        label: "Not God learning",
+        text:
+          "God does not investigate because He lacks information. The opened books reveal the truth so His judgments are seen to be righteous."
+      },
+      {
+        label: "Sanctuary logic",
+        text:
+          "Daily ministry brought forgiveness; the Day of Atonement brought cleansing and removal. Daniel 8:14 lifts that pattern into Christ's heavenly ministry."
+      },
+      {
+        label: "Assurance in Christ",
+        text:
+          "The believer's safety is not self-confidence. It is Christ, who is sacrifice, priest, advocate, and righteous judge."
+      }
+    ],
+    sections: [
+      {
+        heading: "Start with the right question",
+        wide: true,
+        body:
+          "The investigative judgment sounds frightening if it is described as God searching for reasons to reject people. That is not the biblical picture. The better question is this: does Scripture show a judgment before the Second Coming, connected with heavenly records, the sanctuary, Christ's priestly ministry, and the final vindication of God's people? When those pieces are allowed to speak together, the doctrine becomes much more biblical, and much more hopeful, than many people expect."
+      },
+      {
+        heading: "Daniel 7 gives the courtroom",
+        body:
+          "Daniel 7 moves from earthly empires to a heavenly court. Thrones are placed, books are opened, and judgment sits before the Son of man receives the kingdom. This matters because the judgment happens before the kingdom is fully handed to Christ and His saints. It is not an afterthought after the Second Coming; it belongs to the prophetic sequence before the final reward."
+      },
+      {
+        heading: "The books are about transparency",
+        body:
+          "The opened books do not help God remember. They help the watching universe see. Sin has accused God of being unfair, untrustworthy, and severe. Judgment opens the record so that God's mercy and justice can be seen clearly. The question is not whether God knows the truth, but whether His creatures can see that His saving decisions are righteous."
+      },
+      {
+        heading: "Daniel 8 gives the sanctuary cleansing",
+        body:
+          "Daniel 8:14 says, 'then shall the sanctuary be cleansed.' That language is not random. It calls the reader back to the Day of Atonement, the yearly service in which the sanctuary was cleansed from the accumulated record of confessed sin. Daniel 8 is therefore not merely about politics. It is about worship, truth, priestly ministry, and the final answer to sin."
+      },
+      {
+        heading: "Daniel 9 anchors the date in Christ",
+        body:
+          "Daniel 8 gives the 2,300 days but does not give the starting point. Daniel 9 resumes Gabriel's explanation and gives the 70 weeks beginning with the decree to restore and rebuild Jerusalem. That starting point, 457 BC, leads first to Messiah's appearing and death, and then, through the full 2,300 years, to 1844. The timeline is not built around a date alone; it is anchored in Jesus."
+      },
+      {
+        heading: "Leviticus 16 explains the need",
+        body:
+          "In the daily sanctuary service, repentant sinners were forgiven through sacrifice and priestly ministry. Yet the sanctuary still bore the record of the sins that had been confessed and transferred into God's appointed system. On the Day of Atonement the sanctuary was cleansed, the people were restored, and sin was symbolically removed. Daniel 8:14 uses that same cleansing logic on the level of Christ's heavenly ministry."
+      },
+      {
+        heading: "Hebrews points upward",
+        body:
+          "Hebrews tells us that Christ ministers in the true sanctuary, not an earthly copy. His sacrifice is complete, but His priestly ministry is real. The cross is the foundation; the heavenly ministry applies and reveals the meaning of the cross. The investigative judgment does not compete with Calvary. It shows the universe what Calvary has accomplished for those who have trusted Christ."
+      },
+      {
+        heading: "Why works appear in judgment",
+        body:
+          "Scripture connects judgment with works because works reveal the direction of the heart. They do not purchase salvation. They testify whether faith is living or merely claimed. A life may be weak and still belong to Christ, but genuine trust does not cling peacefully to rebellion. Judgment shows the truth about faith, repentance, grace, and transformation."
+      },
+      {
+        heading: "Why this is good news",
+        body:
+          "The judgment is good news because Christ stands at the center of it. The One who knows the record is the One who died for sinners. The One who opens the books is the One who bears our names before God. The purpose is not to make repentant believers insecure, but to show that no confessed sin will remain forever and no accusation against God's saving work will stand."
+      },
+      {
+        heading: "A simple conclusion",
+        wide: true,
+        body:
+          "The investigative judgment is biblical when it is allowed to arise from Daniel's courtroom, Daniel's sanctuary cleansing, Leviticus 16, Hebrews' heavenly sanctuary, and Revelation's judgment-hour message. It is not God trying to learn something. It is God revealing truth, cleansing the record of sin, vindicating Christ and His people, and preparing the universe for a clean eternity."
+      }
+    ],
+    relatedLinks: [
+      { label: "Open 1844 Focus", view: "focus1844" },
+      { label: "Open Day of Atonement feast", view: "calendar", feast: "atonement" }
+    ]
+  },
+  {
+    id: "antitypical-day-of-atonement",
+    category: "1844 Focus",
+    title: "What Is the Antitypical Day of Atonement?",
+    subtitle: "The earthly cleansing day fulfilled in Christ's final ministry",
+    summary:
+      "It is the heavenly reality to which Israel's yearly Day of Atonement pointed: Christ's final priestly work of cleansing, judgment, vindication, and preparing His people for the complete removal of sin.",
+    keyTexts: ["Leviticus 16", "Leviticus 23:26-32", "Daniel 8:14", "Hebrews 8:1-2", "Hebrews 9:23-28", "Revelation 14:6-7"],
+    sections: [
+      {
+        heading: "The idea in plain language",
+        wide: true,
+        body:
+          "The antitypical Day of Atonement is not another cross and not another sacrifice. Christ's sacrifice was once for all. The antitypical Day of Atonement is the final phase of His heavenly priestly ministry, where the meaning of His sacrifice is applied to the final cleansing of the sanctuary record and the final settling of the controversy over sin."
+      },
+      {
+        heading: "The earthly pattern",
+        body:
+          "Once a year, Israel entered its most solemn worship day. The high priest washed, wore plain linen garments, offered sacrifice for himself, carried incense within the veil, sprinkled blood before the mercy seat, cleansed the sanctuary and altar, and finally confessed Israel's sins over the live goat. The whole day taught that sin must not only be forgiven; it must finally be removed."
+      },
+      {
+        heading: "Why the antitype matters",
+        body:
+          "A type is a God-given pattern. An antitype is the greater reality to which the pattern points. The earthly high priest entered an earthly sanctuary with animal blood. Christ ministers in the heavenly sanctuary with the merit of His own sacrifice. The old ritual was a shadow; the antitype is the living ministry of Jesus."
+      },
+      {
+        heading: "What is being cleansed",
+        body:
+          "The heavenly sanctuary is not dirty in a physical sense. The cleansing deals with the record, claims, and consequences of sin in God's government. Forgiven sin is not ignored, hidden, or left forever unresolved. God brings every case into the light and shows that His mercy is righteous and His judgments are true."
+      },
+      {
+        heading: "The believer's posture",
+        body:
+          "The Day of Atonement called Israel to humility, confession, and trust. The antitypical Day calls us to the same spirit. This is not a call to panic. It is a call to stop pretending, to bring sin honestly to Christ, and to rest in the High Priest who is able to cleanse completely."
+      },
+      {
+        heading: "The hope at the center",
+        body:
+          "The best news of the antitypical Day of Atonement is that sin will not always be part of the story. Christ does not merely manage guilt forever. He is bringing history toward a clean sanctuary, a cleansed people, a vindicated God, and a world where sin is gone."
+      }
+    ],
+    relatedLinks: [{ label: "Read the full investigative judgment article", faq: "investigative-judgment" }]
+  },
+  {
+    id: "daniel-7-8-9",
+    category: "Prophecy",
+    title: "How Do Daniel 7, 8, and 9 Connect?",
+    subtitle: "Courtroom, sanctuary, and Messiah in one prophetic flow",
+    summary:
+      "Daniel 7 shows the heavenly courtroom, Daniel 8 adds the sanctuary cleansing and the 2,300 days, and Daniel 9 supplies the starting point through the Messiah-centered 70-week prophecy.",
+    keyTexts: ["Daniel 7:9-14", "Daniel 8:13-14", "Daniel 8:26-27", "Daniel 9:21-27", "Ezra 7", "Mark 1:14-15"],
+    sections: [
+      {
+        heading: "Why the chapters belong together",
+        wide: true,
+        body:
+          "Daniel 7, 8, and 9 are not three unrelated puzzles. They are like three windows into the same end-time sanctuary story. Daniel 7 shows judgment in the heavenly court. Daniel 8 shows the sanctuary under attack and then cleansed. Daniel 9 returns to the unfinished time prophecy and anchors the whole timeline in the coming and death of Messiah."
+      },
+      {
+        heading: "Daniel 7: the court sits",
+        body:
+          "Daniel 7 begins with kingdoms rising and falling, but it does not end on earth. The scene moves to heaven. Books are opened, judgment sits, and the Son of man receives dominion. This chapter gives the courtroom framework: before the saints receive the kingdom, heaven reviews and answers the claims of the powers that opposed God."
+      },
+      {
+        heading: "Daniel 8: the sanctuary is cleansed",
+        body:
+          "Daniel 8 uses sanctuary language throughout: ram, goat, horn, daily, sanctuary, truth cast down, and cleansing. The central question becomes, how long will the sanctuary and truth be trampled? The answer is Daniel 8:14: after the 2,300 days, the sanctuary will be cleansed."
+      },
+      {
+        heading: "The missing piece in Daniel 8",
+        body:
+          "Daniel 8 gives the time period, but Daniel does not receive the full explanation of when it begins. He faints and says he does not understand the vision. That leaves the reader waiting. If God gives a time prophecy but no starting point, the explanation is not complete yet."
+      },
+      {
+        heading: "Gabriel returns in Daniel 9",
+        body:
+          "Daniel 9 opens with Daniel praying about Jerusalem, forgiveness, and restoration. Gabriel comes back and tells Daniel to understand and consider the vision. That language points back to Daniel 8. Gabriel is not beginning a random new subject; he is continuing the explanation Daniel had not understood."
+      },
+      {
+        heading: "The 70 weeks are the first portion",
+        body:
+          "Daniel 9 says 70 weeks are determined for Daniel's people and holy city. Adventists understand this as a period marked off from the larger 2,300 years. That is why the 70 weeks and the 2,300 years share the same starting point: the decree to restore and rebuild Jerusalem."
+      },
+      {
+        heading: "Why 457 BC matters",
+        body:
+          "The decree connected with Ezra 7 in 457 BC fits Daniel's language because it restored Jerusalem's civil and religious life in a meaningful way. From that point the 70 weeks lead to Messiah's appearing, His death in the middle of the final week, and the widening of the gospel mission. The same starting point, carried through the full 2,300 years, reaches 1844."
+      },
+      {
+        heading: "Why this should strengthen faith",
+        body:
+          "The Daniel timeline does not begin with 1844. It first leads to Jesus. It points to His baptism, His cross, and the gospel going to the world. That means the final judgment message rests on the same prophecy that already proved faithful in the life and death of Christ."
+      }
+    ],
+    relatedLinks: [{ label: "Open Daniel 8-9 study", view: "focus1844" }]
+  },
+  {
+    id: "judgment-not-works",
+    category: "Assurance",
+    title: "Does Judgment Mean Salvation by Works?",
+    subtitle: "Why evidence is not the same as earning salvation",
+    summary:
+      "No. Judgment does not mean we earn salvation. Works appear in judgment as evidence of living faith, while Christ alone remains the ground of acceptance.",
+    keyTexts: ["Ephesians 2:8-10", "Romans 3:24-26", "James 2:17-18", "2 Corinthians 5:10", "Revelation 22:12"],
+    sections: [
+      {
+        heading: "The fear many people feel",
+        wide: true,
+        body:
+          "When people hear that there is a judgment, many imagine God placing good deeds on one side of a scale and sins on the other. If the good outweighs the bad, perhaps they are saved. That is not the gospel. Scripture teaches that sinners are saved by grace, through faith, because of Christ. Judgment does not replace that truth; it reveals whether that truth has been received."
+      },
+      {
+        heading: "Grace comes first",
+        body:
+          "In the sanctuary, the sinner did not approach God carrying a record of achievement. He came with a sacrifice. That order matters. Acceptance begins with God's provision, not human worthiness. The repentant sinner is safe because God has provided atonement."
+      },
+      {
+        heading: "Works are witnesses",
+        body:
+          "Works matter in judgment because they tell the truth about the life. They reveal whether faith was alive, whether repentance was real, and whether grace was resisted or welcomed. But a witness is not a savior. Works testify; Christ saves."
+      },
+      {
+        heading: "James and Paul belong together",
+        body:
+          "Paul rejects works as the basis of salvation. James rejects a dead faith that produces no fruit. They are not fighting each other. Together they tell us that we are saved by grace alone, and that saving grace does not leave the life untouched."
+      },
+      {
+        heading: "What about weak believers?",
+        body:
+          "The judgment is not looking for flawless self-produced performance. Believers may stumble, grieve, repent, and return. The question is not whether a person ever fell, but whether they kept hiding from Christ or kept coming back to Him. A bruised faith that clings to Jesus is different from cherished rebellion."
+      },
+      {
+        heading: "A sentence worth remembering",
+        body:
+          "Judgment does not ask, 'Did you save yourself well enough?' It reveals the answer to a different question: 'Did you truly receive the Savior who was given for you?' That is why assurance belongs in Christ, not in our spiritual report card."
+      }
+    ],
+    relatedLinks: [{ label: "Read the full judgment article", faq: "investigative-judgment" }]
+  },
+  {
+    id: "sanctuary-cleansing",
+    category: "Sanctuary",
+    title: "Why Does the Sanctuary Need Cleansing?",
+    subtitle: "Forgiveness, record, and final removal",
+    summary:
+      "Because the sanctuary is where God chose to handle confessed sin. The sinner was forgiven through sacrifice, but the sanctuary record still required final cleansing and removal.",
+    keyTexts: ["Leviticus 4", "Leviticus 6:24-30", "Leviticus 10:16-18", "Leviticus 16", "Daniel 8:14", "Hebrews 9:23"],
+    sections: [
+      {
+        heading: "The question sounds strange at first",
+        wide: true,
+        body:
+          "If the sanctuary is God's dwelling place, why would it need cleansing? The answer is that the sanctuary is not being cleansed from ordinary dust. It is being cleansed from the record and defilement of sin that God has chosen to bear in the process of saving His people."
+      },
+      {
+        heading: "Forgiveness was real",
+        body:
+          "When a repentant Israelite brought the appointed sacrifice, the message was not, 'Wait until the end of the year to see if God might forgive you.' Forgiveness was real in the daily service. The sinner could leave the court knowing that God had accepted the sacrifice and provided mercy."
+      },
+      {
+        heading: "But sin was not treated lightly",
+        body:
+          "The sanctuary also taught that sin does not simply disappear as though it never mattered. It wounds relationships, defiles worship, and creates a record that must be dealt with honestly. God forgives without pretending sin is harmless."
+      },
+      {
+        heading: "How sin entered the sanctuary story",
+        body:
+          "Through blood ministry, priestly mediation, and the priest bearing iniquity in connection with the offering, confessed sin was transferred into the sanctuary system. The guilt left the repentant sinner, but the case now belonged to God's appointed way of handling sin."
+      },
+      {
+        heading: "The Day of Atonement was the yearly answer",
+        body:
+          "Leviticus 16 shows the sanctuary being cleansed from Israel's uncleanness, transgressions, and sins. This was not a second forgiveness for people who had already confessed. It was the final cleansing of the sanctuary from the accumulated burden of forgiven sin."
+      },
+      {
+        heading: "Why this matters now",
+        body:
+          "Daniel 8:14 uses the same cleansing language. In Christ's heavenly ministry, God is not merely forgiving individuals; He is bringing the entire sin problem to judgment, cleansing, vindication, and removal. The doctrine says that confessed sin will not remain in God's universe forever."
+      },
+      {
+        heading: "The comfort of cleansing",
+        body:
+          "The cleansing of the sanctuary is deeply personal. It means God does not keep forgiven sin as a weapon against His people. He carries it toward final removal. The record that once testified against the repentant sinner is answered by the blood and ministry of Christ."
+      }
+    ],
+    relatedLinks: [{ label: "Open 1844 Focus", view: "focus1844" }]
+  },
+  {
+    id: "feasts-nailed-cross",
+    category: "Festival Calendar",
+    title: "Were the Feasts Nailed to the Cross?",
+    subtitle: "What ended, and what still teaches",
+    summary:
+      "The feast system as binding ceremonial law ended because its sanctuary shadows met their reality in Christ. The lessons remain because fulfilled symbols still teach the Savior.",
+    keyTexts: ["Colossians 2:14-17", "Ephesians 2:14-16", "Hebrews 8:13", "Hebrews 10:1-14", "1 Corinthians 5:7-8"],
+    sections: [
+      {
+        heading: "What people usually mean",
+        wide: true,
+        body:
+          "When someone asks whether the feasts were nailed to the cross, they usually mean, 'Are Christians still required to observe them?' The answer is no, not as binding covenant law. But that does not mean the feast chapters should be ignored. The obligation ended; the instruction remains."
+      },
+      {
+        heading: "The shadow and the substance",
+        body:
+          "Colossians calls the ceremonial calendar a shadow and Christ the substance. A shadow is not evil; it is incomplete. Its purpose is to point beyond itself. Once Christ has come, the Christian does not live under the authority of the shadow, but the shadow can still help us recognize the shape of His saving work."
+      },
+      {
+        heading: "What ended",
+        body:
+          "The sacrificial, priestly, and ceremonial obligation of the feasts ended as covenant requirement. Christians are not called to restore temple pilgrimage, animal offerings, Levitical ritual, or calendar observance as a test of faithfulness."
+      },
+      {
+        heading: "What remains",
+        body:
+          "The Bible remains. Passover still preaches substitution. Firstfruits still whispers resurrection. Pentecost still teaches mission. The Day of Atonement still opens judgment and cleansing. Tabernacles still lifts the heart toward the final home with God."
+      },
+      {
+        heading: "The safe balance",
+        body:
+          "Do not throw away the feasts as if they were meaningless. Do not bind them on Christians as if Christ had not fulfilled them. Study them gratefully, preach them Christ-centeredly, and refuse to let them become a measuring rod for someone else's walk with God."
+      }
+    ],
+    relatedLinks: [{ label: "Read the full feast article", faq: "feasts-keep" }]
+  },
+  {
+    id: "paul-feasts",
+    category: "New Testament",
+    title: "Did Paul Keep the Feasts, and What Does That Prove?",
+    subtitle: "Missionary practice is not the same as covenant requirement",
+    summary:
+      "Paul's references to feast timing show Jewish context and missionary sensitivity, but they do not make feast observance a Christian requirement.",
+    keyTexts: ["Acts 20:16", "Acts 21:20-26", "1 Corinthians 9:19-23", "1 Corinthians 16:8", "Colossians 2:16-17", "Galatians 4:9-11"],
+    sections: [
+      {
+        heading: "Do not overread a travel schedule",
+        wide: true,
+        body:
+          "Paul lived and ministered in a world where Jewish feast seasons still shaped travel, crowds, synagogue life, and conversation. When Acts mentions his desire to be somewhere by a feast, it tells us something about his setting and mission strategy. It does not automatically create a command for every Christian church."
+      },
+      {
+        heading: "Paul was a missionary with Jewish roots",
+        body:
+          "Paul knew the feasts from the inside. He could speak their language, use their imagery, and move wisely among Jewish people. He also became as a Jew to win Jews and as one outside the law to win Gentiles. His flexibility was missionary love, not a new legal requirement."
+      },
+      {
+        heading: "Acts records transition",
+        body:
+          "Acts shows the early church moving from a Jewish setting into a worldwide mission. During that transition, Jewish believers still lived near the temple and calendar. But the Jerusalem council did not command Gentile believers to keep the feasts, and Paul's letters warn against being judged by ceremonial observance."
+      },
+      {
+        heading: "Paul's letters clarify Paul",
+        body:
+          "If we want to know whether Paul made feast keeping obligatory, we should read his letters. Colossians says not to let anyone judge believers regarding festivals. Galatians warns against returning to days and seasons as bondage. Those statements must guide how we read the historical details in Acts."
+      },
+      {
+        heading: "How Paul used feast language",
+        body:
+          "Paul could say, 'Christ our Passover is sacrificed for us,' and then draw a spiritual lesson about sincerity and truth. That is the healthiest Christian use of feast language: not restoring the old calendar as law, but letting the fulfilled symbol preach Christ and shape the heart."
+      },
+      {
+        heading: "What Paul's practice proves",
+        body:
+          "Paul's practice proves that the feasts remained meaningful as Scripture, memory, and mission context. It does not prove that feast keeping is required. Christians may learn from the feasts without judging one another by them."
+      }
+    ],
+    relatedLinks: [{ label: "Read the full feast article", faq: "feasts-keep" }]
+  },
+  {
+    id: "hebrew-calendar-today",
+    category: "Practice",
+    title: "How Should Christians Use the Hebrew Calendar Today?",
+    subtitle: "Study deeply without turning shadows into tests",
+    summary:
+      "Use the Hebrew calendar as a Christ-centered study map, not as a measure of another believer's standing with God.",
+    keyTexts: ["Leviticus 23", "Romans 14:5-6", "Colossians 2:16-17", "Hebrews 10:1", "1 Corinthians 5:7-8", "Revelation 14:6-7"],
+    sections: [
+      {
+        heading: "Begin with Jesus",
+        wide: true,
+        body:
+          "The Hebrew calendar is safest in Christian hands when it begins and ends with Jesus. It is not a hidden ladder to holiness or a secret test for the last days. It is a Bible study map that helps us trace the saving work of Christ from sacrifice to final dwelling with God."
+      },
+      {
+        heading: "Use it to teach the story of redemption",
+        body:
+          "A teacher can use Passover to explain substitution, Firstfruits to explain resurrection, Pentecost to explain mission, Trumpets to explain proclamation, the Day of Atonement to explain judgment and cleansing, and Tabernacles to explain the joy of final restoration."
+      },
+      {
+        heading: "Keep study separate from obligation",
+        body:
+          "A Christian may study a feast without being bound to observe it. A family may use feast themes in worship without claiming the ancient ritual has been restored. A church may teach the calendar without making it part of membership, righteousness, or end-time readiness."
+      },
+      {
+        heading: "Do not confuse the yearly feasts with the Sabbath",
+        body:
+          "The seventh-day Sabbath is rooted in creation and the moral law. The yearly feasts belonged to Israel's ceremonial sanctuary calendar. Keeping that distinction clear protects both Sabbath truth and the gospel freedom found in Christ."
+      },
+      {
+        heading: "Watch the fruit",
+        body:
+          "A healthy study of the Hebrew calendar produces gratitude, humility, deeper love for Christ, and clearer understanding of the sanctuary. An unhealthy use produces pride, suspicion, pressure, date excitement, or judgmental attitudes toward believers who do not observe the feasts."
+      },
+      {
+        heading: "A simple guiding sentence",
+        body:
+          "Use the Hebrew calendar as a window, not a wall. Let it open the sanctuary story and show you Christ more clearly. Do not let it become a wall between believers or a shadow placed between the soul and the Savior."
+      }
+    ],
+    relatedLinks: [{ label: "Open Festival Calendar", view: "calendar" }]
+  }
+];
+
+const faqArticleMap = Object.fromEntries(polishedFaqArticles.map(article => [article.id, article]));
 
 const CUBIT_MODEL = {
   court: { length: 100, width: 50, fenceHeight: 5, gateWidth: 20 },
@@ -4374,61 +4860,69 @@ function renderStudyContextLink(kicker, title, text, view) {
 function renderFaq(activeId = faqState.articleId || "feasts-keep") {
   const root = qs("#faq-root");
   if (!root) return;
-  const activeArticle = faqArticleMap[activeId] || faqArticles[0];
+  const activeArticle = faqArticleMap[activeId] || polishedFaqArticles[0];
   faqState.articleId = activeArticle.id;
 
   root.innerHTML = html`
-    <div class="faq-layout">
-      <aside class="faq-library" aria-label="FAQ article list">
-        <div class="faq-library-heading">
-          <span>Study questions</span>
-          <h2>Choose an article</h2>
-        </div>
-        <div class="faq-card-grid">
-          ${faqArticles
+    <div class="faq-picker" aria-label="FAQ article selector">
+      <div class="faq-picker-copy">
+        <span>Choose a study</span>
+        <strong>${activeArticle.title}</strong>
+      </div>
+      <label class="faq-picker-control">
+        <span>Question</span>
+        <select data-faq-select aria-label="Choose FAQ article">
+          ${polishedFaqArticles
             .map(
               article => html`
-                <button
-                  type="button"
-                  class="faq-card ${article.id === activeArticle.id ? "active" : ""} ${article.featured ? "faq-card--featured" : ""}"
-                  data-faq-open="${article.id}"
-                >
-                  <span>${article.category}</span>
-                  <strong>${article.title}</strong>
-                  <small>${article.summary}</small>
-                </button>
+                <option value="${article.id}" ${article.id === activeArticle.id ? "selected" : ""}>
+                  ${article.category}: ${article.title}
+                </option>
               `
             )
             .join("")}
-        </div>
-      </aside>
+        </select>
+      </label>
+    </div>
+    <div class="faq-layout faq-layout--dropdown">
       ${renderFaqArticle(activeArticle)}
     </div>
   `;
 }
 
+function faqSectionId(articleId, index) {
+  return `faq-${articleId}-section-${index + 1}`;
+}
+
 function renderFaqArticle(article) {
+  const tocItems = article.sections.map((section, index) => ({
+    id: faqSectionId(article.id, index),
+    number: String(index + 1).padStart(2, "0"),
+    heading: section.heading.replace(/^\d+\.\s*/, "")
+  }));
+
   return html`
-    <article class="faq-reader">
+    <article class="faq-reader faq-article-shell">
       <header class="faq-reader-header">
         <span class="faq-category">${article.category}</span>
         <h2>${article.title}</h2>
         <p>${article.subtitle}</p>
+        <div class="faq-key-texts" aria-label="Key Bible passages">
+          ${article.keyTexts.map(text => `<span>${text}</span>`).join("")}
+        </div>
       </header>
 
-      <section class="faq-summary-card">
-        <h3>Short Answer</h3>
+      <section class="faq-short-answer">
+        <span>Short answer</span>
         <p>${article.summary}</p>
       </section>
-
-      <div class="faq-key-texts" aria-label="Key Bible passages">
-        ${article.keyTexts.map(text => `<span>${text}</span>`).join("")}
-      </div>
 
       ${
         article.quickAnswer
           ? html`
-              <section class="faq-answer-grid">
+              <section class="faq-at-glance" aria-label="At a glance">
+                <h3>At a glance</h3>
+                <div>
                 ${article.quickAnswer
                   .map(
                     point => html`
@@ -4439,23 +4933,41 @@ function renderFaqArticle(article) {
                     `
                   )
                   .join("")}
+                </div>
               </section>
             `
           : ""
       }
 
-      <section class="faq-section-grid">
-        ${article.sections
-          .map(
-            section => html`
-              <article class="faq-section-card ${section.wide ? "faq-section-card--wide" : ""}">
-                <h3>${section.heading}</h3>
-                <p>${section.body}</p>
-              </article>
-            `
-          )
-          .join("")}
-      </section>
+      <div class="faq-article-main">
+        <nav class="faq-article-toc" aria-label="In this article">
+          <span>In this article</span>
+          ${tocItems
+            .map(
+              item => html`
+                <button type="button" data-faq-jump="${item.id}">
+                  <small>${item.number}</small>
+                  ${item.heading}
+                </button>
+              `
+            )
+            .join("")}
+        </nav>
+
+        <div class="faq-article-body">
+          ${article.sections
+            .map(
+              (section, index) => html`
+                <section class="faq-article-section" id="${faqSectionId(article.id, index)}">
+                  <div class="faq-section-marker">${String(index + 1).padStart(2, "0")}</div>
+                  <h3>${section.heading.replace(/^\d+\.\s*/, "")}</h3>
+                  <p>${section.body}</p>
+                </section>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
 
       ${renderFaqRelatedLinks(article)}
     </article>
@@ -5278,6 +5790,13 @@ function bindUi() {
     if (question) askExplorerAi(question);
   });
 
+  document.addEventListener("change", event => {
+    const faqSelect = event.target.closest("[data-faq-select]");
+    if (faqSelect) {
+      openFaqArticle(faqSelect.value);
+    }
+  });
+
   document.addEventListener("click", event => {
     const aiRefresh = event.target.closest("[data-ai-refresh]");
     if (aiRefresh) {
@@ -5296,6 +5815,15 @@ function bindUi() {
     const faqTrigger = event.target.closest("[data-faq-open]");
     if (faqTrigger) {
       openFaqArticle(faqTrigger.dataset.faqOpen);
+      return;
+    }
+
+    const faqJump = event.target.closest("[data-faq-jump]");
+    if (faqJump) {
+      const target = document.getElementById(faqJump.dataset.faqJump);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
       return;
     }
 
@@ -6510,6 +7038,7 @@ function init() {
   renderFocus1844();
   renderFaq();
   renderExplorerAi();
+  refreshAiStatus();
   bindUi();
   scene = new SanctuaryThreeScene(qs("#sanctuary-canvas"), {
     openArticle,
