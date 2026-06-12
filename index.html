@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Sanctuary Explorer is an immersive study guide to the biblical sanctuary, Christ's ministry, and the plan of restoration."
+    />
+    <title>Sanctuary Explorer</title>
+    <link rel="stylesheet" href="styles.css?v=sanctuary-logo" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="site-header">
+        <a class="brand" href="#structure" aria-label="Sanctuary Explorer home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img">
+              <path class="logo-shadow" d="M7.2 23.3h17.6" />
+              <path class="logo-roof" d="M7.8 15.2 16 8.9l8.2 6.3" />
+              <path d="M10 15.2h12" />
+              <path d="M9.7 23.3v-7.8" />
+              <path d="M22.3 23.3v-7.8" />
+              <path d="M12.1 23.3v-6.1" />
+              <path d="M16 23.3v-6.1" />
+              <path d="M19.9 23.3v-6.1" />
+              <path d="M12.1 17.2h7.8" />
+              <path class="logo-curtain" d="M13.8 23.3c.2-2.1.9-3.8 2.2-5.2 1.3 1.4 2 3.1 2.2 5.2" />
+              <path class="logo-cloud" d="M19.8 9.4c1.7.2 3 .9 4 2.1" />
+              <path class="logo-cloud" d="M21.8 7.4c1.4.1 2.5.7 3.2 1.7" />
+            </svg>
+          </span>
+          <span class="brand-word">Sanctuary <strong>Explorer</strong></span>
+        </a>
+
+        <nav class="tab-nav" aria-label="Primary sections">
+          <button class="nav-tab active" data-view="structure">
+            <span class="icon stack-icon" aria-hidden="true"></span>
+            Structure
+          </button>
+          <button class="nav-tab" data-view="map">
+            <span class="icon cube-icon" aria-hidden="true"></span>
+            3D View
+          </button>
+          <button class="nav-tab" data-view="ministry">
+            <span class="icon target-icon" aria-hidden="true"></span>
+            Ministry
+          </button>
+          <button class="nav-tab" data-view="attire">
+            <span class="icon attire-icon" aria-hidden="true"></span>
+            Priestly Attire
+          </button>
+          <button class="nav-tab" data-view="calendar">
+            <span class="icon calendar-icon" aria-hidden="true"></span>
+            Festival Calendar
+          </button>
+          <button class="nav-tab" data-view="focus1844">
+            <span class="icon clock-icon" aria-hidden="true"></span>
+            1844 Focus
+          </button>
+          <button class="nav-tab" data-view="faq">
+            <span class="icon book-icon" aria-hidden="true"></span>
+            FAQ
+          </button>
+          <button class="nav-tab" data-view="chronicles">
+            <span class="icon book-icon" aria-hidden="true"></span>
+            Chronicles
+          </button>
+          <button class="nav-tab" data-view="ai">
+            <span class="icon chat-icon" aria-hidden="true"></span>
+            Explorer AI
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <section id="structure" class="view-panel active" aria-labelledby="structure-title">
+          <div class="hero-copy">
+            <h1 id="structure-title">The Path to Restoration</h1>
+            <p>
+              Before sin, humanity enjoyed open, face-to-face communion with the Creator in Eden.
+              When sin severed that direct connection, God did not abandon us. He gave the sanctuary
+              as a living blueprint of salvation, declaring, "Let them make me a sanctuary; that I may
+              dwell among them."
+            </p>
+            <button class="hint-pill" data-scroll-to="phase-outer">
+              <span class="target-icon" aria-hidden="true"></span>
+              Click any article below to explore its significance
+            </button>
+          </div>
+          <div id="phase-list" class="phase-list"></div>
+        </section>
+
+        <section id="map" class="view-panel" aria-labelledby="map-title">
+          <div class="map-hero">
+            <h1 id="map-title">Interactive 3D Sanctuary</h1>
+            <div class="control-help">
+              <span><strong>Desktop:</strong> Drag to rotate · Right-drag to pan · Scroll to zoom · Arrow keys to orbit the view</span>
+              <span><strong>Explore:</strong> Click the furniture, priest, veils, coverings, gate, or posts for explanations</span>
+              <span><strong>Mobile:</strong> 1-finger rotate · 2-finger pan · Pinch to zoom</span>
+            </div>
+          </div>
+          <div class="map-stage">
+            <div class="map-scene-column">
+              <div class="scene-frame">
+                <div class="scene-toolbar scene-toolbar--primary" aria-label="3D scene controls">
+                  <button id="reset-scene" class="tool-button" type="button" title="Reset view">Reset</button>
+                  <button id="fullscreen-scene" class="tool-button" type="button" title="Fullscreen">Fullscreen</button>
+                </div>
+                <div class="scene-orbit-pad" aria-label="Orbit and zoom the 3D view">
+                  <button class="scene-orbit-button" type="button" data-scene-control="zoomIn" aria-label="Zoom in" title="Zoom in">+</button>
+                  <button class="scene-orbit-button" type="button" data-scene-control="orbitUp" aria-label="Orbit upward" title="Orbit upward">↑</button>
+                  <button class="scene-orbit-button" type="button" data-scene-control="zoomOut" aria-label="Zoom out" title="Zoom out">−</button>
+                  <button class="scene-orbit-button" type="button" data-scene-control="orbitLeft" aria-label="Orbit left" title="Orbit left">←</button>
+                  <span class="scene-orbit-center" aria-hidden="true">Orbit</span>
+                  <button class="scene-orbit-button" type="button" data-scene-control="orbitRight" aria-label="Orbit right" title="Orbit right">→</button>
+                  <span aria-hidden="true"></span>
+                  <button class="scene-orbit-button" type="button" data-scene-control="orbitDown" aria-label="Orbit downward" title="Orbit downward">↓</button>
+                  <span aria-hidden="true"></span>
+                </div>
+                <canvas id="sanctuary-canvas" width="1280" height="760" aria-label="Interactive sanctuary 3D map"></canvas>
+                <div id="scene-tooltip" class="scene-tooltip" hidden></div>
+              </div>
+              <div id="scene-path-caption" class="scene-path-caption" hidden></div>
+            </div>
+            <div class="scene-control-dock" aria-label="3D study controls">
+              <div class="scene-control-group" aria-label="View presets">
+                <button class="scene-chip active" type="button" data-scene-view="side">Side Cutaway</button>
+                <button class="scene-chip" type="button" data-scene-view="top">Top View</button>
+                <button class="scene-chip" type="button" data-scene-view="walk">Walkthrough</button>
+                <button class="scene-chip" type="button" data-scene-view="holy">Holy Place</button>
+                <button class="scene-chip" type="button" data-scene-view="mostHoly">Most Holy</button>
+              </div>
+              <div class="scene-control-group scene-control-group--layers" aria-label="Layer toggles">
+                <button class="scene-chip active" type="button" data-scene-layer="court">Court</button>
+                <button class="scene-chip active" type="button" data-scene-layer="furniture">Furniture</button>
+                <button class="scene-chip active" type="button" data-scene-layer="priest">Priest</button>
+                <button class="scene-chip active" type="button" data-scene-layer="veils">Veils</button>
+                <button class="scene-chip active" type="button" data-scene-layer="coverings">Coverings</button>
+                <button class="scene-chip active" type="button" data-scene-layer="camp">Camp</button>
+              </div>
+              <div class="scene-control-group scene-control-group--paths" aria-label="Guided study paths">
+                <button class="scene-chip scene-chip--path" type="button" data-scene-path="sinner">Path of the Sinner</button>
+                <button class="scene-chip scene-chip--path" type="button" data-scene-path="daily">Daily Service</button>
+                <button class="scene-chip scene-chip--path" type="button" data-scene-path="atonement">Day of Atonement</button>
+                <button class="scene-chip scene-chip--path" type="button" data-scene-path="christ">Christ in Every Article</button>
+                <button class="scene-chip scene-chip--stop" type="button" data-scene-path="stop">Stop</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="ministry" class="view-panel" aria-labelledby="ministry-title">
+          <div class="section-intro">
+            <p class="eyebrow">Offerings, rites, and priestly service</p>
+            <h1 id="ministry-title">Sanctuary Ministry</h1>
+            <p>The ministry of the sanctuary gathers sacrifice, special restoration rites, and daily and yearly priestly service into one living study of mediation and cleansing.</p>
+          </div>
+          <div id="ministry-content" class="ministry-hub"></div>
+        </section>
+
+        <section id="attire" class="view-panel" aria-labelledby="attire-title">
+          <div class="section-intro">
+            <p class="eyebrow">Exodus 28-29</p>
+            <h1 id="attire-title">Priestly Attire</h1>
+            <p>Explore the garments of mediation, holiness, representation, judgment, beauty, service, and access to God through an appointed priest.</p>
+          </div>
+          <div id="attire-content" class="attire-module"></div>
+        </section>
+
+        <section id="calendar" class="view-panel" aria-labelledby="calendar-title">
+          <div class="section-intro">
+            <p class="eyebrow">Leviticus 23</p>
+            <h1 id="calendar-title">Festival Calendar</h1>
+            <p>The seven Hebrew feasts trace the calendar of redemption from the cross to final dwelling with God.</p>
+          </div>
+          <div id="feast-tabs" class="feast-tabs" role="tablist" aria-label="Hebrew feasts"></div>
+          <article id="feast-detail" class="feast-detail"></article>
+        </section>
+
+        <section id="focus1844" class="view-panel" aria-labelledby="focus-title">
+          <div class="section-intro">
+            <h1 id="focus-title">1844 Focus</h1>
+            <p>A beginner-friendly study path for the 2,300 years, the cleansing of the sanctuary, and Christ's final priestly ministry.</p>
+          </div>
+          <div id="focus-content" class="focus-study"></div>
+        </section>
+
+        <section id="faq" class="view-panel" aria-labelledby="faq-title">
+          <div class="section-intro">
+            <p class="eyebrow">Common sanctuary questions</p>
+            <h1 id="faq-title">FAQ Study Hub</h1>
+            <p>Clear Adventist study answers for questions about the feasts, judgment, prophecy, and assurance in Christ.</p>
+          </div>
+          <div id="faq-root" class="faq-hub"></div>
+        </section>
+
+        <section id="chronicles" class="view-panel" aria-labelledby="chronicles-title">
+          <div class="section-intro">
+            <h1 id="chronicles-title">Sanctuary Chronicles</h1>
+            <p>Choose a path and walk through the sanctuary service as a priest or worshiper, feeling the weight of sin and the wonder of mercy.</p>
+          </div>
+          <div id="chronicles-root" class="chronicles-shell"></div>
+        </section>
+
+        <section id="ai" class="view-panel" aria-labelledby="ai-title">
+          <div class="section-intro">
+            <p class="eyebrow">Private study assistant</p>
+            <h1 id="ai-title">Explorer AI</h1>
+          </div>
+          <div id="ai-root" class="ai-assistant" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="article-dialog" class="article-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close article">×</button>
+      <div id="article-content"></div>
+    </dialog>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/build/three.module.js",
+          "three/addons/": "./vendor/three/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="app.js?v=sanctuary-logo"></script>
+  </body>
+</html>
