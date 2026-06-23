@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.vercel/
+.sanctuary-ai/
+*.pdf
+*.epub
+*.pages
+Sanctuary Project/
