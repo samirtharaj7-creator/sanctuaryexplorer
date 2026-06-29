@@ -2366,17 +2366,93 @@ export class SanctuaryThreeScene {
     }
   }
 
-  highlight(id) {
+  clearHighlight() {
     if (this.highlightHelper) {
       this.scene.remove(this.highlightHelper);
+      this.highlightHelper.traverse?.(object => {
+        object.geometry?.dispose?.();
+        if (object.material) {
+          const materials = Array.isArray(object.material) ? object.material : [object.material];
+          materials.forEach(material => material.dispose?.());
+        }
+      });
       this.highlightHelper = null;
     }
+  }
+
+  glowTexture() {
+    if (this.focusGlowTexture) return this.focusGlowTexture;
+    const canvas = document.createElement("canvas");
+    canvas.width = 128;
+    canvas.height = 128;
+    const ctx = canvas.getContext("2d");
+    const gradient = ctx.createRadialGradient(64, 64, 2, 64, 64, 62);
+    gradient.addColorStop(0, "rgba(255, 244, 199, 0.72)");
+    gradient.addColorStop(0.34, "rgba(255, 202, 103, 0.34)");
+    gradient.addColorStop(0.74, "rgba(255, 183, 72, 0.08)");
+    gradient.addColorStop(1, "rgba(255, 183, 72, 0)");
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 128, 128);
+    this.focusGlowTexture = new THREE.CanvasTexture(canvas);
+    this.focusGlowTexture.colorSpace = THREE.SRGBColorSpace;
+    return this.focusGlowTexture;
+  }
+
+  makeFocusGlow(center, size, floorY = Math.max(0.07, center.y - size.y / 2 + 0.075)) {
+    const group = new THREE.Group();
+    group.name = "selection-focus-glow";
+    const footprintX = Math.max(3.4, size.x + 2.3);
+    const footprintZ = Math.max(2.8, size.z + 2.0);
+    const texture = this.glowTexture();
+
+    const floorGlow = new THREE.Mesh(
+      new THREE.PlaneGeometry(footprintX, footprintZ),
+      new THREE.MeshBasicMaterial({
+        map: texture,
+        color: 0xffd28a,
+        transparent: true,
+        opacity: 0.42,
+        depthWrite: false,
+        blending: THREE.NormalBlending,
+        side: THREE.DoubleSide
+      })
+    );
+    floorGlow.rotation.x = -Math.PI / 2;
+    floorGlow.position.set(center.x, floorY, center.z);
+    floorGlow.renderOrder = 8;
+    group.add(floorGlow);
+
+    const floorRing = new THREE.Mesh(
+      new THREE.RingGeometry(0.82, 1, 96),
+      new THREE.MeshBasicMaterial({
+        color: 0xffd28a,
+        transparent: true,
+        opacity: 0.38,
+        depthWrite: false,
+        blending: THREE.NormalBlending,
+        side: THREE.DoubleSide
+      })
+    );
+    floorRing.rotation.x = -Math.PI / 2;
+    floorRing.scale.set(footprintX * 0.5, footprintZ * 0.5, 1);
+    floorRing.position.set(center.x, floorY + 0.01, center.z);
+    floorRing.renderOrder = 9;
+    group.add(floorRing);
+
+    return group;
+  }
+
+  highlight(id) {
+    this.clearHighlight();
     const objects = this.selectableObjects.get(id);
     if (!objects?.length) return;
     const box = new THREE.Box3();
     objects.forEach(object => box.expandByObject(object));
-    box.expandByScalar(0.18);
-    this.highlightHelper = new THREE.Box3Helper(box, 0xd68a1f);
+    const center = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3());
+    const baseY = center.y - size.y / 2 + 0.075;
+    const floorY = Math.max(INTERIOR_ARTICLE_IDS.has(id) ? 0.245 : 0.07, baseY);
+    this.highlightHelper = this.makeFocusGlow(center, size, floorY);
     this.scene.add(this.highlightHelper);
     this.needsRender = true;
   }
@@ -2407,15 +2483,12 @@ export class SanctuaryThreeScene {
   }
 
   highlightPoint(point) {
-    if (this.highlightHelper) {
-      this.scene.remove(this.highlightHelper);
-      this.highlightHelper = null;
-    }
-    const box = new THREE.Box3().setFromCenterAndSize(
-      point.clone().add(new THREE.Vector3(0, 1.8, 0)),
-      new THREE.Vector3(4.4, 4.8, 4.4)
+    this.clearHighlight();
+    this.highlightHelper = this.makeFocusGlow(
+      point.clone(),
+      new THREE.Vector3(4.4, 0.2, 4.4),
+      Math.max(0.075, Math.min(point.y + 0.025, 0.25))
     );
-    this.highlightHelper = new THREE.Box3Helper(box, 0xd68a1f);
     this.scene.add(this.highlightHelper);
     this.needsRender = true;
   }
@@ -2551,10 +2624,7 @@ export class SanctuaryThreeScene {
     this.resetCinematicState();
     this.setGuidedCaptionMode(false);
     this.setVeilFocusMode(null);
-    if (this.highlightHelper) {
-      this.scene.remove(this.highlightHelper);
-      this.highlightHelper = null;
-    }
+    this.clearHighlight();
     this.pathButtons.forEach(button => button.classList.remove("active"));
     if (clearCaption && this.caption) {
       this.caption.hidden = true;

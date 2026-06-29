@@ -1,4 +1,4 @@
-import { SanctuaryThreeScene } from "./sanctuary-scene.js";
+import { SanctuaryThreeScene } from "./sanctuary-scene.js?v=focus-glow-4";
 
 const iconSvg = {
   flame:
@@ -4318,21 +4318,6 @@ let chronicleState = {
 let faqState = {
   articleId: "feasts-keep"
 };
-const aiExamples = [
-  "What does the laver teach about forgiveness and cleansing?",
-  "How does Daniel 8:14 connect to the Day of Atonement?",
-  "What was the priest doing in the daily service?",
-  "How do the sanctuary coverings point to Christ?"
-];
-let aiState = {
-  status: null,
-  loadingStatus: true,
-  asking: false,
-  question: "",
-  answer: "",
-  citations: [],
-  error: ""
-};
 
 function qs(selector, root = document) {
   return root.querySelector(selector);
@@ -4344,27 +4329,6 @@ function qsa(selector, root = document) {
 
 function html(strings, ...values) {
   return strings.reduce((out, str, i) => out + str + (values[i] ?? ""), "");
-}
-
-function escapeHtml(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-}
-
-function formatAiAnswer(markdown) {
-  const cleaned = String(markdown || "")
-    .replace(/\n*\s*Sources used:[\s\S]*$/i, "")
-    .replace(/\s*\[S\d+\]/g, "")
-    .trim();
-  const escaped = escapeHtml(cleaned);
-  return escaped
-    .split(/\n{2,}/)
-    .map(block => `<p>${block.replace(/\n/g, "<br>")}</p>`)
-    .join("");
 }
 
 function renderPhases() {
@@ -5390,207 +5354,6 @@ function renderFocus1844(activeId = "1844") {
   `;
 }
 
-function aiReadiness(status) {
-  if (!status) return { className: "checking", label: "Checking local AI setup", detail: "Looking for Ollama and the private source index." };
-  if (status.ready) {
-    return {
-      className: "ready",
-      label: "Ready for local source-aware answers",
-      detail: `${status.index.chunkCount} indexed source chunks from ${status.index.sourceCount} core sources.`
-    };
-  }
-  if (!status.ollama?.available) {
-    return {
-      className: "blocked",
-      label: "Ollama is not running yet",
-      detail: "Start Ollama locally, then refresh this panel."
-    };
-  }
-  if (status.ollama?.missingModels?.length) {
-    return {
-      className: "blocked",
-      label: "Local model download needed",
-      detail: `Missing: ${status.ollama.missingModels.join(", ")}.`
-    };
-  }
-  if (!status.index?.ready) {
-    return {
-      className: "blocked",
-      label: "Private library index needed",
-      detail: "Build the local source index before asking questions."
-    };
-  }
-  return { className: "blocked", label: "Explorer AI is not ready", detail: "Check the setup commands below." };
-}
-
-function renderSetupCommands(commands = []) {
-  if (!commands.length) return "";
-  return html`
-    <div class="ai-setup-commands" aria-label="Local setup commands">
-      <span>Run locally if needed:</span>
-      ${commands.map(command => `<code>${escapeHtml(command)}</code>`).join("")}
-    </div>
-  `;
-}
-
-function renderAiCitations(citations = []) {
-  if (!citations.length) return "";
-  return html`
-    <div class="ai-citations" aria-label="Sources cited">
-      ${citations
-        .map(
-          citation => html`
-            <span>
-              <strong>[${escapeHtml(citation.id)}]</strong>
-              ${escapeHtml(citation.title)}
-              <em>${escapeHtml(citation.pageLabel)}</em>
-            </span>
-          `
-        )
-        .join("")}
-    </div>
-    <details class="ai-source-drawer">
-      <summary>View source snippets</summary>
-      <div class="ai-source-list">
-        ${citations
-          .map(
-            citation => html`
-              <article>
-                <strong>[${escapeHtml(citation.id)}] ${escapeHtml(citation.title)}</strong>
-                <span>${escapeHtml(citation.author)} · ${escapeHtml(citation.pageLabel)}</span>
-                <p>${escapeHtml(citation.snippet)}</p>
-              </article>
-            `
-          )
-          .join("")}
-      </div>
-    </details>
-  `;
-}
-
-function renderExplorerAi() {
-  const root = qs("#ai-root");
-  if (!root) return;
-  const statusInfo = aiReadiness(aiState.status);
-  const canAsk = aiState.status?.ready && !aiState.asking;
-  const answerMarkup = aiState.answer
-    ? html`
-        <article class="ai-answer-card">
-          <div class="ai-answer-heading">
-            <span>Answer</span>
-          </div>
-          <div class="ai-answer-text">${formatAiAnswer(aiState.answer)}</div>
-        </article>
-      `
-    : html`
-        <article class="ai-empty-card">
-          <h2>Ask a sanctuary question</h2>
-          <p>Choose an example below, or ask your own question about the sanctuary, sacrifices, priestly ministry, or prophecy.</p>
-        </article>
-      `;
-  const statusMarkup =
-    !aiState.status?.ready || aiState.loadingStatus
-      ? html`
-          <div class="ai-status-card ai-status-card--${statusInfo.className}">
-            <div>
-              <span class="ai-status-dot" aria-hidden="true"></span>
-              <strong>${statusInfo.label}</strong>
-              <p>${statusInfo.detail}</p>
-            </div>
-            <button class="ai-small-button" type="button" data-ai-refresh>${aiState.loadingStatus ? "Checking..." : "Refresh"}</button>
-            ${renderSetupCommands(aiState.status?.setupCommands)}
-          </div>
-        `
-      : "";
-
-  root.innerHTML = html`
-    ${statusMarkup}
-
-    <div class="ai-chat-grid">
-      <section class="ai-question-panel">
-        <form id="ai-form" class="ai-form">
-          <label for="ai-question">Your sanctuary question</label>
-          <textarea
-            id="ai-question"
-            name="question"
-            rows="5"
-            maxlength="900"
-            placeholder="Ask about the sanctuary, sacrifices, Daniel 8:14, priestly ministry, Hebrews, or the furniture..."
-            ${canAsk ? "" : "disabled"}
-          >${escapeHtml(aiState.question)}</textarea>
-          <button class="ai-submit-button" type="submit" ${canAsk ? "" : "disabled"}>
-            ${aiState.asking ? "Searching the library..." : "Ask Explorer AI"}
-          </button>
-        </form>
-        <div class="ai-example-grid" aria-label="Example questions">
-          ${aiExamples
-            .map(example => `<button type="button" data-ai-example="${escapeHtml(example)}">${escapeHtml(example)}</button>`)
-            .join("")}
-        </div>
-        ${aiState.error ? `<p class="ai-error">${escapeHtml(aiState.error)}</p>` : ""}
-      </section>
-      <section class="ai-answer-panel" aria-live="polite">${answerMarkup}</section>
-    </div>
-  `;
-}
-
-async function refreshAiStatus() {
-  aiState = { ...aiState, loadingStatus: true };
-  renderExplorerAi();
-  try {
-    const response = await fetch("/api/ai/status", { cache: "no-store" });
-    aiState = {
-      ...aiState,
-      status: await response.json(),
-      loadingStatus: false,
-      error: ""
-    };
-  } catch (error) {
-    aiState = {
-      ...aiState,
-      status: null,
-      loadingStatus: false,
-      error: `Could not reach the local AI status endpoint: ${error.message}`
-    };
-  }
-  renderExplorerAi();
-}
-
-async function askExplorerAi(question) {
-  aiState = {
-    ...aiState,
-    question,
-    asking: true,
-    answer: "",
-    citations: [],
-    error: ""
-  };
-  renderExplorerAi();
-  try {
-    const response = await fetch("/api/ai/query", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question })
-    });
-    const payload = await response.json();
-    if (!response.ok) throw new Error(payload.error || "Explorer AI could not answer.");
-    aiState = {
-      ...aiState,
-      asking: false,
-      answer: payload.answer,
-      citations: payload.citations || [],
-      error: ""
-    };
-  } catch (error) {
-    aiState = {
-      ...aiState,
-      asking: false,
-      error: error.message
-    };
-  }
-  renderExplorerAi();
-}
-
 function articleKeyTexts(article) {
   if (article.keyTexts) return article.keyTexts;
   return article.citations.trim();
@@ -5765,9 +5528,6 @@ function setView(requestedView) {
   if (view === "map") {
     requestAnimationFrame(() => scene?.resize());
   }
-  if (view === "ai") {
-    refreshAiStatus();
-  }
 }
 
 function syncViewFromHash() {
@@ -5782,14 +5542,6 @@ function syncViewFromHash() {
 }
 
 function bindUi() {
-  document.addEventListener("submit", event => {
-    const aiForm = event.target.closest("#ai-form");
-    if (!aiForm) return;
-    event.preventDefault();
-    const question = new FormData(aiForm).get("question")?.toString().trim();
-    if (question) askExplorerAi(question);
-  });
-
   document.addEventListener("change", event => {
     const faqSelect = event.target.closest("[data-faq-select]");
     if (faqSelect) {
@@ -5798,20 +5550,6 @@ function bindUi() {
   });
 
   document.addEventListener("click", event => {
-    const aiRefresh = event.target.closest("[data-ai-refresh]");
-    if (aiRefresh) {
-      refreshAiStatus();
-      return;
-    }
-
-    const aiExample = event.target.closest("[data-ai-example]");
-    if (aiExample) {
-      aiState = { ...aiState, question: aiExample.dataset.aiExample || "" };
-      renderExplorerAi();
-      qs("#ai-question")?.focus();
-      return;
-    }
-
     const faqTrigger = event.target.closest("[data-faq-open]");
     if (faqTrigger) {
       openFaqArticle(faqTrigger.dataset.faqOpen);
@@ -6232,16 +5970,6 @@ class SanctuaryScene {
       const minY = Math.min(...pts.map(item => item.y));
       const maxY = Math.max(...pts.map(item => item.y));
       this.hitRegions.push({ id, label, x: minX - 10, y: minY - 10, w: maxX - minX + 20, h: maxY - minY + 20, cx: (minX + maxX) / 2 });
-      if (this.hovered === id) {
-        const ctx = this.ctx;
-        ctx.save();
-        ctx.strokeStyle = "rgba(255, 248, 210, .95)";
-        ctx.lineWidth = 3;
-        ctx.shadowColor = "rgba(255, 201, 80, .8)";
-        ctx.shadowBlur = 14;
-        this.polygon([p.t1, p.t2, p.t3, p.t4], "rgba(255,255,255,0.06)", "rgba(255,248,210,.95)", 2);
-        ctx.restore();
-      }
     }
   }
 
@@ -6667,6 +6395,40 @@ class SanctuaryScene {
     ctx.restore();
   }
 
+  drawObjectFocusGlow(obj) {
+    if (this.hovered !== obj.id) return;
+
+    const baseY = Math.max(0.04, obj.y || 0);
+    const topY = baseY + (obj.h || 1.5) + 0.45;
+    const center = this.project({ x: obj.x, y: baseY, z: obj.z });
+    const top = this.project({ x: obj.x, y: topY, z: obj.z });
+    const footprint = Math.max(obj.w || 1, obj.d || 1);
+    const floorRx = Math.max(18, this.zoom * footprint * 0.72);
+    const floorRy = Math.max(7, this.zoom * Math.max(obj.d || 1, 0.9) * 0.28);
+    const bloomRadius = Math.max(22, floorRx * 0.8);
+    const ctx = this.ctx;
+
+    ctx.save();
+    ctx.globalCompositeOperation = "screen";
+    ctx.shadowColor = "rgba(255, 201, 96, 0.34)";
+    ctx.shadowBlur = Math.max(16, floorRx * 0.28);
+    ctx.beginPath();
+    ctx.ellipse(center.x, center.y, floorRx, floorRy, -this.yaw, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(255, 216, 128, 0.18)";
+    ctx.fill();
+
+    const bloom = ctx.createRadialGradient(top.x, top.y, 2, top.x, top.y, bloomRadius);
+    bloom.addColorStop(0, "rgba(255, 239, 178, 0.2)");
+    bloom.addColorStop(0.5, "rgba(255, 204, 103, 0.08)");
+    bloom.addColorStop(1, "rgba(255, 204, 103, 0)");
+    ctx.shadowBlur = 0;
+    ctx.beginPath();
+    ctx.ellipse(top.x, top.y, bloomRadius * 0.85, bloomRadius * 0.55, -0.12, 0, Math.PI * 2);
+    ctx.fillStyle = bloom;
+    ctx.fill();
+    ctx.restore();
+  }
+
   drawAltar(obj) {
     this.cuboid({ ...obj, color: "#9d542a", id: obj.id, label: obj.label });
     const inset = 0.75;
@@ -6988,6 +6750,7 @@ class SanctuaryScene {
     const sorted = [...sceneObjects].sort((a, b) => this.project({ x: a.x, z: a.z }).depth - this.project({ x: b.x, z: b.z }).depth);
     sorted.forEach(obj => {
       if (obj.hidden || obj.gate) return;
+      this.drawObjectFocusGlow(obj);
       if (obj.id === "altar") this.drawAltar(obj);
       else if (obj.id === "laver") this.drawLaver(obj);
       else if (obj.id === "lampstand") this.drawLampstand(obj);
@@ -7037,8 +6800,6 @@ function init() {
   renderChronicles();
   renderFocus1844();
   renderFaq();
-  renderExplorerAi();
-  refreshAiStatus();
   bindUi();
   scene = new SanctuaryThreeScene(qs("#sanctuary-canvas"), {
     openArticle,

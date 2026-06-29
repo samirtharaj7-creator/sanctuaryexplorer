@@ -34,352 +34,6 @@
   --sans: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-.ai-assistant {
-  width: min(1180px, 100%);
-  margin: 34px auto 0;
-}
-
-.ai-status-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 16px;
-  padding: 18px 20px;
-  border: 1px solid rgba(120, 80, 35, 0.16);
-  border-radius: 24px;
-  background:
-    linear-gradient(135deg, rgba(255, 253, 247, 0.96), rgba(250, 239, 219, 0.82));
-  box-shadow: 0 18px 44px rgba(93, 64, 28, 0.08);
-}
-
-.ai-status-card > div:first-child {
-  display: grid;
-  grid-template-columns: 14px minmax(0, 1fr);
-  column-gap: 10px;
-  align-items: center;
-}
-
-.ai-status-card strong,
-.ai-status-card p {
-  grid-column: 2;
-}
-
-.ai-status-card strong {
-  color: var(--ink);
-  font-size: 16px;
-}
-
-.ai-status-card p {
-  margin: 4px 0 0;
-  color: var(--muted);
-  font-weight: 650;
-}
-
-.ai-status-dot {
-  grid-row: 1 / span 2;
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background: #9aa3ad;
-  box-shadow: 0 0 0 6px rgba(154, 163, 173, 0.16);
-}
-
-.ai-status-card--ready .ai-status-dot {
-  background: #3f9f6b;
-  box-shadow: 0 0 0 6px rgba(63, 159, 107, 0.16);
-}
-
-.ai-status-card--blocked .ai-status-dot {
-  background: #c76f2a;
-  box-shadow: 0 0 0 6px rgba(199, 111, 42, 0.17);
-}
-
-.ai-small-button,
-.ai-submit-button,
-.ai-example-grid button {
-  border: 1px solid rgba(120, 80, 35, 0.18);
-  border-radius: 999px;
-  background: rgba(255, 253, 247, 0.88);
-  color: var(--ink);
-  font: inherit;
-  font-weight: 850;
-  cursor: pointer;
-  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
-}
-
-.ai-small-button {
-  padding: 10px 16px;
-}
-
-.ai-small-button:hover,
-.ai-example-grid button:hover,
-.ai-submit-button:hover:not(:disabled) {
-  transform: translateY(-1px);
-  border-color: rgba(211, 134, 28, 0.45);
-  background: #fff8e9;
-}
-
-.ai-setup-commands {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding-top: 4px;
-}
-
-.ai-setup-commands span {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 850;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.ai-setup-commands code {
-  padding: 7px 10px;
-  border: 1px solid rgba(120, 80, 35, 0.14);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  color: #7f441b;
-  font-size: 12px;
-  font-weight: 850;
-}
-
-.ai-chat-grid {
-  display: grid;
-  grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
-  gap: 22px;
-  margin-top: 22px;
-}
-
-.ai-question-panel,
-.ai-answer-card,
-.ai-empty-card {
-  border: 1px solid rgba(120, 80, 35, 0.16);
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at 90% 0%, rgba(230, 153, 42, 0.13), transparent 34%),
-    rgba(255, 253, 247, 0.92);
-  box-shadow: 0 18px 44px rgba(93, 64, 28, 0.08);
-}
-
-.ai-question-panel {
-  padding: 22px;
-}
-
-.ai-form {
-  display: grid;
-  gap: 12px;
-}
-
-.ai-form label {
-  color: var(--ink);
-  font-weight: 900;
-}
-
-.ai-form textarea {
-  width: 100%;
-  resize: vertical;
-  min-height: 150px;
-  border: 1px solid rgba(120, 80, 35, 0.18);
-  border-radius: 22px;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.74);
-  color: var(--ink);
-  font: inherit;
-  font-weight: 650;
-  line-height: 1.55;
-}
-
-.ai-form textarea:disabled {
-  color: var(--muted);
-  background: rgba(245, 236, 219, 0.64);
-  cursor: not-allowed;
-}
-
-.ai-submit-button {
-  justify-self: start;
-  padding: 13px 20px;
-  background: linear-gradient(135deg, #ed9b28, #c97615);
-  color: #1d1308;
-  border-color: rgba(133, 72, 8, 0.32);
-}
-
-.ai-submit-button:disabled {
-  opacity: 0.58;
-  cursor: not-allowed;
-}
-
-.ai-example-grid {
-  display: grid;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.ai-example-grid button {
-  padding: 12px 14px;
-  text-align: left;
-  border-radius: 18px;
-  color: var(--muted);
-  background: rgba(255, 253, 247, 0.72);
-}
-
-.ai-privacy-note,
-.ai-error {
-  margin: 16px 0 0;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-.ai-privacy-note {
-  color: var(--muted);
-  font-weight: 700;
-}
-
-.ai-error {
-  padding: 12px 14px;
-  border-radius: 18px;
-  background: rgba(190, 75, 45, 0.1);
-  color: #8a321f;
-  font-weight: 850;
-}
-
-.ai-answer-panel {
-  min-width: 0;
-}
-
-.ai-answer-card,
-.ai-empty-card {
-  padding: 24px;
-  min-height: 390px;
-}
-
-.ai-empty-card h2 {
-  margin: 0 0 10px;
-  font-family: var(--serif);
-  font-size: clamp(30px, 4vw, 48px);
-}
-
-.ai-empty-card p {
-  max-width: 680px;
-  color: var(--muted);
-  font-size: 18px;
-  font-weight: 650;
-  line-height: 1.65;
-}
-
-.ai-answer-heading {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 16px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(120, 80, 35, 0.12);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.ai-answer-text {
-  color: var(--ink);
-  font-size: 16px;
-  font-weight: 650;
-  line-height: 1.68;
-}
-
-.ai-answer-text p {
-  margin: 0 0 14px;
-}
-
-.ai-citations {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
-.ai-citations span {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 9px 11px;
-  border: 1px solid rgba(120, 80, 35, 0.14);
-  border-radius: 999px;
-  background: rgba(255, 248, 233, 0.8);
-  color: var(--ink);
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.ai-citations em {
-  color: var(--muted);
-  font-style: normal;
-}
-
-.ai-source-drawer {
-  margin-top: 14px;
-  border: 1px solid rgba(120, 80, 35, 0.14);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.ai-source-drawer summary {
-  cursor: pointer;
-  padding: 13px 16px;
-  color: #7f441b;
-  font-weight: 900;
-}
-
-.ai-source-list {
-  display: grid;
-  gap: 10px;
-  padding: 0 14px 14px;
-}
-
-.ai-source-list article {
-  padding: 13px;
-  border-radius: 16px;
-  background: rgba(250, 239, 219, 0.52);
-}
-
-.ai-source-list strong,
-.ai-source-list span {
-  display: block;
-}
-
-.ai-source-list span {
-  margin-top: 3px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 850;
-}
-
-.ai-source-list p {
-  margin: 8px 0 0;
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 620;
-  line-height: 1.55;
-}
-
-@media (max-width: 860px) {
-  .ai-status-card,
-  .ai-chat-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .ai-small-button,
-  .ai-submit-button {
-    width: 100%;
-  }
-
-  .ai-answer-heading {
-    display: grid;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -671,21 +325,6 @@ button {
   bottom: -2px;
   left: 4px;
   border-left: 2px solid currentColor;
-}
-
-.chat-icon {
-  border: 2px solid currentColor;
-  border-radius: 4px;
-}
-
-.chat-icon::after {
-  content: "";
-  position: absolute;
-  left: 2px;
-  bottom: -5px;
-  border-width: 5px 4px 0 0;
-  border-style: solid;
-  border-color: currentColor transparent transparent transparent;
 }
 
 main {
@@ -1506,8 +1145,7 @@ main {
 .service-typology,
 .feast-detail,
 .feast-grid section,
-.focus-panel,
-.ai-placeholder {
+.focus-panel {
   border: 1px solid var(--line);
   border-radius: 26px;
   padding: 24px;
@@ -1534,8 +1172,7 @@ main {
 .service-flow p,
 .service-typology p,
 .feast-detail p,
-.focus-panel p,
-.ai-placeholder p {
+.focus-panel p {
   margin: 0;
   color: var(--soft);
   font-size: 15.5px;
@@ -1776,8 +1413,7 @@ main {
 }
 
 .service-study-card h2,
-.focus-panel h2,
-.ai-placeholder h2 {
+.focus-panel h2 {
   display: block;
   margin: 10px 0 12px;
   color: #1d2635;
@@ -4072,25 +3708,13 @@ main {
   margin-top: 12px;
 }
 
-.focus-panel,
-.ai-placeholder {
+.focus-panel {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 28px;
   max-width: 940px;
   margin: 52px auto 0;
-}
-
-.fake-input {
-  min-height: 48px;
-  min-width: min(430px, 100%);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 13px 18px;
-  color: var(--muted);
-  background: rgba(255, 253, 247, 0.72);
-  font-weight: 700;
 }
 
 .chronicles-shell {
@@ -5552,8 +5176,7 @@ main {
 
   .offering-detail header,
   .feast-detail header,
-  .focus-panel,
-  .ai-placeholder {
+  .focus-panel {
     display: grid;
   }
 
