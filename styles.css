@@ -759,6 +759,36 @@ main {
   }
 }
 
+@media (max-width: 1200px) {
+  .map-stage {
+    grid-template-columns: 1fr;
+    max-width: min(100%, calc(100vw - 32px));
+    gap: 12px;
+  }
+
+  .scene-control-dock {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    border-radius: 18px;
+    padding: 10px;
+  }
+
+  .scene-control-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .scene-chip {
+    width: auto;
+    flex: 1 1 140px;
+  }
+
+  .scene-chip--path {
+    flex-basis: 220px;
+  }
+}
+
 .tool-button,
 .article-link {
   min-height: 36px;
