@@ -550,11 +550,12 @@ main {
 
 .map-stage {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(250px, 310px);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
   align-items: start;
   gap: 16px;
   position: relative;
-  width: min(1420px, calc(100vw - 48px));
+  width: 100%;
+  max-width: min(1420px, calc(100vw - 48px));
   margin: 0 auto;
 }
 
@@ -668,6 +669,8 @@ main {
 
 .scene-control-dock {
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   margin: 0;
   display: grid;
   gap: 12px;
@@ -682,6 +685,7 @@ main {
 .scene-control-group {
   display: flex;
   flex-wrap: wrap;
+  min-width: 0;
   gap: 7px;
 }
 
@@ -694,6 +698,8 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
+  max-width: 100%;
   min-height: 32px;
   border: 1px solid rgba(117, 80, 34, 0.2);
   border-radius: 999px;
@@ -703,8 +709,9 @@ main {
   cursor: pointer;
   font-size: 11px;
   font-weight: 850;
-  line-height: 1;
+  line-height: 1.1;
   text-align: center;
+  overflow-wrap: anywhere;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease;
 }
 
@@ -746,8 +753,9 @@ main {
 
   .scene-chip {
     width: 100%;
+    min-width: 0;
     min-height: 34px;
-    padding: 0 10px;
+    padding: 0 8px;
   }
 }
 
