@@ -6655,3 +6655,47 @@ main {
     border-radius: 23px;
   }
 }
+
+/* Final map containment guard: keep the 3D canvas and controls inside the visible page even when browser zoom changes the effective viewport. */
+#map .map-stage {
+  width: min(100%, 1280px, calc(100vw - 32px));
+  max-width: min(1280px, calc(100vw - 32px));
+}
+
+#map .map-scene-column,
+#map .scene-frame,
+#map .scene-control-dock {
+  min-width: 0;
+}
+
+@media (min-width: 1201px) {
+  #map .map-stage {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+  }
+}
+
+@media (max-width: 1450px) {
+  #map .map-stage {
+    grid-template-columns: 1fr;
+  }
+
+  #map .scene-control-dock {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  #map .scene-control-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #map .scene-chip {
+    width: auto;
+    flex: 1 1 140px;
+  }
+
+  #map .scene-chip--path {
+    flex-basis: 220px;
+  }
+}
