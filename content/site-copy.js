@@ -2,7 +2,7 @@ export const siteCopy = {
   document: {
     title: "Sanctuary Explorer",
     description:
-      "Sanctuary Explorer is an immersive study guide to the biblical sanctuary, Christ's ministry, and the plan of restoration."
+      "An interactive guide to the biblical sanctuary, the ministry of Jesus, and God's work of restoring what sin has broken."
   },
   attributes: [
     { selector: ".mbe-ribbon-brand", name: "aria-label", value: "My Bible Explorer home" },
@@ -32,11 +32,11 @@ export const siteCopy = {
     { selector: ".mbe-library-item[href='https://revelation.mybibleexplorer.com/'] .mbe-library-name", value: "Revelation" },
     { selector: ".mbe-library-item[href='https://revelation.mybibleexplorer.com/'] .mbe-library-desc", value: "Symbols, judgment, and final hope" },
     { selector: ".mbe-library-item[href='https://sanctuary.mybibleexplorer.com/#structure'] .mbe-library-name", value: "Sanctuary" },
-    { selector: ".mbe-library-item[href='https://sanctuary.mybibleexplorer.com/#structure'] .mbe-library-desc", value: "A blueprint of salvation" },
+    { selector: ".mbe-library-item[href='https://sanctuary.mybibleexplorer.com/#structure'] .mbe-library-desc", value: "Salvation pictured in sacred space" },
     { selector: ".mbe-library-item[href='https://lastdayevents.mybibleexplorer.com/index.html'] .mbe-library-name", value: "Last Day Events" },
     { selector: ".mbe-library-item[href='https://lastdayevents.mybibleexplorer.com/index.html'] .mbe-library-desc", value: "Earth's final chapter" },
     { selector: "#structure-title", value: "The Path to Restoration" },
-    { selector: ".hint-pill", value: "Click any article below to explore its significance" },
+    { selector: ".hint-pill", value: "Choose an article to see why each part of the sanctuary matters" },
     { selector: "#map-title", value: "Interactive 3D Sanctuary" },
     { selector: "#reset-scene", value: "Reset" },
     { selector: "#fullscreen-scene", value: "Fullscreen" },
@@ -74,40 +74,40 @@ export const siteCopy = {
     {
       selector: "#structure .hero-copy p",
       value:
-        "Before sin, humanity enjoyed open, face-to-face communion with the Creator in Eden. When sin severed that direct connection, God did not abandon us. He gave the sanctuary as a living blueprint of salvation, declaring, \"Let them make me a sanctuary; that I may dwell among them.\""
+        "In Eden, human beings knew God's presence without fear or distance. Sin broke that fellowship, but God did not abandon His people. He placed the sanctuary at the center of Israel's camp and said, \"Let them make me a sanctuary; that I may dwell among them.\" The story begins with God's desire to live with us again."
     },
     { selector: "#map .control-help span:nth-child(1)", value: "<strong>Desktop:</strong> Drag to rotate · Right-drag to pan · Scroll to zoom · Arrow keys to orbit the view" },
-    { selector: "#map .control-help span:nth-child(2)", value: "<strong>Explore:</strong> Click the furniture, priest, veils, coverings, gate, or posts for explanations" },
+    { selector: "#map .control-help span:nth-child(2)", value: "<strong>Explore:</strong> Select the furniture, priest, veils, coverings, gate, or posts to learn more" },
     { selector: "#map .control-help span:nth-child(3)", value: "<strong>Mobile:</strong> 1-finger rotate · 2-finger pan · Pinch to zoom" },
     {
       selector: "#ministry .section-intro > p:last-child",
       value:
-        "The ministry of the sanctuary gathers sacrifice, special restoration rites, and daily and yearly priestly service into one living study of mediation and cleansing."
+        "This section brings together the sacrifices, rites of cleansing and restoration, and the daily and yearly work of the priests. Together they show how God dealt with sin while continuing to dwell among His people."
     },
     {
       selector: "#attire .section-intro > p:last-child",
       value:
-        "Explore the garments of mediation, holiness, representation, judgment, beauty, service, and access to God through an appointed priest."
+        "See what each priestly garment revealed about holiness, service, representation, judgment, and the privilege of approaching God."
     },
     {
       selector: "#calendar .section-intro > p:last-child",
       value:
-        "The seven Hebrew feasts trace the calendar of redemption from the cross to final dwelling with God."
+        "Follow Israel's seven annual feasts from deliverance and sacrifice to harvest, judgment, and the joy of dwelling with God."
     },
     {
       selector: "#focus1844 .section-intro > p:last-child",
       value:
-        "A beginner-friendly study path for the 2,300 years, the cleansing of the sanctuary, and Christ's final priestly ministry."
+        "A clear guide to the 2,300-year prophecy, the cleansing of the sanctuary, and Christ's closing work as our High Priest."
     },
     {
       selector: "#faq .section-intro > p:last-child",
       value:
-        "Clear Adventist study answers for questions about the feasts, judgment, prophecy, and assurance in Christ."
+        "Straightforward Adventist answers to common questions about the feasts, prophecy, judgment, and assurance in Christ."
     },
     {
       selector: "#chronicles .section-intro > p:last-child",
       value:
-        "Choose a path and walk through the sanctuary service as a priest or worshiper, feeling the weight of sin and the wonder of mercy."
+        "Step into the story as a worshiper or priest. See the sanctuary service from the inside: its sorrow over sin, its careful rituals, and its promise of mercy."
     },
     {
       selector: ".mbe-footer-wrap > span:nth-of-type(2)",

@@ -1193,10 +1193,49 @@ function articleGlanceItems(article) {
   ];
 }
 
-function articleSection(title, glyph, content, extraClass = "") {
+function articleSectionIcon(name) {
+  const icons = {
+    structure: html`
+      <svg viewBox="0 0 24 24" focusable="false">
+        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+        <path d="M3 9h18"></path>
+        <path d="M9 21V9"></path>
+      </svg>
+    `,
+    layers: html`
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="m12.83 2.18 8.58 3.9a1 1 0 0 1 0 1.83l-8.58 3.91a2 2 0 0 1-1.66 0L2.6 7.91a1 1 0 0 1 0-1.83l8.58-3.9a2 2 0 0 1 1.66 0Z"></path>
+        <path d="m22 12.5-9.17 4.17a2 2 0 0 1-1.66 0L2 12.5"></path>
+        <path d="m22 17.5-9.17 4.17a2 2 0 0 1-1.66 0L2 17.5"></path>
+      </svg>
+    `,
+    route: html`
+      <svg viewBox="0 0 24 24" focusable="false">
+        <circle cx="6" cy="19" r="3"></circle>
+        <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
+        <circle cx="18" cy="5" r="3"></circle>
+      </svg>
+    `,
+    cross: html`
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M10 2h4v8h8v4h-8v8h-4v-8H2v-4h8V2Z"></path>
+      </svg>
+    `,
+    check: html`
+      <svg viewBox="0 0 24 24" focusable="false">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="m8 12 2.5 2.5L16 9"></path>
+      </svg>
+    `
+  };
+
+  return icons[name] || icons.structure;
+}
+
+function articleSection(title, icon, content, extraClass = "") {
   return html`
     <section class="article-section ${extraClass}">
-      <h2><span class="section-glyph">${glyph}</span>${title}</h2>
+      <h2><span class="section-glyph" aria-hidden="true">${articleSectionIcon(icon)}</span>${title}</h2>
       ${content}
     </section>
   `;
@@ -1214,7 +1253,7 @@ function articleTemplate(article) {
   const meaningSection = article.meaning
     ? articleSection(
         "Color and Material Meaning",
-        "✦",
+        "layers",
         html`
         <div class="meaning-grid">
           ${article.meaning
@@ -1265,18 +1304,18 @@ function articleTemplate(article) {
         <div class="article-study-grid">
       ${articleSection(
         `Structure of ${article.title}`,
-        "▰",
+        "structure",
         articleStepList(article.structure, "article-detail-list")
       )}
       ${meaningSection}
       ${articleSection(
         "Ritual Process",
-        "◷",
+        "route",
         articleStepList(article.process, "process-list")
       )}
       ${articleSection(
         "Typological Fulfillment in Christ",
-        "☆",
+        "cross",
         html`
         <div class="quote-stack">${article.fulfillment.map(item => `<blockquote class="quote-card">${item}</blockquote>`).join("")}</div>
       `,
@@ -1284,7 +1323,7 @@ function articleTemplate(article) {
       )}
       ${articleSection(
         "Practical Application",
-        "ϟ",
+        "check",
         html`
         <div class="application-grid">
           ${article.applications

@@ -2,19 +2,19 @@ export const attireGroups = [
   {
     id: "ordinary",
     label: "Ordinary Priest",
-    summary: "White linen garments taught purity, service, and access through consecrated ministry.",
+    summary: "Simple white linen marked the ordinary priest for clean, consecrated service.",
     defaultGarment: "linen-tunic"
   },
   {
     id: "high",
     label: "High Priest",
-    summary: "The high priest carried Israel before God in garments of glory, beauty, judgment, and mediation.",
+    summary: "In garments of beauty and dignity, the high priest carried the names and concerns of Israel before God.",
     defaultGarment: "breastplate"
   },
   {
     id: "atonement",
     label: "Day of Atonement Linen",
-    summary: "On Yom Kippur the high priest laid aside glory garments and ministered in plain holy linen.",
+    summary: "On the Day of Atonement, the high priest set aside the ornate garments and served in plain, holy linen.",
     defaultGarment: "holy-linen-garments"
   }
 ];
@@ -29,13 +29,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:39-40; Exodus 39:27; Leviticus 8:7.",
     shortMeaning: "A clean garment for holy service.",
     description:
-      "The ordinary priest wore a woven linen coat or tunic as the base garment for sanctuary ministry. It covered the body in simplicity and cleanliness rather than display.",
+      "The ordinary priest's basic garment was a woven linen tunic. It covered him simply and cleanly, without the splendor of the high priest's outer garments.",
     meaning:
-      "The tunic taught that ministry near God required purity supplied by God. Priestly service was not performed in common clothing; the priest was visibly set apart for sacred work.",
+      "He did not enter holy service in everyday clothes. The tunic visibly marked him as someone cleansed and set apart for work in God's presence.",
     typology:
-      "It points to Christ's spotless righteousness. He ministers before the Father with no stain of sin, and His righteousness covers those who come to God through Him.",
+      "The clean linen naturally directs Christian thought to the sinless righteousness of Jesus, who serves before the Father without stain.",
     application:
-      "Service for God begins with received cleansing, not self-made importance. We come clothed in Christ's righteousness and then serve with quiet holiness.",
+      "We begin service with what Christ gives, not with our own importance. His righteousness covers us, and from that gift grows a quiet, holy life.",
   },
   {
     id: "linen-breeches",
@@ -46,13 +46,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:42-43; Exodus 39:28.",
     shortMeaning: "Reverence and modesty before God's presence.",
     description:
-      "The breeches were linen undergarments worn from the waist to the thighs so the priest would not expose nakedness while ministering at the altar.",
+      "The linen breeches were undergarments extending from the waist to the thighs. They prevented exposure as the priest moved and worked around the altar.",
     meaning:
-      "They taught reverence in bodily service. God cared about the unseen as well as the visible, and sanctuary worship rejected casual familiarity with holy things.",
+      "The garment protected modesty as the priest served. God cared about what was hidden as well as what everyone could see.",
     typology:
-      "Christ's priesthood is perfectly reverent and undefiled. Nothing shameful or hidden corrupts His ministry for us.",
+      "Nothing secret or shameful mars Christ's priesthood. His ministry for us is pure through and through.",
     application:
-      "Holiness reaches private life. God calls His servants to integrity when no one is watching as much as when ministry is public.",
+      "Holiness reaches private life. Integrity before God matters when no one is looking as much as it does in public ministry.",
   },
   {
     id: "ordinary-sash",
@@ -63,13 +63,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:39-40; Exodus 39:29; Leviticus 8:7.",
     shortMeaning: "Readiness for ordered service.",
     description:
-      "The sash gathered the garment and prepared the priest for active ministry. Exodus describes skillful needlework with fine linen and colored thread.",
+      "The sash secured the tunic and made the priest ready to move and work. It was woven with fine linen and colored thread.",
     meaning:
-      "The girded priest was ready to serve. Beauty and order belonged together: sanctuary ministry was careful, disciplined, and prepared.",
+      "A girded priest was prepared for service. The beauty of the garment was matched by discipline, order, and readiness.",
     typology:
-      "Christ is the ready Servant and Priest, wholly prepared to do the Father's will and to minister for His people.",
+      "Jesus is the ready Servant and High Priest. He came to do the Father's will and remains active for His people.",
     application:
-      "Grace does not make us careless. It gathers our attention, disciplines our habits, and makes us ready for useful service.",
+      "Grace does not produce carelessness. It gathers our scattered attention and trains us for useful, faithful service.",
   },
   {
     id: "head-covering",
@@ -80,13 +80,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:40; Exodus 39:28.",
     shortMeaning: "The mind set apart for holy duty.",
     description:
-      "Ordinary priests wore linen bonnets or caps as part of the appointed garments for glory and beauty.",
+      "The ordinary priests also wore linen caps, part of the garments God appointed for dignity and beauty.",
     meaning:
-      "The head covering marked the priest as one whose thoughts, judgment, and attention belonged to God's service.",
+      "The head covering identified the priest as a man whose attention and judgment were given to sacred duty. Scripture does not assign a separate symbolic meaning to it, but its place in the uniform speaks of whole-person consecration.",
     typology:
-      "Christ's mind is perfectly holy, perfectly obedient, and perfectly devoted to the Father's saving purpose.",
+      "The mind of Christ is completely devoted to the Father's will and saving purpose.",
     application:
-      "Priestly living includes the mind. Our thoughts, plans, and imagination need consecration, not merely our outward actions.",
+      "Priestly living includes our inner life. Thoughts, plans, and imagination need to be brought under God's care along with visible actions.",
   },
   {
     id: "ephod",
@@ -97,13 +97,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:6-14; Exodus 39:2-7.",
     shortMeaning: "A garment of representation and priestly authority.",
     description:
-      "The ephod was a richly worked garment of gold, blue, purple, scarlet, and fine linen. It had shoulder pieces joined together and was bound with a skillfully woven girdle.",
+      "The ephod was skillfully woven from gold, blue, purple, scarlet, and fine linen. Shoulder pieces joined it, and a matching band held it in place.",
     meaning:
-      "It identified the high priest as the representative mediator of Israel. The colors joined royal dignity, heavenly calling, sacrifice, and purity in one garment of service.",
+      "Worn only by the high priest, it marked his representative office and gave his service royal dignity and beauty.",
     typology:
-      "Christ bears the glory and responsibility of true priesthood. He does not merely sympathize from a distance; He carries His people in His appointed ministry.",
+      "Jesus does not sympathize from a distance. As our High Priest, He has taken responsibility to represent His people before the Father.",
     application:
-      "We are represented before God by Someone stronger than ourselves. That gives humility, because we do not stand alone, and assurance, because Christ bears us faithfully.",
+      "We stand before God in Someone stronger and better than ourselves. That truth humbles self-reliance and gives real assurance.",
   },
   {
     id: "shoulder-stones",
@@ -114,13 +114,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:9-12; Exodus 39:6-7.",
     shortMeaning: "The tribes carried on the priest's strength.",
     description:
-      "Two onyx stones were set on the high priest's shoulders, engraved with the names of the twelve tribes of Israel.",
+      "Two onyx stones were mounted on the shoulders of the ephod, each engraved with six of Israel's tribal names.",
     meaning:
-      "The priest carried the names of God's people on his shoulders before the Lord. The shoulders suggest strength, burden-bearing, and public representation.",
+      "Whenever the high priest entered, he carried the names of all Israel before the Lord. Their place on his shoulders naturally conveys the burden and strength of representation.",
     typology:
-      "Christ carries His people with unfailing strength. Our names are not forgotten in heaven; they rest on the shoulders of the true High Priest.",
+      "Jesus does not forget the people He represents. The true High Priest carries His own with strength that never fails.",
     application:
-      "Believers can pray and labor with confidence because Christ carries what we cannot carry. Intercession begins with His strength, not ours.",
+      "We can pray and serve without pretending to carry everything ourselves. Christ bears the weight that would crush us.",
   },
   {
     id: "breastplate",
@@ -131,13 +131,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:15-30; Exodus 39:8-21.",
     shortMeaning: "Israel carried over the heart before God.",
     description:
-      "The breastplate was a square, folded piece set with twelve precious stones, each associated with a tribe of Israel. It was fastened to the ephod and worn over the high priest's heart.",
+      "The breastpiece was a folded square set with twelve precious stones, one for each tribe. It was fastened securely to the ephod and rested over the high priest's heart.",
     meaning:
-      "It taught representation in judgment. The people were not merely carried as a burden on the shoulders; they were carried near the heart in the decisions and concerns of sanctuary mediation.",
+      "The names of the tribes were carried on his shoulders and over his heart. In matters of judgment, God's people were represented with both responsibility and care.",
     typology:
-      "Christ bears His people on His heart in the judgment. His priestly ministry is not cold administration; it is intelligent, lawful, merciful representation by the One who gave Himself for us.",
+      "Jesus carries His people in judgment with perfect knowledge, justice, and love. The One who represents us is the One who gave Himself for us.",
     application:
-      "Judgment becomes good news when we are in Christ. We are invited to live honestly before God, trusting the heart of our High Priest.",
+      "Judgment is good news for those who are in Christ. We can live honestly before God because our High Priest knows us and remains for us.",
   },
   {
     id: "urim-thummim",
@@ -148,13 +148,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:30; Numbers 27:21; Deuteronomy 33:8.",
     shortMeaning: "Guidance sought through appointed mediation.",
     description:
-      "The Urim and Thummim were placed in the breastplate of judgment and were associated with receiving divine direction for Israel. Scripture does not describe their exact shape, so the wardrobe shows them as two small light-bearing stones within the breastplate pouch.",
+      "The Urim and Thummim were kept in the breastpiece and used when Israel sought God's direction. The Bible does not describe their form; this visualization presents them as two small stones within the breastpiece pouch.",
     meaning:
-      "The nation was not left to guess its way through covenant life. Guidance was sought through the priestly system God appointed.",
+      "Israel was not expected to invent its own course in moments of national decision. Guidance was sought through the priestly means God had appointed.",
     typology:
-      "Christ is the full revelation of God's will. In Him are light, truth, wisdom, and the final answer to the direction God's people need.",
+      "Jesus is God's clearest and final revelation. In Him we see the truth, wisdom, and character needed to walk faithfully.",
     application:
-      "We seek guidance through Christ, Scripture, prayer, and Spirit-led wisdom rather than self-confident impulse.",
+      "We seek direction through Christ, Scripture, prayer, wise counsel, and the Spirit's guidance, not through impulse dressed up as certainty.",
   },
   {
     id: "blue-robe",
@@ -165,13 +165,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:31-35; Exodus 39:22-26.",
     shortMeaning: "Heavenly-colored ministry beneath the ephod.",
     description:
-      "The robe of the ephod was entirely blue, worn beneath the ephod. Around its hem were bells and pomegranates.",
+      "The robe worn under the ephod was entirely blue. Bells and woven pomegranates lined its hem.",
     meaning:
-      "The blue robe suggested a heavenly dimension to priestly service. The high priest ministered on earth, yet his work pointed upward to God's dwelling and authority.",
+      "Blue dominated the garment and gave the high priest's service a color associated with the tabernacle and the things of God. Christian readers have often seen in it a reminder of the heavenly ministry to which the earthly service pointed.",
     typology:
-      "Christ's priesthood is heavenly. Hebrews presents Him as minister of the true sanctuary, bringing earthly need into heavenly reality.",
+      "Hebrews presents Jesus as the minister of the true sanctuary in heaven. He carries human need into the presence of God.",
     application:
-      "Our faith must look higher than visible religion. Christian life is sustained by the living ministry of Christ in heaven.",
+      "Faith looks beyond visible ceremonies to the living Christ who now ministers for us in heaven.",
   },
   {
     id: "bells-pomegranates",
@@ -182,13 +182,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:33-35; Exodus 39:24-26.",
     shortMeaning: "Audible ministry and fruitful service.",
     description:
-      "Golden bells alternated with blue, purple, and scarlet pomegranates around the hem of the high priest's robe.",
+      "Small golden bells alternated with woven pomegranates in blue, purple, and scarlet along the robe's hem.",
     meaning:
-      "The bells made the priest's ministry audible, while the pomegranates suggested fruitfulness and beauty. Priesthood was living service, not silent ornament.",
+      "The bells made the high priest's movement audible. The pomegranate forms added color and the appearance of fruitfulness, though Scripture does not explain a separate symbolism for them.",
     typology:
-      "Christ's ministry is effective and fruitful. His work is heard in the gospel and seen in transformed lives.",
+      "Christ's priesthood is neither hidden nor barren. Its good news is proclaimed, and its fruit appears in lives He changes.",
     application:
-      "True service should have both witness and fruit: a clear testimony and a life that bears evidence of grace.",
+      "Healthy service has a voice and fruit: a clear witness joined to a life that bears the marks of grace.",
   },
   {
     id: "embroidered-tunic",
@@ -199,13 +199,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:39; Exodus 39:27.",
     shortMeaning: "Purity enriched with beauty.",
     description:
-      "The high priest also wore a finely woven tunic under the colored garments, connecting him with the linen purity of the ordinary priesthood.",
+      "Beneath the colored garments, the high priest wore a finely woven linen tunic like the other priests.",
     meaning:
-      "The garment showed that glory did not replace purity. Beauty in sanctuary service rested on clean consecration.",
+      "The linen base showed that splendor never replaced purity. Every visible sign of honor rested on consecration.",
     typology:
-      "Christ's glory is inseparable from holiness. He is majestic because He is perfectly pure, obedient, and self-giving.",
+      "The glory of Jesus cannot be separated from His holiness. His majesty is the beauty of perfect obedience and self-giving love.",
     application:
-      "Spiritual beauty is not performance. It grows from purity, faithfulness, and hidden consecration beneath public service.",
+      "Spiritual beauty is not a performance for others. It grows out of faithfulness and hidden consecration.",
   },
   {
     id: "high-priest-sash",
@@ -216,13 +216,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:8; Exodus 39:5.",
     shortMeaning: "Glory bound into active service.",
     description:
-      "The ephod's skillfully woven girdle was made of the same materials as the ephod and bound the garment to the high priest.",
+      "A skillfully woven band, made from the same materials as the ephod, held the garment firmly around the high priest.",
     meaning:
-      "The sash joined beauty to readiness. The high priest's glory was not decorative only; it was bound to active mediation.",
+      "Its purpose was practical as well as beautiful. The high priest's dignity was bound to active service.",
     typology:
-      "Christ's glory is the glory of saving service. He is exalted as the Priest who acts for His people.",
+      "Christ's glory is the glory of the One who serves and saves. His exaltation does not remove Him from His people.",
     application:
-      "God-given gifts and honor are meant to be bound to service, not used for display.",
+      "Gifts, position, and honor are safest when they are fastened to service rather than display.",
   },
   {
     id: "mitre",
@@ -233,13 +233,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:39; Exodus 39:28; Leviticus 8:9.",
     shortMeaning: "The head set apart for holy judgment.",
     description:
-      "The high priest wore a linen turban, and the golden plate was fastened to it with a blue lace.",
+      "The high priest wore a linen turban. A blue cord secured the gold plate across its front.",
     meaning:
-      "The turban marked the high priest's mind, identity, and authority as consecrated to God. His thoughts and judgments were not private property.",
+      "The turban completed the dress of a man whose identity and authority were consecrated to God. His judgments were exercised as a servant of the covenant.",
     typology:
-      "Christ's mind and authority are wholly holy. He judges, intercedes, and leads with perfect consecration.",
+      "Jesus leads, judges, and intercedes with a mind wholly set on the Father's will.",
     application:
-      "Consecration includes the way we think, decide, speak, and lead. Holiness must govern the mind.",
+      "Consecration includes how we think and decide. Holiness must shape speech, judgment, and leadership.",
   },
   {
     id: "golden-plate",
@@ -250,13 +250,13 @@ export const priestlyAttire = [
     scripture: "KJV references: Exodus 28:36-38; Exodus 39:30-31.",
     shortMeaning: "Holiness borne on behalf of the people.",
     description:
-      "A pure gold plate engraved with 'HOLINESS TO THE LORD' was fastened to the high priest's forehead.",
+      "A plate of pure gold, engraved with the words \"HOLINESS TO THE LORD,\" was fastened across the high priest's forehead.",
     meaning:
-      "The plate taught that the priest bore the iniquity of the holy things, making Israel's worship acceptable through appointed mediation.",
+      "According to Exodus, the plate enabled the high priest to bear the guilt connected with Israel's holy gifts so that they could be accepted before the Lord.",
     typology:
-      "Christ bears the defect of our worship and presents His people accepted before God. His holiness covers what our best offerings lack.",
+      "Jesus bears the defects even of our worship and presents His people acceptable in His own holiness.",
     application:
-      "Even our worship needs grace. We serve sincerely, but our confidence is Christ's holiness, not the flawless quality of our devotion.",
+      "Our best devotion still needs grace. Confidence rests in Christ's holiness, not in the flawless quality of our prayers or service.",
   },
   {
     id: "holy-linen-garments",
@@ -267,12 +267,12 @@ export const priestlyAttire = [
     scripture: "KJV references: Leviticus 16:4, 23-24; Hebrews 9:7-14.",
     shortMeaning: "Humility in the final work of cleansing.",
     description:
-      "On the Day of Atonement the high priest wore holy linen garments rather than the full garments of glory and beauty. He washed, dressed in linen, and entered the solemn service of cleansing.",
+      "For the Day of Atonement, the high priest set aside the full garments of glory and wore plain, holy linen. After washing, he entered the day's solemn ministry of cleansing.",
     meaning:
-      "The plain linen emphasized humility, purity, and the seriousness of atonement. On the day of judgment and cleansing, the focus was not splendor but holiness, blood, confession, and removal of sin.",
+      "The simple linen kept attention on purity, humility, blood, confession, and the removal of sin. Splendor did not dominate the day of judgment.",
     typology:
-      "Christ's final priestly work is humble, holy, and complete. The One who is glorious does the work of cleansing by the merit of His own blood.",
+      "Christ carries out His final priestly work with perfect holiness and on the basis of His own sacrifice.",
     application:
-      "The antitypical Day of Atonement calls for humility, confession, confidence in Christ, and willingness to let God remove sin rather than merely excuse it.",
+      "The antitypical Day of Atonement calls us to humility, honest confession, confidence in Christ, and a willingness to let Him remove the sin we are tempted merely to excuse.",
   }
 ];

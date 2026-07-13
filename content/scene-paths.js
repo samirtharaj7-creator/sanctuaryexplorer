@@ -3,74 +3,74 @@ export const STUDY_PATHS = {
     {
       id: "gate",
       text:
-        "The sinner does not climb over the fence or invent a private way in. He enters through the one open gate, learning that access to God is welcomed, but only through the way God provides."
+        "The sinner enters through the one open gate. He cannot climb the fence or devise a private route to God. The entrance welcomes him, while its singleness teaches that God Himself provides the way home."
     },
     {
       id: "altar",
       text:
-        "The first furniture he meets is the altar. The innocent substitute bears what the worshiper cannot carry. Forgiveness is real, but the fire and blood teach that mercy is never cheap."
+        "The altar is the first thing he meets. An innocent life stands in his place, carrying what he cannot bear. Here mercy is offered freely, but the blood and fire keep anyone from calling it cheap."
     },
     {
       id: "laver",
       text:
-        "After sacrifice comes cleansing. The laver shows that God does not merely cancel guilt while leaving the life untouched; the forgiven person is called into a washed, renewed walk."
+        "Water follows sacrifice. At the laver, forgiveness opens into a cleansed life. God does more than remove guilt; He begins to wash the hands that serve and the feet that walk."
     },
     {
       id: "entranceVeil",
       text:
-        "The worshiper cannot push himself into the Holy Place. The veil marks a deeper ministry carried forward by the priest: blood is ministered at the altar, and in appointed sin-offering cases blood is carried before the veil."
+        "The worshiper cannot force his way into the Holy Place. The priest carries the ministry beyond him, applying blood at the altar and, in appointed offerings, before the veil."
     },
     {
       id: "lampstand",
       text:
-        "Inside, light is kept burning. The path of salvation is not only pardon from the past; God gives illumination so His people can live by the Spirit's light."
+        "Within the tent, the lamps keep burning. Salvation is more than release from yesterday's guilt. God gives light for the road ahead."
     },
     {
       id: "shewbread",
       text:
-        "The bread stands before the Lord as a sign of covenant fellowship and daily nourishment. The restored life must be fed by God's provision, not by its old wilderness hunger."
+        "Bread remains before the Lord as a sign of covenant fellowship and daily provision. The restored life must be nourished by what God gives, not by its former hunger."
     },
     {
       id: "incense",
       text:
-        "At the altar of incense, prayer rises near the veil. In the daily ministry the priest stands where the sinner cannot, teaching that confessed sin is dealt with through mediation, not ignored."
+        "Near the veil, incense rises with prayer. The priest stands where the worshiper cannot, showing that confessed sin is carried through mediation rather than pushed aside."
     },
     {
       id: "innerVeil",
       text:
-        "The inner veil reminds the worshiper that sin has created distance from unveiled glory. Yet even this boundary is a promise: God is making a way toward His throne."
+        "The inner curtain marks the distance sin has made between humanity and unveiled glory. Yet the boundary itself holds a promise: God is opening a way toward His throne."
     },
     {
       id: "ark",
       text:
-        "The ark remains unseen behind the inner veil during the daily service, yet it gives meaning to the whole path: law beneath mercy, justice answered by blood, and a final cleansing still promised."
+        "The ark is hidden during the daily service, but it gives meaning to everything outside it: God's law beneath the mercy seat, justice met by atoning blood, and a final cleansing still to come."
     }
   ],
   daily: [
-    { id: "altar", text: "Morning and evening, the continual offering kept grace visibly before Israel." },
-    { id: "laver", text: "The priest washed before holy service, joining ministry with purity." },
-    { id: "lampstand", text: "The lampstand was tended so light never failed inside the Holy Place." },
-    { id: "shewbread", text: "Bread stood before the Lord as covenant fellowship and daily provision." },
-    { id: "incense", text: "Incense rose morning and evening, carrying the prayers of the people near to God." },
-    { id: "priest", text: "The priest's daily labor taught Israel to trust a mediator they could not replace." }
+    { id: "altar", text: "Morning and evening, the continual offering kept God's mercy before the camp." },
+    { id: "laver", text: "Before serving, the priest washed, joining holy ministry with a cleansed life." },
+    { id: "lampstand", text: "He tended the lampstand so the Holy Place never stood in darkness." },
+    { id: "shewbread", text: "Bread remained before the Lord, a quiet sign of covenant fellowship and daily care." },
+    { id: "incense", text: "Incense rose at dawn and dusk, carrying the people's prayers into God's presence." },
+    { id: "priest", text: "Day after day, the priest's work taught Israel to depend on a mediator." }
   ],
   atonement: [
-    { id: "priest", text: "On the Day of Atonement, the high priest bore the solemn weight of the camp." },
-    { id: "altar", text: "Blood was provided before entrance within the veil." },
-    { id: "incense", text: "Incense formed a covering cloud before the ark." },
-    { id: "innerVeil", text: "The veil marked the boundary only the high priest crossed on that day." },
-    { id: "ark", text: "Before the mercy seat, sanctuary cleansing, judgment, and mercy came together." },
-    { id: "gate", text: "The cleansed camp waited for sin's final removal and restored fellowship." }
+    { id: "priest", text: "On the Day of Atonement, the high priest carried the solemn needs of the whole camp." },
+    { id: "altar", text: "Sacrificial blood was prepared before he entered within the veil." },
+    { id: "incense", text: "A cloud of incense covered the mercy seat as he approached." },
+    { id: "innerVeil", text: "Only on this day, and only by the high priest, was the inner veil crossed." },
+    { id: "ark", text: "Before the ark, judgment, cleansing, and mercy met." },
+    { id: "gate", text: "Outside, the camp waited for the promise of sin removed and fellowship restored." }
   ],
   christ: [
-    { id: "gate", text: "Christ is the true way into the Father's presence." },
-    { id: "altar", text: "Christ is the Lamb whose sacrifice bears sin." },
-    { id: "laver", text: "Christ cleanses His people by water and the Spirit." },
-    { id: "lampstand", text: "Christ is the Light, shining through His Spirit-filled people." },
-    { id: "shewbread", text: "Christ is the living Bread who sustains the covenant community." },
-    { id: "incense", text: "Christ is the interceding Priest whose merits make prayer acceptable." },
-    { id: "innerVeil", text: "Christ opens the living way through the veil." },
-    { id: "ark", text: "Christ ministers before the throne where mercy answers the law." }
+    { id: "gate", text: "Jesus is the living way into the Father's presence." },
+    { id: "altar", text: "Jesus is the Lamb who gives His life for sinners." },
+    { id: "laver", text: "Jesus washes His people through the Spirit and the Word." },
+    { id: "lampstand", text: "Jesus is the Light who shines in and through His people." },
+    { id: "shewbread", text: "Jesus is the living Bread who sustains the covenant family." },
+    { id: "incense", text: "Jesus is the interceding Priest through whom our prayers are welcomed." },
+    { id: "innerVeil", text: "Jesus opens the new and living way through the veil." },
+    { id: "ark", text: "Jesus ministers before the throne where mercy upholds, rather than cancels, God's law." }
   ]
 };
 
@@ -82,7 +82,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Sinner Enters the Gate",
         text:
-          "A worshiper comes from the camp with a lamb beside him. He does not rush. The open gate teaches him that God has made a way back, but the way back passes through sacrifice.",
+          "A worshiper approaches from the camp with a lamb at his side. His pace slows near the entrance. The gate is open, but beyond it stands the altar. God has made a way back, and that way begins with sacrifice.",
         scripture: "Leviticus 1:3; John 10:9",
         camera: [68, 8, 13],
         target: [49, 2.2, 0],
@@ -98,7 +98,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "He Walks Through the Appointed Way",
         text:
-          "The colored gate closes the wilderness behind him and opens the court before him. He learns in his body what his heart needs to know: access to God is not self-made; it is received.",
+          "He passes through the woven gate, leaving the open wilderness behind for the ordered court within. The movement makes the lesson physical: access to God is not achieved; it is received through the entrance He provides.",
         scripture: "Exodus 27:16",
         camera: [55, 6.2, 9],
         target: [41, 1.8, 0],
@@ -115,7 +115,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Hands Rest on the Substitute",
         text:
-          "Near the altar, the sinner bends over the lamb. No blood is shown; only the solemn pause is shown. The gesture says what words cannot carry: guilt is real, and God has provided another to stand in the sinner's place.",
+          "Beside the altar, the worshiper leans over the lamb and rests his hand on its head. The scene is still and restrained. No violence is needed on screen for the meaning to be felt: guilt has been confessed, and an innocent substitute now stands in the sinner's place.",
         scripture: "Leviticus 1:4; Isaiah 53:6",
         camera: [37, 6.8, 10.4],
         target: [29.5, 1.5, 3.3],
@@ -131,7 +131,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Priest Receives the Ministry",
         text:
-          "The worshiper cannot carry the service farther. The priest steps forward with quiet care. The sinner has confessed; now mediation continues where his own hands must stop.",
+          "The priest comes forward and takes up the ministry. The worshiper has confessed, but he cannot carry the service to its end. From here, he must trust the mediator God has appointed.",
         scripture: "Leviticus 4:5-7; Hebrews 5:1",
         camera: [34, 7.2, -8.8],
         target: [28.6, 1.9, 1.7],
@@ -146,7 +146,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Blood and Fire Speak of Costly Mercy",
         text:
-          "The lamb is no longer the focus. The priest stands by the bronze altar with a basin, and smoke rises. In the ordinary offering, blood is ministered at the altar where sacrifice is accepted. The scene remains symbolic, but the meaning is plain: forgiveness is free to the sinner because God bears its cost.",
+          "Smoke rises from the bronze altar as the priest ministers with a basin nearby. The lamb is no longer shown. Blood at the altar and fire on the offering speak together: pardon costs the sinner nothing because God has accepted the cost of a substitute.",
         scripture: "Leviticus 1:5; Romans 3:24-25",
         camera: [31, 8.3, 10.2],
         target: [25, 2.4, 0],
@@ -161,7 +161,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Priest Washes for Holy Work",
         text:
-          "Before the ministry moves inward, the priest pauses at the laver. Sacrifice has opened the way, and cleansing keeps the servant fit for holy work. Grace forgives and also washes.",
+          "Before moving toward the tent, the priest stops at the laver. Sacrifice has opened the way; washing prepares him for holy service. The same grace that forgives also cleanses.",
         scripture: "Exodus 30:18-21; Titus 3:5",
         camera: [15, 6.4, 8.6],
         target: [5, 1.7, 0],
@@ -175,7 +175,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Ministry Continues Beyond Sight",
         text:
-          "The sinner remains in the court while the priest approaches the veil. He cannot see everything that is done for him. The sanctuary teaches him to trust the appointed mediator when the work passes beyond his sight.",
+          "The worshiper remains in the court while the priest approaches the veil. Much of the ministry now passes beyond his sight. He must learn to trust what God is doing through the mediator he can no longer follow.",
         scripture: "Hebrews 8:1-2; Hebrews 9:6",
         camera: [-7, 6.6, 10.2],
         target: [-15, 2.8, 0],
@@ -189,7 +189,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Blood Is Brought Before God",
         text:
-          "In appointed sin-offering cases, the priest took blood into the Holy Place, sprinkled it before the inner veil, and touched the horns of the incense altar. In many personal offerings, the blood remained at the bronze altar while the priest bore the confessed guilt through the appointed service. Either way, sin was not brushed aside; it was carried by mediation until God's final cleansing.",
+          "In some purification offerings, blood was carried into the Holy Place, sprinkled before the inner veil, and placed on the incense altar. In many personal cases it remained at the bronze altar while the priest bore the worshiper's culpability through the appointed rite. In either form, sin was not dismissed. God placed it within a ministry that moved toward final cleansing.",
         scripture: "Leviticus 4:6-7; Leviticus 10:17",
         camera: [-26.2, 5.9, 7.7],
         target: [-33.8, 2.6, 0],
@@ -204,7 +204,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Prayer Rises Where He Cannot Follow",
         text:
-          "Inside the Holy Place, incense rises near the inner veil. The sinner is not forgotten outside. Confession, blood, and prayer are gathered into priestly ministry, teaching him that mercy keeps working even where his eyes cannot go.",
+          "Incense rises close to the inner veil. The sinner waiting outside has not been forgotten. Confession, sacrifice, and prayer are gathered into the priest's ministry, and mercy continues where human eyes cannot follow.",
         scripture: "Exodus 30:7-8; Revelation 8:3-4",
         camera: [-26.5, 5.8, 7.4],
         target: [-33.8, 2.6, 0],
@@ -219,7 +219,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Priest Stops Before the Curtain",
         text:
-          "In the daily service, the priest did not pass this curtain. He ministered before it, and the closed veil taught the sinner that forgiveness was real while the final cleansing still waited for God's appointed day.",
+          "The priest ministers before the inner curtain but does not cross it in the daily service. The closed veil holds two truths together: the worshiper is truly forgiven, and the sanctuary still awaits its appointed cleansing.",
         scripture: "Exodus 30:6-8; Hebrews 9:6-7",
         camera: [-28.2, 5.8, 6.8],
         target: [-34.4, 2.5, 0],
@@ -234,7 +234,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "He Leaves Under Promise",
         text:
-          "The worshiper turns back toward the camp with a lighter step. He has not seen behind the inner curtain, but he has learned enough to trust God's appointed ministry. The sanctuary has not made sin small; it has made mercy large. He is safe because God has accepted the sacrifice He provided.",
+          "The worshiper turns back toward the camp with an easier step. He has not seen behind the curtain, but he has seen enough to trust God's promise. Sin has not been minimized; mercy has become larger. He leaves because God has accepted the sacrifice He provided.",
         scripture: "Leviticus 4:31; 1 John 1:9",
         camera: [51, 7.4, 12.5],
         target: [39, 2.2, 1.2],
@@ -257,7 +257,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Priest Comes Before Dawn",
         text:
-          "The court is quiet as the priest enters his work. He is not a hero in himself; he is a servant standing where the people need mercy every morning.",
+          "Before sunrise, the priest enters the quiet court. He comes not as a hero, but as a servant standing each morning where a needy people depend on mercy.",
         scripture: "Exodus 29:38-39",
         camera: [52, 6.4, 11],
         target: [26, 2, 0],
@@ -270,7 +270,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Continual Fire Is Tended",
         text:
-          "He approaches the altar, tends the fire, and ministers the morning lamb. Blood at the altar and fire upon the bronze teach Israel that grace is not occasional. Before the day grows loud, God has already provided.",
+          "He tends the altar fire and ministers the morning lamb. Blood and flame tell the camp that grace is not an occasional interruption. Before Israel's day has fully begun, God's provision is already there.",
         scripture: "Exodus 29:38-42; Leviticus 6:12-13",
         camera: [34, 6.8, 8.4],
         target: [25, 2.4, 0],
@@ -284,7 +284,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Hands and Feet Are Washed",
         text:
-          "At the laver, the priest washes again. Holy service requires more than zeal; it requires clean hands, clean steps, and dependence on God's provision.",
+          "At the laver, the priest washes his hands and feet again. Holy work calls for more than eagerness. It asks for clean actions, careful steps, and continuing dependence on God.",
         scripture: "Exodus 30:20",
         camera: [14, 6.6, 8.6],
         target: [5, 1.8, 0],
@@ -297,7 +297,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "He Passes the Entrance Veil",
         text:
-          "The priest moves toward the Holy Place. The people outside cannot follow him, but his movement teaches them that mediation continues in the presence of God.",
+          "He draws aside the entrance curtain and passes into the Holy Place. The people remain outside, yet his movement assures them that the ministry continues in God's presence.",
         scripture: "Exodus 28:35; Hebrews 9:6",
         camera: [-7, 6.8, 10.5],
         target: [-15, 2.8, 0],
@@ -310,7 +310,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Lampstand Is Kept Burning",
         text:
-          "Inside, he tends the light. The sanctuary does not only forgive darkness; it keeps light alive before God, pointing to the Spirit's steady work among His people.",
+          "Inside the tent, he trims and tends the lamps. God does not leave His people in the darkness He has forgiven. He keeps light burning before Him.",
         scripture: "Exodus 27:20-21; John 8:12",
         camera: [-18.8, 5.4, 8.4],
         target: [-24, 2.2, 3.15],
@@ -323,7 +323,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Bread Remains Before the Lord",
         text:
-          "He turns toward the table. The bread is a quiet witness that the covenant people live from God's table, not from their own strength.",
+          "He turns toward the table, where the bread remains before the Lord. It is a quiet testimony that Israel lives from God's provision, not its own strength.",
         scripture: "Leviticus 24:5-9; John 6:35",
         camera: [-19.2, 5.5, 8.2],
         target: [-24, 2, -2.8],
@@ -336,7 +336,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Incense Rises Near the Veil",
         text:
-          "The priest stands near the veil as incense rises morning and evening. Prayer is not left to climb by itself; it is carried in the fragrance of accepted mediation.",
+          "At the golden altar, incense curls upward near the veil. Prayer does not arrive in God's presence on the strength of human words. It comes wrapped in the fragrance of accepted mediation.",
         scripture: "Exodus 30:7-8; Revelation 8:3-4",
         camera: [-26.8, 5.8, 7.2],
         target: [-33.8, 2.6, 0],
@@ -349,7 +349,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Evening Grace Closes the Day",
         text:
-          "As evening comes, the priest returns to the altar. Morning and evening, God surrounds the day with sacrifice, teaching His people to sleep under mercy.",
+          "At evening the priest returns to the bronze altar. The second offering closes the day as the first one opened it. Israel lies down with sacrifice on both horizons and mercy around its hours.",
         scripture: "Exodus 29:41-42",
         camera: [36, 7, -8.5],
         target: [25, 2.3, 0],
@@ -369,7 +369,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The High Priest Washes and Dresses in Linen",
         text:
-          "The day begins with washing and plain linen. The high priest does not approach God in display. He comes in humility, aware that he also needs mercy before he can minister for the camp.",
+          "The high priest begins by bathing and putting on plain linen. He approaches without display, knowing that before he can represent the camp, he too must stand under God's mercy.",
         scripture: "Leviticus 16:4",
         camera: [16, 6.4, 8.4],
         target: [5, 1.8, 0],
@@ -385,7 +385,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "A Bull Is Offered for the Priest",
         text:
-          "Before he acts for Israel, the high priest offers the bull for himself and his house. The mediator is not casual or self-sufficient; he stands under mercy before he carries mercy to others.",
+          "The bull is offered for the high priest and his household. He does not enter as a self-sufficient mediator. He first receives the mercy he is about to carry on behalf of others.",
         scripture: "Leviticus 16:6, 11",
         camera: [31, 6.8, 8.5],
         target: [25, 2.4, 0],
@@ -400,7 +400,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Two Goats Are Presented",
         text:
-          "The goats stand before the Lord, and lots are cast. One will represent the blood of cleansing; the other will bear away confessed sin. Israel sees that sin must be both forgiven and finally removed.",
+          "Two goats are presented before the Lord and the lots are cast. One will supply sacrificial blood; the other will later carry the confessed sins away. Together they show that God means not only to forgive sin, but to remove it.",
         scripture: "Leviticus 16:7-10",
         camera: [41, 6.2, 9.2],
         target: [31, 1.5, 0],
@@ -415,7 +415,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Incense Covers the Approach Within the Veil",
         text:
-          "Before blood is sprinkled, the high priest carries coals and incense past the inner veil. The cloud rises before the mercy seat, reminding him that no one enters God's presence on personal worth.",
+          "Carrying coals and incense, the high priest crosses the inner veil. A fragrant cloud forms over the mercy seat before blood is sprinkled, reminding him that no one approaches the Holy One on personal merit.",
         scripture: "Leviticus 16:12-13",
         camera: [-32.5, 5.8, 6.6],
         target: [-39.2, 2.3, 0],
@@ -428,7 +428,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Bull Blood Before the Mercy Seat",
         text:
-          "He passes where no ordinary step may go and sprinkles the bull's blood upon and before the mercy seat. The priestly house must be covered before the people can be represented.",
+          "Within the Most Holy Place, he sprinkles the bull's blood on and before the mercy seat. Mercy must first cover the priestly household before he can represent the people.",
         scripture: "Leviticus 16:14; Hebrews 9:7",
         camera: [-34, 5.7, 5.7],
         target: [-40, 2.1, 0],
@@ -442,7 +442,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Lord's Goat Is Given for the People",
         text:
-          "The goat for the Lord is now the sin offering for the people. The scene remains symbolic and reverent: no gore is shown, only the basin, the altar, and the solemn truth that Israel's cleansing depends on life given by God's provision.",
+          "The goat chosen for the Lord is offered for Israel. The camera remains reverent: a basin, the altar, the priest's measured movements. The scene communicates the essential truth without gore - the people's cleansing depends on a life God has provided.",
         scripture: "Leviticus 16:15; Hebrews 9:22",
         camera: [34, 6.8, -8.6],
         target: [25, 2.4, 0],
@@ -458,7 +458,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Lord's Goat Blood Is Brought Within",
         text:
-          "The high priest brings the Lord's goat blood inside the veil and sprinkles it as he did the bull's blood. This blood cleanses for the people; the live goat has not yet entered the work.",
+          "The high priest brings the Lord's goat blood within the veil and sprinkles it as he did the bull's blood. This is the blood that makes atonement for the people. The live goat has no part in supplying it.",
         scripture: "Leviticus 16:15-16; Hebrews 9:23-24",
         camera: [-34, 5.7, 5.9],
         target: [-40, 2.1, 0],
@@ -472,7 +472,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Holy Place Is Cleansed",
         text:
-          "The work does not stop at the ark. The high priest makes atonement for the Holy Place and the tent because Israel's uncleanness, transgressions, and sins have affected the sanctuary. Cleansing is judgment and mercy together.",
+          "The ministry now extends from the ark to the Holy Place and the tent itself. Israel's impurities, transgressions, and sins have touched the sanctuary through God's work of forgiveness. The cleansing joins mercy with truthful judgment.",
         scripture: "Leviticus 16:16-17; Daniel 8:14",
         camera: [-26.2, 5.9, 7.7],
         target: [-33.8, 2.6, 0],
@@ -486,7 +486,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Altar Is Cleansed",
         text:
-          "The priest returns to cleanse the altar, touching blood to its horns and sprinkling seven times. The record of sin is not left in God's house forever. The sanctuary promises a day when sin itself will be removed.",
+          "Back in the court, the high priest places blood on the altar's horns and sprinkles it seven times. What the sanctuary has carried through the year will not remain there forever. The service points toward an end to sin's record and presence.",
         scripture: "Leviticus 16:18-19, 30",
         camera: [34, 7.4, -8.4],
         target: [25, 2.4, 0],
@@ -500,7 +500,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Live Goat Is Brought After Atonement",
         text:
-          "Only after atonement has been made for the sanctuary, the tent, and the altar is the live goat brought near. It does not provide the cleansing blood. It receives the confessed sins for final removal.",
+          "Only after atonement has been completed for the sanctuary and altar is the live goat brought forward. It supplies no cleansing blood. It receives the confessed sins for removal from the camp.",
         scripture: "Leviticus 16:20",
         camera: [48, 6.8, 9.8],
         target: [38, 1.8, 2],
@@ -518,7 +518,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "Both Hands Confess the Sins of Israel",
         text:
-          "The high priest places both hands on the live goat and confesses Israel's iniquities, transgressions, and sins. The goat is not a savior; it bears away what the sacrificial blood has already answered.",
+          "The high priest rests both hands on the live goat and confesses Israel's iniquities, transgressions, and sins. The animal is not a savior. It bears away what sacrificial blood has already answered before God.",
         scripture: "Leviticus 16:21",
         camera: [48, 6.4, 8.8],
         target: [41.5, 1.7, 2],
@@ -536,7 +536,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "A Fit Man Leads the Goat Away",
         text:
-          "A fit man leads the goat into the wilderness, away from the camp. The movement is quiet but powerful: confessed sin is removed from God's dwelling and from God's people.",
+          "An appointed man leads the goat beyond the tents and into the wilderness. The action is simple, almost silent, but the meaning is unmistakable: the confessed sins are carried away from God's dwelling and His people.",
         scripture: "Leviticus 16:21-22",
         camera: [61, 7.2, 12],
         target: [50, 2.2, 1.8],
@@ -554,7 +554,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Priest Washes, Changes, and Offers Burnt Offerings",
         text:
-          "After the live goat is sent away, the high priest washes, changes garments, and returns to offer burnt offerings. The day ends not in emptiness, but in renewed dedication to God.",
+          "After the goat has gone, the high priest bathes, changes garments, and returns to offer burnt offerings. The day closes not with an empty court, but with a people newly devoted to God.",
         scripture: "Leviticus 16:23-25",
         camera: [34, 7, -8.5],
         target: [25, 2.3, 0],
@@ -568,7 +568,7 @@ export const CINEMATIC_PATHS = {
       {
         title: "The Camp Breathes Under Cleansing",
         text:
-          "The people hear the meaning of the day: before the Lord, they are clean from all their sins. Leviticus 16 does not make sin small. It shows that God can forgive, cleanse, remove, and restore.",
+          "At last the camp hears the promise of the day: before the Lord, they are clean from all their sins. Leviticus 16 neither softens evil nor leaves people beneath it. God forgives, cleanses, removes, and restores.",
         scripture: "Leviticus 16:30; Revelation 21:4",
         camera: [58, 7.4, 12.5],
         target: [42, 2.2, 0],

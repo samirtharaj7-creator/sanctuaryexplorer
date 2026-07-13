@@ -7,37 +7,37 @@ export const offerings = [
     text: "Leviticus 1; 6:8-13",
     icon: "♨",
     summary:
-      "The burnt offering was the whole-life offering. It did not focus on a shared meal or repayment, but on complete surrender to God through substitutionary death.",
+      "The burnt offering represented a life given wholly to God. Unlike the peace offering, it did not end in a shared meal, and unlike the guilt offering, it did not center on restitution. The entire victim was offered through substitution.",
     columns: [
-      ["Practical Procedure", "The worshiper brought an unblemished male from the herd, flock, or birds according to ability. After hand-laying and slaughter at the entrance, the priest applied the blood around the altar. The animal was skinned, divided, washed, arranged, and wholly consumed by fire."],
-      ["Sanctuary Meaning", "Because the whole animal ascended to God, this offering emphasized complete consecration. It was not a partial gift but an entire life placed on the altar, accepted through substitutionary blood and ascending as a pleasing aroma."],
-      ["Fulfillment in Christ", "Christ gave Himself wholly to the Father. His obedience was not partial, reluctant, or symbolic; He offered a complete life and a complete death, making acceptance with God possible for the believer."],
-      ["Devotional Response", "Romans 12:1 applies burnt-offering logic to Christian life: because mercy has been given, the whole person becomes a living sacrifice. Dedication is not payment for salvation, but the shape gratitude takes."]
+      ["Practical Procedure", "Depending on means, the worshiper brought a male animal from the herd or flock, or a bird. After the laying on of a hand and the slaughter, the priest splashed the blood around the altar. The animal was prepared, washed, arranged, and burned completely."],
+      ["Sanctuary Meaning", "Because none of the meat returned to the worshiper, the rite carried a strong sense of total consecration. The whole life belonged to God and was accepted through the death of a substitute."],
+      ["Fulfillment in Christ", "Jesus gave His whole life to the Father, from perfect obedience to sacrificial death. Nothing in His offering was reluctant or incomplete, and through Him we are accepted."],
+      ["Devotional Response", "Romans 12:1 brings this image into Christian discipleship. God's mercy comes first; then the believer responds by placing the whole life at His service."]
     ],
     ritualForm: [
-      ["Totality", "The distinctive form is wholeness: nothing is held back for the worshiper. The entire victim belongs to God, so the rite teaches full surrender rather than selective devotion."],
-      ["Ascent", "The Hebrew idea behind the offering is movement upward. The sacrifice is transformed by altar fire into smoke that ascends, portraying accepted life rising toward God."],
-      ["Continual Rhythm", "The morning and evening burnt offerings made this surrender the daily frame of sanctuary life. Israel woke and slept under the sign of accepted substitution."]
+      ["Totality", "What sets this offering apart is its wholeness. Nothing is reserved for the worshiper's use, so the rite speaks of complete rather than selective surrender."],
+      ["Ascent", "The Hebrew name carries the idea of going up. As the offering became smoke over the altar, it pictured a gift received by God."],
+      ["Continual Rhythm", "A burnt offering was presented every morning and evening. Israel's day opened and closed under the sign of a substitute accepted by God."]
     ],
     sourceInsights: [
       {
         author: "Davidson",
-        quote: "the blood of an innocent victim is shed instead of theirs",
-        text: "Davidson's sanctuary typology makes substitution painfully concrete: the worshiper is not saved by admiration of sacrifice, but by a life given in the worshiper's place."
+        quote: "An innocent victim gives its blood in the worshiper's place.",
+        text: "Davidson's point makes substitution concrete. The worshiper was not rescued by admiring the victim, but because an innocent life was given in the worshiper's place."
       },
       {
         author: "Andreasen",
-        quote: "On every ceremony and on every service was stamped the lesson: Sin means death.",
-        text: "Andreasen presses the moral gravity of the altar. The fire is not religious theater; it teaches that sin is costly before it teaches that grace is free."
+        quote: "Every sacrifice carried the same grave reminder: sin leads to death.",
+        text: "Andreasen keeps the cost of sin in view. The altar was not religious drama; its fire declared that sin brings death, even as the offered life proclaimed mercy."
       },
       {
         author: "Gane",
-        quote: "only in the burnt offering did all of the flesh go to the Lord",
-        text: "Gane's ritual observation explains the offering's unique force: it is not merely forgiveness, but total surrender through accepted substitution."
+        quote: "The burnt offering was unique because the whole animal was given to the Lord on the altar.",
+        text: "Gane's observation identifies what made this offering unique: all of it went to God. Its message is total surrender made possible through accepted substitution."
       }
     ],
     scholar:
-      "Scholarly synthesis: The burnt offering is best read as a ritual of total surrender through substitution. It combines expiation, dedication, and acceptance, showing that restored fellowship begins with a life yielded completely to God."
+      "Taken together, these features present the burnt offering as a rite of substitution, acceptance, and complete dedication. Restored fellowship begins with a life yielded to God."
   },
   {
     id: "grain",
@@ -47,37 +47,37 @@ export const offerings = [
     text: "Leviticus 2; 6:14-23",
     icon: "✦",
     summary:
-      "The grain offering was a bloodless tribute of worship. It placed the produce of ordinary labor into God's hands and confessed that daily bread comes from Him.",
+      "The grain offering was a tribute drawn from the worshiper's food and labor. By bringing it to the altar, the Israelite acknowledged that harvest, skill, and daily bread came from God.",
     columns: [
-      ["Practical Procedure", "Fine flour was mixed with oil and frankincense, or prepared as baked cakes or wafers. A memorial portion was burned on the altar, while the remainder belonged to the priests. It was seasoned with salt, but leaven and honey were excluded from altar portions."],
-      ["Sanctuary Meaning", "This offering did not replace blood atonement. It followed and accompanied sacrifice as grateful tribute. Flour, oil, frankincense, and salt taught purity, Spirit-enabled service, fragrance before God, and covenant permanence."],
-      ["Fulfillment in Christ", "Christ's humanity was perfectly balanced, like fine flour without coarse unevenness. He was anointed by the Spirit, fragrant in obedience, and incorrupt in covenant faithfulness."],
-      ["Devotional Response", "The grain offering dignifies ordinary life. Work, food, resources, skill, and daily routines can become worship when they are returned to God in gratitude and purified from self-display."]
+      ["Practical Procedure", "The gift could be fine flour with oil and frankincense, or bread prepared in several forms. The priest burned a memorial portion and received the rest. Salt was required, while leaven and honey were not placed on the altar."],
+      ["Sanctuary Meaning", "The grain offering did not take the place of a blood sacrifice. It was the grateful gift of a person already approaching God through atonement. Its ingredients spoke of a life and livelihood set apart for Him."],
+      ["Fulfillment in Christ", "Christ fulfilled the devotion this offering expressed. His ordinary human life, work, obedience, and dependence on the Spirit were all given to the Father without corruption."],
+      ["Devotional Response", "This offering brings worship into the kitchen, field, workshop, and budget. Ordinary work and resources can be returned to God with gratitude, without turning them into a display of self."]
     ],
     ritualForm: [
-      ["Tribute", "Its form is gift and homage rather than slaughter. The worshiper returns cultivated life to God, confessing that harvest and labor are covenant gifts."],
-      ["Memorial Portion", "Only a representative portion ascends on the altar. The part stands for the whole, teaching that God claims the entire life even when only a memorial portion is burned."],
-      ["Holy Remainder", "The priestly portion shows that what is given to God may also sustain ministry. Worship, livelihood, and service are held together in the sanctuary economy."]
+      ["Tribute", "Here the worshiper brought cultivated produce rather than an animal. The gift acknowledged God as the giver of both the harvest and the strength used to prepare it."],
+      ["Memorial Portion", "Only part of the offering was burned, yet that memorial portion represented the whole gift. A small portion on the altar declared that every part of life belonged to God."],
+      ["Holy Remainder", "The remainder supported the priests. The sanctuary joined worship and livelihood without treating either as unspiritual."]
     ],
     sourceInsights: [
       {
         author: "Davidson",
-        quote: "The normal grain offering did not bring atonement for sin",
-        text: "Davidson's point keeps the offering in its proper place. Grain does not replace blood; it teaches what a forgiven life gives back to God."
+        quote: "An ordinary grain offering was not offered to make atonement for sin.",
+        text: "Davidson's distinction is important. Grain did not replace sacrificial blood; it showed how a forgiven person returned work and provision to God."
       },
       {
         author: "Andreasen",
         quote: "salt is a vital part of each sacrifice",
-        text: "Andreasen notices the covenant texture of the rite. The offering is not raw religious enthusiasm, but life seasoned with permanence, fidelity, and worshipful order."
+        text: "Andreasen draws attention to the salt. The offering was not a passing burst of feeling, but a covenant gift marked by faithfulness and permanence."
       },
       {
         author: "Gane",
         quote: "the grain offering is not even expiatory",
-        text: "Gane's precision matters devotionally: the worshiper brings labor and harvest because grace has already opened the way, not to buy the way open."
+        text: "Gane's precision keeps gratitude from becoming a bargain. The worshiper did not bring grain to purchase atonement, but because God had already opened the way."
       }
     ],
     scholar:
-      "Scholarly synthesis: The grain offering functions as a tribute offering. It assumes atonement and then teaches covenant gratitude, showing that redemption claims not only the sinner's guilt but also the worshiper's labor and livelihood."
+      "The grain offering was a tribute of covenant gratitude. It shows that redemption claims not only our guilt but also our work, possessions, and daily bread."
   },
   {
     id: "peace",
@@ -87,37 +87,37 @@ export const offerings = [
     text: "Leviticus 3; 7:11-21",
     icon: "♡",
     summary:
-      "The peace offering celebrated restored fellowship. It was the sanctuary meal of thanksgiving, vow fulfillment, and freewill joy before God.",
+      "The peace offering celebrated fellowship restored. It could express thanksgiving, fulfill a vow, or simply rejoice before God in a sacred meal.",
     columns: [
-      ["Practical Procedure", "The worshiper brought an animal without blemish, laid hands on it, and slaughtered it. The priest applied the blood, burned the fat portions for God, received the priestly portion, and the worshiper ate the remaining meat in a sacred meal."],
-      ["Sanctuary Meaning", "This was not casual dining. Blood had already made peace possible, and the shared meal dramatized communion among God, priest, worshiper, and community. Thanksgiving became embodied fellowship."],
-      ["Fulfillment in Christ", "Christ makes peace through the blood of His cross. In Him, reconciliation is not merely legal pardon; it becomes restored table fellowship with God and with the redeemed community."],
-      ["Devotional Response", "The peace offering calls believers to gratitude, reconciliation, and joy. A forgiven person becomes a hospitable person, making room for restored relationships and shared praise."]
+      ["Practical Procedure", "The worshiper brought an animal without defect, laid a hand on it, and slaughtered it. The priest handled the blood and burned the fat for God. A priestly share was set aside, and the worshiper ate the rest with others."],
+      ["Sanctuary Meaning", "This was a meal made possible by sacrifice. After the blood was applied, the worshiper could eat before God, turning gratitude into fellowship shared by family and community."],
+      ["Fulfillment in Christ", "Through the blood of the cross, Christ makes peace with God possible. Reconciliation is a real change of relationship, and it gathers the redeemed into fellowship with one another."],
+      ["Devotional Response", "The peace offering encourages a life of thanksgiving, reconciliation, and generous fellowship. People who have been welcomed by God learn to make room for others."]
     ],
     ritualForm: [
-      ["Shared Portions", "The distinctive form is distribution: God's portion, the priestly portion, and the worshiper's meal. Atonement opens fellowship rather than ending with bare acquittal."],
-      ["Sacred Meal", "Eating before God makes the theology visible. Peace is not only a status recorded in heaven; it becomes communion, gratitude, and restored community."],
-      ["Joy With Boundaries", "The meal is joyful, but it remains holy. The rite rejects both anxious religion and careless familiarity by placing celebration inside covenant order."]
+      ["Shared Portions", "Its portions were shared: one for God, one for the priest, and one for the worshiper. Atonement did not end in a bare verdict; it opened the table."],
+      ["Sacred Meal", "The meal gave peace a taste, a place, and a community. Reconciliation was celebrated, not left as an invisible idea."],
+      ["Joy With Boundaries", "The feast was joyful and still holy. It made room for celebration without turning God's presence into something casual."]
     ],
     sourceInsights: [
       {
         author: "Davidson",
-        quote: "shalom is not just absence of war, but connotes total well-being",
-        text: "Davidson's insight widens the peace offering beyond a truce with God. It is wholeness, restored relationship, and covenant life enjoyed at God's table."
+        quote: "Biblical peace reaches beyond the end of conflict to wholeness, well-being, and restored relationship.",
+        text: "Davidson's explanation of shalom widens the picture. Peace is not simply the end of conflict, but wholeness and well-being in restored covenant relationship."
       },
       {
         author: "Andreasen",
         quote: "God, priest, and offerer partake",
-        text: "Andreasen sees the meal as theology in motion. The altar leads to communion, and the worshiper is invited into fellowship made possible by blood."
+        text: "Andreasen reads the shared meal as fellowship made visible. The altar opened the way for God, priest, and worshiper to meet in peace."
       },
       {
         author: "Gane",
         quote: "was eaten by the person who brought the sacrifice",
-        text: "Gane's concrete ritual detail is easy to miss: the worshiper does not simply watch peace happen; he receives it, tastes it, and shares it."
+        text: "Gane's ritual detail matters. The offerer did not stand at a distance and watch reconciliation; the person ate the meal and shared its joy."
       }
     ],
     scholar:
-      "Scholarly synthesis: The peace offering is a communion sacrifice. It moves beyond the removal of guilt to the celebration of wholeness, embodying the biblical idea that atonement restores fellowship."
+      "The peace offering was a communion sacrifice. It shows that atonement removes estrangement so that life with God and His people can be enjoyed again."
   },
   {
     id: "sin",
@@ -127,37 +127,37 @@ export const offerings = [
     text: "Leviticus 4; 6:24-30",
     icon: "○",
     summary:
-      "The sin offering addressed purification from sin and ritual defilement. It showed that sin pollutes persons, community, and sanctuary, and that God provides cleansing through blood.",
+      "The so-called sin offering was chiefly a purification offering. It dealt with moral faults and ritual impurities that disrupted the relationship between people, community, and God's dwelling.",
     columns: [
-      ["Practical Procedure", "The required animal varied by responsibility: priest, congregation, leader, or common person. After hand-laying and slaughter, blood was applied to the appropriate sanctuary location, and selected fat was burned on the altar."],
-      ["Sanctuary Meaning", "Sin was not treated as a private mistake. Its effects reached God's dwelling among His people. The blood both brought forgiveness to the sinner and transferred the record of confessed sin into the sanctuary system for final resolution."],
-      ["Fulfillment in Christ", "Christ bears sin and cleanses from unrighteousness. His blood is sufficient not only to pardon the sinner but also to answer the larger problem of sin's defilement before God's universe."],
-      ["Devotional Response", "Confession is hopeful because God has provided purification. The worshiper does not hide sin, minimize it, or manage it privately; he brings it to the place where God removes guilt and begins cleansing."]
+      ["Practical Procedure", "The required animal depended on the offender's role. After the hand was laid on the victim and it was slaughtered, the priest applied blood at the location required for that case and burned selected fat on the altar."],
+      ["Sanctuary Meaning", "Sin was not treated as a private feeling. It damaged covenant life and affected the sanctuary system through which God remained among His people. The ritual brought forgiveness and placed the confessed wrong within God's appointed process for final cleansing."],
+      ["Fulfillment in Christ", "Jesus bears sin and cleanses His people from unrighteousness. His blood answers both personal guilt and the wider defilement sin has brought into God's creation."],
+      ["Devotional Response", "Confession can be honest because God has provided a remedy. The worshiper brings the wrong into the light and trusts God to forgive, cleanse, and deal with its consequences."]
     ],
     ritualForm: [
-      ["Purification", "The form is cleansing, not merely punishment transferred. Blood reaches the altar or sanctuary space because sin contaminates relationship, worship, and the dwelling place of God."],
-      ["Ranked Responsibility", "The blood application changes with the offender's role. Priests and the congregation create wider contamination, so the ritual shows that responsibility increases with influence."],
-      ["Daily to Yearly", "Forgiveness is real in the daily service, yet the sanctuary still awaits final cleansing. The rite plants the logic that leads to the Day of Atonement."]
+      ["Purification", "The central concern is purification. Blood is applied to altar or sanctuary because sin and impurity disturb worship and covenant relationship, not simply because punishment must be transferred."],
+      ["Ranked Responsibility", "The ritual changed with the offender's responsibility. A priest's or the congregation's failure had wider effects, reminding us that influence increases accountability."],
+      ["Daily to Yearly", "The daily ministry gave real forgiveness, but the sanctuary's annual cycle still moved toward the Day of Atonement. Individual pardon and final cleansing belonged to one larger work."]
     ],
     sourceInsights: [
       {
         author: "Davidson",
-        quote: "confessed sins were transferred from the sinner to the sanctuary throughout the year",
-        text: "Davidson gives the key logic for the whole sanctuary cycle: daily forgiveness is real, yet the sanctuary still awaits final cleansing."
+        quote: "During the year, confessed sins passed from the repentant worshiper into the sanctuary process God had appointed.",
+        text: "Davidson highlights the movement from daily forgiveness to yearly cleansing. Confessed sin was dealt with immediately, yet the sanctuary service still awaited its annual resolution."
       },
       {
         author: "Andreasen",
-        quote: "Forgiveness of sin can be obtained only through confession and the ministration of blood.",
-        text: "Andreasen holds together two things modern readers often separate: honest confession and priestly blood-ministry. Sin is named, then borne away."
+        quote: "The sanctuary joined honest confession with the ministry of sacrificial blood as God's way of granting forgiveness.",
+        text: "Andreasen refuses to separate confession from priestly ministry. The wrong is named honestly, and the blood God has appointed provides the way of forgiveness."
       },
       {
         author: "Gane",
         quote: "remedy moral faults and physical ritual impurities",
-        text: "Gane's phrase explains why this offering is called purification. It handles sin's pollution, not merely the sinner's feelings of regret."
+        text: "Gane's wording explains the name purification offering. The rite addressed the pollution caused by moral faults and ritual impurity, not simply a person's sense of regret."
       }
     ],
     scholar:
-      "Scholarly synthesis: The sin offering is better called a purification offering. Its concern is not only moral guilt, but also the contamination caused by sin, which explains why Leviticus connects forgiveness with sanctuary cleansing."
+      "The familiar \"sin offering\" is more accurately understood as a purification offering. It dealt with guilt and contamination together, helping explain why forgiveness during the year led to sanctuary cleansing on the Day of Atonement."
   },
   {
     id: "guilt",
@@ -167,37 +167,37 @@ export const offerings = [
     text: "Leviticus 5:14-6:7; 7:1-10",
     icon: "↺",
     summary:
-      "The guilt offering addressed sacrilege, breach of trust, and reparable wrong. It joined sacrifice with restitution so that forgiveness did not bypass repair.",
+      "The guilt, or reparation, offering dealt with specific breaches of trust, including misuse of holy things and wrongs that could be repaid. Sacrifice and restitution belonged together.",
     columns: [
-      ["Practical Procedure", "The worshiper brought a ram as a guilt offering and made restitution for the wrong, adding a fifth. The priest made atonement, and the guilty person was forgiven."],
-      ["Sanctuary Meaning", "This offering teaches that sin creates debt and damage. When the wrong involved holy things or another person's property, atonement included concrete repair, not only inward remorse."],
-      ["Fulfillment in Christ", "Christ is the One who restores what sin has ruined. He pays the debt humanity cannot pay and reconciles sinners to God without ignoring the real harm sin has caused."],
-      ["Devotional Response", "Grace creates integrity. A forgiven person seeks restoration: confession to God, honesty with people, repayment where possible, and a changed pattern of life."]
+      ["Practical Procedure", "The offender brought a ram and restored what had been lost, adding one-fifth to the amount. The priest then made atonement, and forgiveness was granted."],
+      ["Sanctuary Meaning", "Some sins create measurable damage. In such cases, remorse alone was not enough; reconciliation with God included making the wrong right as far as possible."],
+      ["Fulfillment in Christ", "Christ restores what sin has ruined and pays the debt we cannot meet. His atonement never pretends that the harm caused by sin is unimportant."],
+      ["Devotional Response", "Grace produces honesty. A forgiven person confesses to God, speaks truthfully to those who were harmed, repays what can be repaid, and turns from the old pattern."]
     ],
     ritualForm: [
-      ["Reparation", "The distinctive form is sacrifice plus repayment. The rite refuses a spirituality that wants forgiveness while leaving damage unrepaired."],
-      ["Added Fifth", "The added twenty percent turns restitution into more than replacement. It acknowledges loss, responsibility, and the worshiper's renewed commitment to covenant justice."],
-      ["Holy Trust", "Wrongs against holy things and neighbors are treated as covenant breaches. Sin is theft from God's order, and grace restores that order concretely."]
+      ["Reparation", "This rite joined sacrifice to repayment. It offered no shelter for a spirituality that asked God for pardon while refusing to repair the damage done to another person."],
+      ["Added Fifth", "The extra twenty percent went beyond simple replacement. It recognized the loss suffered and gave concrete evidence that the offender was accepting responsibility."],
+      ["Holy Trust", "Wronging a neighbor or misusing something holy violated covenant trust. Restoration therefore had to take visible form."]
     ],
     sourceInsights: [
       {
         author: "Davidson",
         quote: "dealing with particular offenses",
-        text: "Davidson's framing helps distinguish this offering from general confession. The rite addresses concrete covenant breaches that require concrete repair."
+        text: "Davidson's description helps separate this rite from a general offering for sin. It addressed identifiable wrongs that called for identifiable repair."
       },
       {
         author: "Andreasen",
-        quote: "not only is it to be confessed, but restitution is to be made",
-        text: "Andreasen's emphasis makes grace ethically serious. Forgiveness does not bypass harmed people; it sends the forgiven person back to repair what can be repaired."
+        quote: "A wrong had to be confessed, and wherever possible the damage also had to be repaired.",
+        text: "Andreasen makes the ethical consequence plain. Forgiveness sends us back toward the people we have harmed, with a willingness to restore what can be restored."
       },
       {
         author: "Gane",
-        quote: "sin creates debt that must be paid by Christ's sacrifice",
-        text: "Gane connects restitution to the gospel's deepest debt. Human repayment can restore damaged trust, but only Christ can answer sin's ultimate liability."
+        quote: "Sin leaves a debt that human restitution cannot finally settle; only Christ's sacrifice can answer it before God.",
+        text: "Gane connects human restitution with a deeper debt. We can repay property and address broken trust, but only Christ can bear sin's ultimate liability."
       }
     ],
     scholar:
-      "Scholarly synthesis: The guilt offering shows that biblical atonement is morally concrete. It reconciles the sinner to God while also requiring repair of damaged relationships and violated trust."
+      "The reparation offering makes atonement morally concrete. It reconciles the offender to God while requiring honest action toward damaged relationships and violated trust."
   }
 ];
 
@@ -210,17 +210,17 @@ export const specialCeremonies = [
     text: "Leviticus 14:1-32; Mark 1:40-45; Luke 17:11-19",
     icon: "✚",
     summary:
-      "The cleansing of the leper restored a person from exclusion to worship, home, and community. It joined death and release, washing, shaving, waiting, blood, oil, and sacrifice into one careful drama of restoration.",
+      "This ceremony brought a healed person back from isolation into home, worship, and community. Its many steps made restoration visible and complete: inspection, birds, washing, shaving, waiting, blood, oil, and sacrifice.",
     columns: [
-      ["Practical Procedure", "The priest went outside the camp to inspect the healed person. Two clean birds, cedar wood, scarlet, and hyssop were used: one bird was killed over running water, and the living bird was released. The person washed, shaved, waited seven days, shaved again, then brought offerings. Blood and oil were placed on the right ear, thumb, and great toe."],
-      ["Sanctuary Meaning", "This rite moved the healed person from death-like exclusion back to covenant life. The living bird announced release, the washings marked cleansing, and the blood-and-oil application restored the whole person to hearing, serving, and walking before God."],
-      ["Fulfillment in Christ", "Christ touches the unclean without becoming polluted by sin. He bears exclusion outside the camp and brings the outcast home. His blood cleanses, and His Spirit consecrates the restored life for obedient listening, service, and walk."],
-      ["Devotional Response", "Grace does not merely forgive from a distance; it restores belonging. The healed person returns with humility, gratitude, and a life re-dedicated to God in every faculty."]
+      ["Practical Procedure", "The priest went outside the camp to examine the person. One clean bird was killed over fresh water with cedar, scarlet, and hyssop; the other was released. The person washed, shaved, waited seven days, shaved again, and brought offerings. Blood and oil were then placed on the right ear, thumb, and big toe."],
+      ["Sanctuary Meaning", "The ritual led a person from a death-like separation back into covenant life. The released bird pictured freedom, repeated washing marked cleansing, and blood with oil reconsecrated hearing, work, and walk."],
+      ["Fulfillment in Christ", "Jesus touched people considered unclean and was not overcome by their impurity. He went outside the camp, bore rejection, and opened the way home. His blood cleanses, and His Spirit sets the restored life apart for obedience."],
+      ["Devotional Response", "Grace does not forgive from a safe distance. It restores people to worship, relationships, and useful life, then calls every part of them back into God's service."]
     ],
     ritualForm: [
-      ["Outside the Camp", "The priest meets the person where exclusion has placed him. Restoration begins with God's representative going out to the one who cannot yet come in."],
-      ["Death and Release", "The slain bird and released bird hold two truths together: cleansing requires life given, and restoration means freedom into renewed life."],
-      ["Blood and Oil", "The ear, thumb, and toe show whole-person consecration. The restored person is cleansed for hearing God's voice, doing God's will, and walking in God's path."]
+      ["Outside the Camp", "The priest went to the place of exclusion. Restoration began when God's representative stepped outside to meet the person who could not yet return."],
+      ["Death and Release", "One bird died and the other flew free. Together they joined the cost of cleansing with the joy of restored life."],
+      ["Blood and Oil", "Blood and oil touched the ear, thumb, and big toe. The person was set apart again to listen, serve, and walk with God."]
     ],
     sourceInsights: [],
   },
@@ -232,17 +232,17 @@ export const specialCeremonies = [
     text: "Numbers 19; Hebrews 9:13-14",
     icon: "☄",
     summary:
-      "The red heifer rite provided purification from corpse impurity, one of Israel's most serious forms of uncleanness because death is the visible fruit of sin in God's world.",
+      "The red heifer rite provided cleansing after contact with a corpse. Death created one of Israel's gravest forms of ritual impurity because it stood in direct contrast to the living God among them.",
     columns: [
-      ["Practical Procedure", "A red heifer without defect was taken outside the camp and slaughtered before the priest. Its blood was sprinkled toward the sanctuary, and the animal was burned with cedar wood, hyssop, and scarlet. The ashes were stored and later mixed with running water for sprinkling on those defiled by contact with death."],
-      ["Sanctuary Meaning", "The rite taught that death defiles because it contradicts the life of the holy God who dwells among Israel. The ashes made cleansing available beyond the sanctuary courtyard, extending God's purifying provision into homes, travel, graves, and daily contact with mortality."],
-      ["Fulfillment in Christ", "Hebrews points from heifer ashes to the blood of Christ, whose offering cleanses the conscience from dead works. Jesus suffers outside the gate and provides a cleansing deeper than ritual washing: He answers death itself by resurrection life."],
-      ["Devotional Response", "Believers do not treat death, sin, or dead works lightly. They bring contamination to Christ, trusting that His sacrifice cleanses the conscience and calls them into living service."]
+      ["Practical Procedure", "A red heifer without defect was led outside the camp and killed in the priest's presence. Blood was sprinkled toward the sanctuary, and the whole animal was burned with cedar, hyssop, and scarlet. Its ashes were stored and later mixed with fresh water to cleanse those defiled by death."],
+      ["Sanctuary Meaning", "The rite acknowledged that death does not belong in the presence of the God of life. At the same time, the stored ashes made purification available wherever people encountered death: in homes, on journeys, and at burial."],
+      ["Fulfillment in Christ", "Hebrews compares the ashes with the blood of Christ, which cleanses the conscience from dead works. Jesus suffered outside the gate and, through His resurrection, offers a cleansing that reaches beyond ritual impurity to the power of death itself."],
+      ["Devotional Response", "Christians need not deny the weight of death or the deadening power of sin. We bring both to Christ, whose sacrifice cleanses the conscience and frees us to serve the living God."]
     ],
     ritualForm: [
-      ["Outside-Camp Burning", "The victim is consumed outside the camp, placing the rite at the boundary between holy presence and death's defilement."],
-      ["Stored Ashes", "One sacrifice supplies repeated cleansing water. The rite made purification portable for the people as they encountered death in ordinary life."],
-      ["Running Water", "Ashes joined to living water show that cleansing is not only the removal of defilement, but also the return toward life."]
+      ["Outside-Camp Burning", "The animal was burned outside the camp, at the edge between Israel's holy community and the defilement associated with death."],
+      ["Stored Ashes", "A single sacrifice produced ashes that could be used again and again, making cleansing available as Israel met death in ordinary life."],
+      ["Running Water", "Fresh water carried the ashes to the person in need. The rite moved the defiled person away from death and back toward life and community."]
     ],
     sourceInsights: [],
   },
@@ -254,17 +254,17 @@ export const specialCeremonies = [
     text: "Exodus 29; Leviticus 8; Hebrews 7:26-28",
     icon: "♕",
     summary:
-      "Priestly consecration set Aaron and his sons apart for holy mediation through washing, garments, anointing, sacrifices, blood application, and a consecration meal.",
+      "Aaron and his sons were set apart through washing, sacred garments, anointing, sacrifices, blood, and a consecration meal. Every part of the ceremony underlined the seriousness of representing others before God.",
     columns: [
-      ["Practical Procedure", "Moses washed the priests, clothed them in holy garments, anointed the tabernacle, altar, and priesthood, and offered a sin offering, burnt offering, and ram of consecration. Blood was placed on the right ear, thumb, and great toe, and portions of the offering were waved and eaten in a holy meal."],
-      ["Sanctuary Meaning", "Mediation required cleansing, covering, anointing, blood, and food from the altar. The priest's ear, hand, and foot were marked because his hearing, action, and walk now belonged to God's service."],
-      ["Fulfillment in Christ", "Christ is the consecrated High Priest who needs no sacrifice for His own sin. He is washed in no moral uncleanness, clothed in perfect righteousness, anointed by the Spirit, and qualified to represent humanity forever."],
-      ["Devotional Response", "Christian service is not casual religious activity. Those who serve God need cleansed lives, consecrated faculties, Spirit dependence, and the humility to minister from sacrifice already provided."]
+      ["Practical Procedure", "Moses washed and clothed the priests, anointed the sanctuary and priesthood, and offered a purification offering, a burnt offering, and the ram of ordination. Blood touched the right ear, thumb, and big toe. Portions were waved before God, and the priests ate a holy meal."],
+      ["Sanctuary Meaning", "A mediator needed cleansing, covering, anointing, atonement, and nourishment from the altar. The markings on ear, hand, and foot claimed the priest's listening, work, and walk for God."],
+      ["Fulfillment in Christ", "Jesus is the High Priest who needed no offering for personal sin. He is perfectly righteous, anointed by the Spirit, and forever qualified to represent humanity."],
+      ["Devotional Response", "Serving God is not an informal religious hobby. Christian ministry calls for a clean life, surrendered abilities, dependence on the Spirit, and humility before the sacrifice that makes service possible."]
     ],
     ritualForm: [
-      ["Washed and Clothed", "The priest does not dress himself into holiness. God provides cleansing and garments before ministry begins."],
-      ["Marked by Blood", "The blood on ear, thumb, and toe makes mediation bodily and practical. Priesthood claims listening, labor, and direction."],
-      ["Seven-Day Ordination", "Consecration is not rushed. The repeated time frame teaches settled dedication before public ministry."]
+      ["Washed and Clothed", "The priest was washed and dressed by another. Holiness for ministry began with what God provided, not with self-made importance."],
+      ["Marked by Blood", "Blood on ear, thumb, and toe made consecration practical. The priest's listening, labor, and direction now belonged to God."],
+      ["Seven-Day Ordination", "The ordination lasted seven days. Sacred service was not entered in haste; the priesthood was established through sustained consecration."]
     ],
     sourceInsights: [],
   },
@@ -276,17 +276,17 @@ export const specialCeremonies = [
     text: "Numbers 8:5-22; Numbers 3:11-13",
     icon: "✦",
     summary:
-      "The Levites were cleansed and presented to serve as substitutes for Israel's firstborn, showing that worship required an ordered community of service around God's dwelling.",
+      "The Levites were cleansed and presented to God in place of Israel's firstborn. Their appointment created an ordered body of servants around the sanctuary and freed the priests for their particular duties.",
     columns: [
-      ["Practical Procedure", "The Levites were sprinkled with water of purification, shaved, washed their clothes, and brought offerings. Israel laid hands on them, and Aaron presented them before the Lord as a wave offering. They were then assigned to assist the priesthood and care for the sanctuary service."],
-      ["Sanctuary Meaning", "The Levites stood in place of the firstborn who belonged to God after the Exodus. Their dedication taught substitution, communal representation, and ordered service in support of holy worship."],
-      ["Fulfillment in Christ", "Christ is the true Firstborn and the true Servant, giving Himself for His people and forming a serving community around God's presence. In Him, belonging to God becomes worshipful service."],
-      ["Devotional Response", "The saved life is a serving life. God redeems people not only from judgment, but also for ordered, humble, practical ministry in the community of faith."]
+      ["Practical Procedure", "They were sprinkled with purification water, shaved, washed their clothes, and brought offerings. The congregation laid hands on them, and Aaron presented them before the Lord. From then on they assisted the priests and cared for the work of the sanctuary."],
+      ["Sanctuary Meaning", "The Levites served as substitutes for the firstborn claimed by God at the Exodus. Their dedication joined substitution, representation, and practical service."],
+      ["Fulfillment in Christ", "Jesus is the true Firstborn and the perfect Servant. He gives Himself for His people and gathers a community whose belonging to God takes the form of service."],
+      ["Devotional Response", "Salvation gives us work to do. God rescues people from judgment and places them within a community where humble, ordered, practical service matters."]
     ],
     ritualForm: [
-      ["People Lay Hands", "The congregation identifies with the Levites, showing that their service represents the whole community before God."],
-      ["Wave Offering People", "Unlike ordinary offerings, the Levites themselves are presented. The human servant becomes the gift devoted to sanctuary care."],
-      ["Firstborn Substitution", "The rite remembers Exodus deliverance: those spared by grace now belong to God in service."]
+      ["People Lay Hands", "When the people laid hands on the Levites, they identified these servants as representatives of the whole congregation."],
+      ["Wave Offering People", "The Levites themselves were presented to God. In this rite, the servant became the offering."],
+      ["Firstborn Substitution", "The ceremony looked back to the Exodus. Lives spared by grace were now devoted to God's service."]
     ],
     sourceInsights: [],
   },
@@ -298,17 +298,17 @@ export const specialCeremonies = [
     text: "Numbers 6:1-21; Acts 21:23-26",
     icon: "◎",
     summary:
-      "The Nazirite vow was a voluntary period of intensified dedication, marked by separation from wine, uncut hair, and avoidance of corpse impurity until the vow was completed with offerings.",
+      "A Nazirite chose a set period of unusual dedication to God. During that time the person avoided wine and grape products, left the hair uncut, and stayed away from corpse impurity.",
     columns: [
-      ["Practical Procedure", "During the vow, the Nazirite avoided grape products, did not cut the hair, and avoided contact with the dead. At completion, the person brought burnt, sin, and peace offerings with grain and drink offerings. The consecrated hair was shaved and placed in the fire under the peace offering."],
-      ["Sanctuary Meaning", "The vow temporarily elevated ordinary life into a special sign of consecration. Hair represented visible dedication, while the closing sacrifices confessed that even devoted service still depends on atonement and fellowship with God."],
-      ["Fulfillment in Christ", "Christ is wholly devoted to the Father, not temporarily but perfectly. He embodies the consecrated life and makes imperfect human dedication acceptable through His sacrifice."],
-      ["Devotional Response", "Special seasons of dedication can be holy and useful, but they must remain humble. Our vows, disciplines, and sacrifices are responses to grace, not substitutes for grace."]
+      ["Practical Procedure", "Throughout the vow, the Nazirite avoided grape products, did not cut the hair, and avoided the dead. At the end, burnt, purification, peace, grain, and drink offerings were brought. The consecrated hair was shaved and burned beneath the peace offering."],
+      ["Sanctuary Meaning", "The vow turned ordinary life into a visible season of consecration. Uncut hair marked the dedication, while the final sacrifices confessed that even sincere devotion still rested on atonement."],
+      ["Fulfillment in Christ", "Jesus belonged wholly to the Father, not for a season but throughout His life. He embodies perfect devotion and makes our incomplete dedication acceptable through His sacrifice."],
+      ["Devotional Response", "Focused seasons of prayer, restraint, and service can be valuable. They remain healthy only when they are humble responses to grace, never attempts to replace it."]
     ],
     ritualForm: [
-      ["Voluntary Separation", "The rite is not imposed on all Israel. It shows that love may choose concentrated devotion for a season."],
-      ["Hair Offered", "The visible sign of dedication is finally surrendered at the altar. Consecration itself becomes God's possession."],
-      ["Offerings at Completion", "The vow ends with sacrifice, teaching that dedication needs atonement, gratitude, and communion."]
+      ["Voluntary Separation", "The vow was voluntary. It shows that love may freely choose a more concentrated discipline for a time."],
+      ["Hair Offered", "At the end, the visible sign of consecration was placed in the altar fire. Even the vow itself was surrendered to God."],
+      ["Offerings at Completion", "The vow concluded with sacrifice and fellowship. Dedication still needed atonement, thanksgiving, and communion."]
     ],
     sourceInsights: [],
   },
@@ -320,17 +320,17 @@ export const specialCeremonies = [
     text: "Leviticus 12; Luke 2:22-24",
     icon: "◌",
     summary:
-      "Purification after childbirth returned the mother to sanctuary access after the blood and vulnerability of birth, treating life as holy while acknowledging human mortality and impurity.",
+      "After childbirth, a mother passed through a period of ritual impurity before returning to sanctuary worship. The law honored new life while recognizing the blood, weakness, and mortality that accompany birth in a fallen world.",
     columns: [
-      ["Practical Procedure", "After a set period following birth, the mother brought a burnt offering and a sin or purification offering. Those who could not afford a lamb brought birds, the option used by Mary and Joseph in Luke 2."],
-      ["Sanctuary Meaning", "The rite did not treat childbirth as personal sin. It dealt with blood, mortality, and access to sacred space. The mother was restored to full participation in worship, and new life was received under God's holiness and mercy."],
-      ["Fulfillment in Christ", "Luke places Jesus under this law through Mary's offering. The Holy One enters ordinary human poverty, family life, and ritual obligation, identifying with the people He came to redeem."],
-      ["Devotional Response", "God meets people in bodily, family, and vulnerable seasons. The ceremony teaches reverence for life, compassion for weakness, and gratitude that Christ entered our condition fully."]
+      ["Practical Procedure", "When the prescribed days were complete, she brought a burnt offering and a purification offering. Families unable to afford a lamb could bring birds, as Mary and Joseph did after Jesus was born."],
+      ["Sanctuary Meaning", "The ceremony did not call childbirth a moral sin. It dealt with bodily blood and the conditions for reentering sacred space, restoring the mother to full participation in worship."],
+      ["Fulfillment in Christ", "Luke shows Mary and Jesus entering Israel's life under this law. The Holy One came into an ordinary family of limited means and accepted the obligations of the people He came to save."],
+      ["Devotional Response", "God is present in the vulnerable seasons of body and family. This law encourages reverence for life, compassion for weakness, and gratitude that Christ fully entered our human condition."]
     ],
     ritualForm: [
-      ["Birth and Mortality", "The rite holds joy and fragility together. New life is celebrated, yet the realities of blood and mortality still require cleansing before sanctuary access."],
-      ["Poor Person's Offering", "The allowance for birds reveals mercy in the law. Access to restoration did not depend on wealth."],
-      ["Mary's Participation", "Luke's reference shows the Messiah entering Israel's sanctuary rhythms from infancy."]
+      ["Birth and Mortality", "The rite held joy and frailty in the same frame. A child had been born, yet blood and mortality still marked human life east of Eden."],
+      ["Poor Person's Offering", "The provision for birds made restoration possible for the poor. Access to worship was never meant to depend on wealth."],
+      ["Mary's Participation", "Luke's brief reference places the Messiah within Israel's sanctuary rhythms from the beginning of His life."]
     ],
     sourceInsights: [],
   },
@@ -342,17 +342,17 @@ export const specialCeremonies = [
     text: "Leviticus 15; Mark 5:25-34",
     icon: "≈",
     summary:
-      "Leviticus 15 addresses bodily discharges that interrupt ordinary holiness and sanctuary access, showing that the life of the body matters in the presence of a holy God.",
+      "Leviticus 15 addresses normal and abnormal bodily discharges that affected ritual cleanness and sanctuary access. The chapter treats the body seriously without turning bodily weakness into moral guilt.",
     columns: [
-      ["Practical Procedure", "The person with an abnormal discharge washed, waited until the condition ceased, counted seven clean days, washed again, and brought two birds: one for purification and one for burnt offering. Ordinary bodily emissions required washing and waiting before restored cleanness."],
-      ["Sanctuary Meaning", "The rite protected the sanctuary from impurity associated with loss of life fluids, disorder, and mortality. It also provided a path back to cleanness, so impurity was not permanent exile."],
-      ["Fulfillment in Christ", "Jesus heals the woman with the issue of blood without fear of contamination. His holiness is not fragile; it restores. He brings cleansing, dignity, and peace to the one who has lived under shame and exclusion."],
-      ["Devotional Response", "God cares about hidden suffering. The ceremony invites people to bring shame, weakness, and bodily brokenness to the One whose holiness heals rather than humiliates."]
+      ["Practical Procedure", "For an abnormal discharge, the person washed, waited for the condition to end, counted seven days, washed again, and brought two birds, one as a purification offering and one as a burnt offering. Normal emissions also required washing and a period of waiting."],
+      ["Sanctuary Meaning", "Loss of life fluids placed a person temporarily outside ordinary sacred participation. The law protected the sanctuary while also providing a clear way back; impurity was never meant to become permanent exile."],
+      ["Fulfillment in Christ", "When Jesus met the woman with the flow of blood, He did not recoil. His holiness brought healing rather than contamination, and He restored her health, dignity, and peace."],
+      ["Devotional Response", "Hidden bodily suffering can carry deep shame. This law and its gospel fulfillment show a God who sees the whole person and whose holiness heals rather than humiliates."]
     ],
     ritualForm: [
-      ["Waiting and Washing", "The process respects time, bodily reality, and restored order. Cleansing is not rushed or denied."],
-      ["Two Birds", "The offerings bring the restored person back through purification and renewed dedication."],
-      ["From Shame to Peace", "The gospel fulfillment shows that Christ restores both access and personal dignity."]
+      ["Waiting and Washing", "The process made room for time, recovery, washing, and verified return. It did not pretend the body was irrelevant or rush restoration."],
+      ["Two Birds", "The two birds marked purification and renewed dedication as the person returned to worship."],
+      ["From Shame to Peace", "In Christ, restored access and restored dignity belong together."]
     ],
     sourceInsights: [],
   },
@@ -364,17 +364,17 @@ export const specialCeremonies = [
     text: "Exodus 24:1-11; Hebrews 9:18-22",
     icon: "✶",
     summary:
-      "At Sinai, blood was applied to altar and people, joining God and Israel in covenant relationship under the words of the book and the mercy of sacrifice.",
+      "At Sinai, blood touched both altar and people. God and Israel entered covenant under the words Moses read and the sacrifice God accepted.",
     columns: [
-      ["Practical Procedure", "Moses built an altar and twelve pillars, offered burnt offerings and peace offerings, read the book of the covenant, and sprinkled blood on the altar and the people. The elders then ascended and ate a covenant meal before God."],
-      ["Sanctuary Meaning", "The altar represented God's side of the covenant, and the people received the same blood. Covenant life was founded on sacrifice, word, response, and communion. Israel's obedience was framed by blood before it became national mission."],
-      ["Fulfillment in Christ", "Jesus inaugurates the new covenant with His own blood. The covenant meal finds its gospel center in the Lord's Supper, where Christ gives His people participation in the benefits of His sacrifice."],
-      ["Devotional Response", "Covenant faith is not vague admiration. It hears the word, says yes to God, receives the blood of the covenant, and comes to the table in grateful communion."]
+      ["Practical Procedure", "Moses built an altar with twelve pillars, offered burnt and peace offerings, read the covenant book, and sprinkled blood on the altar and the people. Then the elders went up and ate before God."],
+      ["Sanctuary Meaning", "The altar represented the divine side of the covenant, while the same blood marked the people. Word, sacrifice, response, and fellowship all belonged together. Israel's calling to obey began under mercy."],
+      ["Fulfillment in Christ", "Jesus established the new covenant with His own blood. At the Lord's Supper, He gives His people a meal through which they remember and receive the benefits of His sacrifice."],
+      ["Devotional Response", "Covenant faith listens and answers. It receives God's word, rests under the blood He provides, and comes to His table with gratitude."]
     ],
     ritualForm: [
-      ["Book and Blood", "The covenant is both spoken and sealed. God's word defines the relationship, and blood makes the relationship possible for sinners."],
-      ["Altar and People", "The same blood links God's altar and Israel, binding worship, obedience, and mercy together."],
-      ["Covenant Meal", "The rite ends in fellowship, showing that sacrificial covenant aims at communion with God."]
+      ["Book and Blood", "God spoke the terms, and blood sealed the relationship. His word gave the covenant its shape; sacrifice made covenant fellowship possible for sinners."],
+      ["Altar and People", "One blood touched altar and people, binding mercy, worship, and obedience in a single covenant act."],
+      ["Covenant Meal", "The ceremony ended with a meal in God's presence. Sacrifice aimed at fellowship, not distance."]
     ],
     sourceInsights: [],
   },
@@ -386,17 +386,17 @@ export const specialCeremonies = [
     text: "Leviticus 9; Numbers 7; Exodus 40:34-38",
     icon: "▰",
     summary:
-      "The tabernacle and altar dedication inaugurated sanctuary ministry, culminating in fire from the Lord and the visible glory of God among His people.",
+      "The dedication of the tabernacle and altar marked the beginning of sanctuary ministry. The climax came when God's glory appeared and fire from His presence consumed the offering.",
     columns: [
-      ["Practical Procedure", "The sanctuary was set up, anointed, and sanctified. Leaders brought dedication offerings, and Aaron offered sacrifices for himself and the people. When the service was completed, the glory of the Lord appeared, and fire came out from before the Lord to consume the offering."],
-      ["Sanctuary Meaning", "The dedication showed that the sanctuary was not a human religious project. God accepted the altar, authorized the priesthood, and filled the dwelling with His presence. Ministry began under divine glory and divine fire."],
-      ["Fulfillment in Christ", "Christ is the true meeting place between God and humanity. His sacrifice is accepted, His priesthood is authorized by resurrection, and through Him God's presence dwells with His people by the Spirit."],
-      ["Devotional Response", "Worship should seek God's acceptance, not human spectacle. Dedication means yielding the whole space of life to God's presence, order, and fire."]
+      ["Practical Procedure", "The sanctuary was erected, anointed, and set apart. Tribal leaders brought gifts, and Aaron offered sacrifices for himself and the people. When the service was complete, the glory of the Lord appeared and divine fire consumed the offering."],
+      ["Sanctuary Meaning", "This was not a shrine Israel had invented and asked God to bless. God accepted the altar, authorized the priesthood, and filled the tent with His presence."],
+      ["Fulfillment in Christ", "Jesus is the true meeting place of God and humanity. The Father accepted His sacrifice, vindicated His priesthood by raising Him from the dead, and now dwells among His people through the Spirit."],
+      ["Devotional Response", "Worship seeks God's presence and approval, not religious spectacle. Dedication means giving the spaces and practices of life over to His order and use."]
     ],
     ritualForm: [
-      ["Anointed Space", "Objects, altar, and priesthood are set apart together. Holy service requires a holy environment and holy mediation."],
-      ["Accepted Fire", "The fire from the Lord confirms that God receives the offering and authorizes the sanctuary system."],
-      ["Glory Among People", "The goal is presence: sacrifice and priesthood lead to God dwelling with His people."]
+      ["Anointed Space", "Tent, altar, objects, and priests were set apart together. Holy ministry involved both consecrated servants and a consecrated setting."],
+      ["Accepted Fire", "Fire from the Lord publicly confirmed that the sacrifice was accepted and the sanctuary ministry authorized."],
+      ["Glory Among People", "The goal was God's presence among His people. Sacrifice and priesthood served that purpose."]
     ],
     sourceInsights: [],
   },
@@ -408,17 +408,17 @@ export const specialCeremonies = [
     text: "Exodus 13:1-16; Numbers 18:15-17; Luke 2:22-24",
     icon: "⚑",
     summary:
-      "The redemption of the firstborn remembered the Exodus, when God spared Israel's firstborn through blood and claimed the firstborn as belonging to Him.",
+      "The redemption of the firstborn kept the Exodus alive in family memory. Israel's firstborn had been spared under the sign of blood and therefore belonged to the Lord.",
     columns: [
-      ["Practical Procedure", "Israel consecrated the firstborn to the Lord. Clean firstborn animals were offered, while unclean animals and firstborn sons were redeemed according to God's instruction. The rite taught each generation to remember deliverance from Egypt."],
-      ["Sanctuary Meaning", "The firstborn belonged to God because God had redeemed Israel by judgment and mercy. Redemption meant substitution: the spared life was not self-owned but returned to God in dedication."],
-      ["Fulfillment in Christ", "Jesus is presented in the temple as Mary's firstborn, yet He is also the true Firstborn who redeems others. He belongs wholly to the Father and gives Himself so the redeemed may belong to God."],
-      ["Devotional Response", "A redeemed life is not a private possession. God saves in order to claim, dedicate, and send. Remembering deliverance should shape family, worship, and identity."]
+      ["Practical Procedure", "Every firstborn was consecrated to God. Clean animals were offered; unclean animals and firstborn sons were redeemed according to His command. Each generation learned that its life rested on deliverance."],
+      ["Sanctuary Meaning", "Because God had spared Israel in judgment, the firstborn were His. Redemption involved substitution, and the life that was spared could no longer be treated as self-owned."],
+      ["Fulfillment in Christ", "Jesus was presented in the temple as Mary's firstborn. He is also the true Firstborn who belongs wholly to the Father and gives Himself to redeem many brothers and sisters."],
+      ["Devotional Response", "A redeemed life is not private property. God saves us, claims us, and gives us a place in His mission. Remembered deliverance shapes family, worship, and identity."]
     ],
     ritualForm: [
-      ["Memory of Exodus", "The rite turns family life into testimony. Children learn that they exist under the mercy of deliverance."],
-      ["Substitution", "A life is redeemed because another provision stands in its place. Belonging to God is grounded in rescue."],
-      ["Consecrated Identity", "The first and best belong to God, teaching gratitude before self-ownership."]
+      ["Memory of Exodus", "The rite turned family life into testimony. Children grew up hearing that they lived because God had shown mercy."],
+      ["Substitution", "A provision stood in place of the life being redeemed. Belonging to God began with rescue, not achievement."],
+      ["Consecrated Identity", "The first and best were returned to God, teaching gratitude before claims of self-ownership."]
     ],
     sourceInsights: [],
   }
@@ -431,17 +431,17 @@ export const serviceStudies = [
     title: "The Daily Service",
     label: "Continual mediation",
     summary:
-      "The daily service formed the foundation of Israel's sanctuary life. It taught that grace was continually available, that confessed sin could be transferred from the sinner, and that priestly mediation sustained covenant fellowship.",
+      "The daily service gave Israel a steady rhythm of grace. Sacrifice, confession, priestly ministry, light, bread, and incense taught that God remained available to His people and provided a way for covenant fellowship to continue.",
     steps: [
-      ["Morning and Evening Burnt Offering", "Each day began and ended with a lamb on the altar, with grain and drink offerings. The fire was kept burning, showing that Israel's relationship with God rested on continual substitution and dedication."],
-      ["Individual Sin and Guilt Offerings", "Throughout the year, worshipers brought offerings for specific sins. Through hand-laying, confession, slaughter, and blood application, guilt was removed from the sinner and symbolically borne by the sanctuary system."],
-      ["Holy Place Ministry", "Priests trimmed the lampstand, replenished oil, replaced the bread on the appointed rhythm, and burned incense morning and evening. Light, bread, and prayer formed the daily grammar of sanctified life."],
-      ["Transfer of Sin", "The daily service solved the sinner's immediate problem through forgiveness, but it also created the need for final cleansing. The record of confessed sin was not ignored; it awaited the Day of Atonement."]
+      ["Morning and Evening Burnt Offering", "Every morning and evening a lamb was offered with grain and drink offerings. The altar fire was kept alive, so each day began and ended under the sign of substitution, acceptance, and renewed dedication."],
+      ["Individual Sin and Guilt Offerings", "During the year, individuals brought purification and reparation offerings for particular wrongs. Confession, hand-laying, sacrifice, and the priest's handling of the blood removed guilt from the worshiper and placed the matter within God's sanctuary ministry."],
+      ["Holy Place Ministry", "Priests tended the lamps, supplied the oil, renewed the bread at its appointed time, and burned incense morning and evening. Light, nourishment, and prayer marked the ordinary life of the sanctuary."],
+      ["Transfer of Sin", "The daily rite brought genuine forgiveness, yet the sanctuary cycle still moved toward an annual cleansing. God did not forget the sins He forgave; He took responsibility for resolving them completely."]
     ],
     typology: [
-      ["Christ's Continual Intercession", "The morning and evening sacrifices and ascending incense prefigure Christ's unceasing priestly ministry. The believer does not approach God as though heaven must be persuaded to care; Christ already stands as the living Mediator whose merits are sufficient and whose intercession is constant."],
-      ["Daily Sustenance", "The lampstand and shewbread point to Christ as light and bread, continually sustaining the church by the Spirit and the Word. Sanctification is therefore not a burst of occasional religious intensity, but a daily receiving of illumination, nourishment, and prayerful communion."],
-      ["Confession With Assurance", "The daily service shows that forgiveness is real now, while the final eradication of sin belongs to the completed work of judgment and cleansing. Confession transfers the burden away from the sinner, but the sanctuary pattern also teaches that God will finally deal with the record, damage, and presence of sin."]
+      ["Christ's Continual Intercession", "The continual sacrifices and rising incense help us understand Christ's ongoing priesthood. We do not pray as though heaven were reluctant to receive us. Jesus already stands before the Father, and His sacrifice is fully sufficient."],
+      ["Daily Sustenance", "The lampstand and bread direct us to Christ as our light and life. Growth in holiness is usually quiet and daily: receiving the Spirit's guidance, feeding on the Word, and remaining in prayer."],
+      ["Confession With Assurance", "The daily service gives assurance in the present and hope for the future. The confessed sinner was forgiven, and the yearly service promised that God would also deal with sin's record, damage, and continuing presence."]
     ],
     texts: "Exodus 29:38-46; Exodus 30:7-10; Leviticus 4; Leviticus 6:8-13; Hebrews 7:25; 1 John 1:9."
   },
@@ -451,18 +451,18 @@ export const serviceStudies = [
     title: "The Yearly Service",
     label: "Final cleansing",
     summary:
-      "The yearly service reached its climax on Yom Kippur, the Day of Atonement. Once a year the sanctuary was cleansed, the accumulated record of confessed sin was removed, and the camp was called to solemn repentance.",
+      "The annual cycle reached its high point on the Day of Atonement. On that day the sanctuary was cleansed, Israel's confessed sins were removed from the sanctuary system, and the whole camp stood before God in solemn self-examination.",
     steps: [
-      ["Preparation and Humbling", "Israel was commanded to afflict the soul, cease ordinary work, and gather before God. The issue was not ordinary festivity but searching judgment and covenant loyalty."],
-      ["The High Priest Enters Within the Veil", "Only on this day did the high priest enter the Most Holy Place. He brought incense and blood before the ark, approaching the throne under the covering cloud of mediation."],
-      ["The Lord's Goat", "The goat for the Lord was slain as a sin offering. Its blood was sprinkled before and upon the mercy seat, cleansing the sanctuary from the sins and impurities of Israel."],
-      ["The Scapegoat", "After the sanctuary was cleansed, the high priest confessed Israel's sins over the live goat, which was led into the wilderness. This did not provide atonement by sacrifice; it represented the final removal and disposal of sin."],
-      ["A Clean Camp", "The day ended with sanctuary, priesthood, and people ritually cleansed. The yearly service announced that God's plan does not merely forgive sin; it finally removes it."]
+      ["Preparation and Humbling", "Israel set ordinary work aside and \"afflicted\" the soul in humility before God. This was a day for repentance, judgment, and renewed covenant loyalty, not ordinary celebration."],
+      ["The High Priest Enters Within the Veil", "Only on this day did the high priest pass the inner curtain. Incense covered the mercy seat as he brought sacrificial blood into the presence of God's throne."],
+      ["The Lord's Goat", "The goat chosen for the Lord became the purification offering for the people. Its blood was taken within the veil and used to cleanse the sanctuary from Israel's sins and impurities."],
+      ["The Scapegoat", "When the cleansing was complete, the high priest placed Israel's sins on the live goat, which was sent away into the wilderness. The goat was not a sacrifice and did not make atonement; it carried the removed sins away from the camp."],
+      ["A Clean Camp", "By the end of the rite, sanctuary, priesthood, and people were clean. The day promised that God's answer to sin would go beyond pardon to its final removal."]
     ],
     typology: [
-      ["Investigative Judgment", "Daniel 8:14 connects sanctuary cleansing with God's end-time answer to evil. Adventist interpretation sees the antitypical Day of Atonement as Christ's final heavenly ministry, where the claims of the gospel, the reality of faith, and the justice of God's government are openly demonstrated."],
-      ["Vindication of God", "The judgment concerns more than human destiny. It also vindicates God's justice, mercy, law, and saving character before the universe. The same throne that exposes sin also reveals that God has acted righteously in forgiving, restoring, and finally cleansing His people."],
-      ["Final Removal of Sin", "Azazel represents the final disposal of sin and responsibility after atonement has been completed by the Lord's provision. The live goat does not save; it bears away responsibility after sacrificial atonement has already been made, pointing to the ultimate end of sin's author and sin's effects."]
+      ["Investigative Judgment", "Daniel 8:14 places sanctuary cleansing within God's end-time answer to evil. Adventists understand the antitypical Day of Atonement as Christ's closing phase of heavenly ministry, in which the reality of faith and the justice of God's saving work are brought into the open."],
+      ["Vindication of God", "The judgment concerns God's character as well as human destiny. Before the universe, He shows that His law is just, His mercy is trustworthy, and His decision to forgive and restore His people is righteous."],
+      ["Final Removal of Sin", "After atonement was completed through the Lord's goat, the live goat carried the sins away. In the larger biblical story, Azazel points to the final accountability of the originator of sin and the complete removal of sin's effects. The goat does not save; it bears away what has already been dealt with by atonement."]
     ],
     texts: "Leviticus 16; Leviticus 23:26-32; Daniel 7:9-14; Daniel 8:14; Hebrews 8-9; Revelation 11:19."
   }
