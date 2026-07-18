@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=article-icons-1" />
+    <link rel="stylesheet" href="styles.css?v=accessibility-2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&family=Literata:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
@@ -77,35 +77,35 @@
         </a>
 
         <nav class="tab-nav" aria-label="Primary sections">
-          <button class="nav-tab active" data-view="structure">
+          <button class="nav-tab active" type="button" data-view="structure" aria-pressed="true">
             <span class="icon stack-icon" aria-hidden="true"></span>
             Structure
           </button>
-          <button class="nav-tab" data-view="map">
+          <button class="nav-tab" type="button" data-view="map" aria-pressed="false">
             <span class="icon cube-icon" aria-hidden="true"></span>
             3D View
           </button>
-          <button class="nav-tab" data-view="ministry">
+          <button class="nav-tab" type="button" data-view="ministry" aria-pressed="false">
             <span class="icon target-icon" aria-hidden="true"></span>
             Ministry
           </button>
-          <button class="nav-tab" data-view="attire">
+          <button class="nav-tab" type="button" data-view="attire" aria-pressed="false">
             <span class="icon attire-icon" aria-hidden="true"></span>
             Priestly Attire
           </button>
-          <button class="nav-tab" data-view="calendar">
+          <button class="nav-tab" type="button" data-view="calendar" aria-pressed="false">
             <span class="icon calendar-icon" aria-hidden="true"></span>
             Festival Calendar
           </button>
-          <button class="nav-tab" data-view="focus1844">
+          <button class="nav-tab" type="button" data-view="focus1844" aria-pressed="false">
             <span class="icon clock-icon" aria-hidden="true"></span>
             1844 Focus
           </button>
-          <button class="nav-tab" data-view="faq">
+          <button class="nav-tab" type="button" data-view="faq" aria-pressed="false">
             <span class="icon book-icon" aria-hidden="true"></span>
             FAQ
           </button>
-          <button class="nav-tab" data-view="chronicles">
+          <button class="nav-tab" type="button" data-view="chronicles" aria-pressed="false">
             <span class="icon book-icon" aria-hidden="true"></span>
             Chronicles
           </button>
@@ -157,32 +157,33 @@
                   <button class="scene-orbit-button" type="button" data-scene-control="orbitDown" aria-label="Orbit downward" title="Orbit downward">↓</button>
                   <span aria-hidden="true"></span>
                 </div>
-                <canvas id="sanctuary-canvas" width="1280" height="760" aria-label="Interactive sanctuary 3D map"></canvas>
+                <p id="sanctuary-canvas-description" class="visually-hidden">The 3D model is a visual companion. Use the labeled view, layer, orbit, and guided-path controls to explore it. The same sanctuary articles are available from the Structure section.</p>
+                <canvas id="sanctuary-canvas" width="1280" height="760" role="img" aria-label="Visual 3D model of the biblical sanctuary" aria-describedby="sanctuary-canvas-description"></canvas>
                 <div id="scene-tooltip" class="scene-tooltip" hidden></div>
               </div>
-              <div id="scene-path-caption" class="scene-path-caption" hidden></div>
+              <div id="scene-path-caption" class="scene-path-caption" aria-live="polite" aria-atomic="true" hidden></div>
             </div>
             <div class="scene-control-dock" aria-label="3D study controls">
               <div class="scene-control-group" aria-label="View presets">
-                <button class="scene-chip active" type="button" data-scene-view="side">Side Cutaway</button>
-                <button class="scene-chip" type="button" data-scene-view="top">Top View</button>
-                <button class="scene-chip" type="button" data-scene-view="walk">Walkthrough</button>
-                <button class="scene-chip" type="button" data-scene-view="holy">Holy Place</button>
-                <button class="scene-chip" type="button" data-scene-view="mostHoly">Most Holy</button>
+                <button class="scene-chip active" type="button" data-scene-view="side" aria-pressed="true">Side Cutaway</button>
+                <button class="scene-chip" type="button" data-scene-view="top" aria-pressed="false">Top View</button>
+                <button class="scene-chip" type="button" data-scene-view="walk" aria-pressed="false">Walkthrough</button>
+                <button class="scene-chip" type="button" data-scene-view="holy" aria-pressed="false">Holy Place</button>
+                <button class="scene-chip" type="button" data-scene-view="mostHoly" aria-pressed="false">Most Holy</button>
               </div>
               <div class="scene-control-group scene-control-group--layers" aria-label="Layer toggles">
-                <button class="scene-chip active" type="button" data-scene-layer="court">Court</button>
-                <button class="scene-chip active" type="button" data-scene-layer="furniture">Furniture</button>
-                <button class="scene-chip active" type="button" data-scene-layer="priest">Priest</button>
-                <button class="scene-chip active" type="button" data-scene-layer="veils">Veils</button>
-                <button class="scene-chip active" type="button" data-scene-layer="coverings">Coverings</button>
-                <button class="scene-chip active" type="button" data-scene-layer="camp">Camp</button>
+                <button class="scene-chip active" type="button" data-scene-layer="court" aria-pressed="true">Court</button>
+                <button class="scene-chip active" type="button" data-scene-layer="furniture" aria-pressed="true">Furniture</button>
+                <button class="scene-chip active" type="button" data-scene-layer="priest" aria-pressed="true">Priest</button>
+                <button class="scene-chip active" type="button" data-scene-layer="veils" aria-pressed="true">Veils</button>
+                <button class="scene-chip active" type="button" data-scene-layer="coverings" aria-pressed="true">Coverings</button>
+                <button class="scene-chip active" type="button" data-scene-layer="camp" aria-pressed="true">Camp</button>
               </div>
               <div class="scene-control-group scene-control-group--paths" aria-label="Guided study paths">
-                <button class="scene-chip scene-chip--path" type="button" data-scene-path="sinner">Path of the Sinner</button>
-                <button class="scene-chip scene-chip--path" type="button" data-scene-path="daily">Daily Service</button>
-                <button class="scene-chip scene-chip--path" type="button" data-scene-path="atonement">Day of Atonement</button>
-                <button class="scene-chip scene-chip--path" type="button" data-scene-path="christ">Christ in Every Article</button>
+                <button class="scene-chip scene-chip--path" type="button" data-scene-path="sinner" aria-pressed="false">Path of the Sinner</button>
+                <button class="scene-chip scene-chip--path" type="button" data-scene-path="daily" aria-pressed="false">Daily Service</button>
+                <button class="scene-chip scene-chip--path" type="button" data-scene-path="atonement" aria-pressed="false">Day of Atonement</button>
+                <button class="scene-chip scene-chip--path" type="button" data-scene-path="christ" aria-pressed="false">Christ in Every Article</button>
                 <button class="scene-chip scene-chip--stop" type="button" data-scene-path="stop">Stop</button>
               </div>
             </div>
@@ -213,7 +214,7 @@
             <h1 id="calendar-title">Festival Calendar</h1>
             <p>The seven Hebrew feasts trace the calendar of redemption from the cross to final dwelling with God.</p>
           </div>
-          <div id="feast-tabs" class="feast-tabs" role="tablist" aria-label="Hebrew feasts"></div>
+          <div id="feast-tabs" class="feast-tabs" role="group" aria-label="Hebrew feasts"></div>
           <article id="feast-detail" class="feast-detail"></article>
         </section>
 
@@ -258,7 +259,7 @@
         }
       }
     </script>
-    <script type="module" src="app.js?v=article-icons-1"></script>
+    <script type="module" src="app.js?v=accessibility-2"></script>
     <footer class="mbe-global-footer" data-tool="sanctuary">
       <div class="mbe-shell-wrap mbe-footer-wrap">
         <a class="mbe-footer-brand" href="https://mybibleexplorer.com" aria-label="My Bible Explorer home"><img class="mbe-footer-logo" src="https://mybibleexplorer.com/assets/my-bible-explorer-logo.png?v=mbe-20260715-1" alt="My Bible Explorer" width="107" height="34"></a>

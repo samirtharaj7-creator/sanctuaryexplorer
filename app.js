@@ -1,4 +1,4 @@
-import { SanctuaryThreeScene } from "./sanctuary-scene.js?v=focus-glow-4";
+import { SanctuaryThreeScene } from "./sanctuary-scene.js?v=accessibility-2";
 import { iconSvg, feastProcedureIcons } from "./content/icons.js";
 import { articles, articleEnhancements, phases } from "./content/articles.js";
 import { offerings, specialCeremonies, serviceStudies, ministryViews } from "./content/ministry.js";
@@ -105,6 +105,10 @@ function qs(selector, root = document) {
 
 function qsa(selector, root = document) {
   return [...root.querySelectorAll(selector)];
+}
+
+function focusAfterRender(selector) {
+  requestAnimationFrame(() => qs(selector)?.focus({ preventScroll: true }));
 }
 
 function html(strings, ...values) {
@@ -215,7 +219,7 @@ function renderMinistry(activeId = "sacrifices") {
   ministryState.active = activeView.id;
 
   qs("#ministry-content").innerHTML = html`
-    <div class="ministry-switcher" role="tablist" aria-label="Sanctuary ministry sections">
+    <div class="ministry-switcher" role="group" aria-label="Sanctuary ministry sections">
       ${ministryViews
         .map(view => {
           return html`
@@ -223,8 +227,7 @@ function renderMinistry(activeId = "sacrifices") {
               type="button"
               class="ministry-switch-card ${view.id === activeView.id ? "active" : ""}"
               data-ministry-view="${view.id}"
-              role="tab"
-              aria-selected="${view.id === activeView.id ? "true" : "false"}"
+              aria-pressed="${view.id === activeView.id ? "true" : "false"}"
             >
               <span class="ministry-icon ministry-icon--${view.id}" aria-hidden="true"></span>
               <strong>${view.title}</strong>
@@ -244,7 +247,7 @@ function renderMinistry(activeId = "sacrifices") {
                 <h2>The Sacrificial System</h2>
                 <p>Understanding the types, shadows, and modern application of the five major offerings.</p>
               </div>
-              <div id="offering-tabs" class="offering-tabs" role="tablist" aria-label="Sacrificial offerings"></div>
+              <div id="offering-tabs" class="offering-tabs" role="group" aria-label="Sacrificial offerings"></div>
               <article id="offering-detail" class="offering-detail"></article>
             `
           : ""
@@ -257,7 +260,7 @@ function renderMinistry(activeId = "sacrifices") {
                 <h2>Special Sacrifices and Ceremonies</h2>
                 <p>Unusual sanctuary rites that reveal cleansing, consecration, restoration, covenant identity, and belonging to God.</p>
               </div>
-              <div id="special-ceremony-tabs" class="offering-tabs special-ceremony-tabs" role="tablist" aria-label="Special sacrifices and ceremonies"></div>
+              <div id="special-ceremony-tabs" class="offering-tabs special-ceremony-tabs" role="group" aria-label="Special sacrifices and ceremonies"></div>
               <article id="special-ceremony-detail" class="offering-detail special-ceremony-detail"></article>
             `
           : ""
@@ -285,7 +288,7 @@ function renderMinistry(activeId = "sacrifices") {
 function renderOfferingTabs(activeId = offerings[0].id) {
   qs("#offering-tabs").innerHTML = offerings
     .map(
-      offering => `<button type="button" class="${offering.id === activeId ? "active" : ""}" data-offering="${offering.id}">${offering.tab}</button>`
+      offering => `<button type="button" class="${offering.id === activeId ? "active" : ""}" data-offering="${offering.id}" aria-pressed="${offering.id === activeId ? "true" : "false"}">${offering.tab}</button>`
     )
     .join("");
   renderOfferingDetail(activeId);
@@ -300,7 +303,7 @@ function renderSpecialCeremonyTabs(activeId = specialCeremonies[0].id) {
   qs("#special-ceremony-tabs").innerHTML = specialCeremonies
     .map(
       ceremony =>
-        `<button type="button" class="${ceremony.id === activeId ? "active" : ""}" data-special-ceremony="${ceremony.id}">${ceremony.tab}</button>`
+        `<button type="button" class="${ceremony.id === activeId ? "active" : ""}" data-special-ceremony="${ceremony.id}" aria-pressed="${ceremony.id === activeId ? "true" : "false"}">${ceremony.tab}</button>`
     )
     .join("");
   renderSpecialCeremonyDetail(activeId);
@@ -314,8 +317,8 @@ function renderSpecialCeremonyDetail(id) {
 function renderServices(activeId = serviceStudies[0].id || "daily") {
   const activeService = serviceStudies.find(service => service.id === activeId) || serviceStudies[0];
   qs("#services-content").innerHTML = html`
-    <div class="service-tabs" role="tablist" aria-label="Sanctuary services">
-      ${serviceStudies.map(service => `<button type="button" class="${service.id === activeService.id ? "active" : ""}" data-service="${service.id}">${service.tab}</button>`).join("")}
+    <div class="service-tabs" role="group" aria-label="Sanctuary services">
+      ${serviceStudies.map(service => `<button type="button" class="${service.id === activeService.id ? "active" : ""}" data-service="${service.id}" aria-pressed="${service.id === activeService.id ? "true" : "false"}">${service.tab}</button>`).join("")}
     </div>
     <article class="service-study-card">
       <header>
@@ -459,7 +462,7 @@ function renderPriestlyAttire(groupId = attireState.group, garmentId = attireSta
       </p>
     </article>
 
-    <div class="attire-toggle-row" role="tablist" aria-label="Priestly attire groups">
+    <div class="attire-toggle-row" role="group" aria-label="Priestly attire groups">
       ${attireGroups
         .map(
           item => html`
@@ -515,7 +518,7 @@ function renderPriestlyAttire(groupId = attireState.group, garmentId = attireSta
 
 function renderFeastTabs(activeId = feasts[0].id) {
   qs("#feast-tabs").innerHTML = feasts
-    .map(feast => `<button type="button" class="${feast.id === activeId ? "active" : ""}" data-feast="${feast.id}">${feast.name}</button>`)
+    .map(feast => `<button type="button" class="${feast.id === activeId ? "active" : ""}" data-feast="${feast.id}" aria-pressed="${feast.id === activeId ? "true" : "false"}">${feast.name}</button>`)
     .join("");
   renderFeastDetail(activeId);
 }
@@ -695,7 +698,7 @@ function renderFaqArticle(article) {
     <article class="faq-reader faq-article-shell">
       <header class="faq-reader-header">
         <span class="faq-category">${article.category}</span>
-        <h2>${article.title}</h2>
+        <h2 tabindex="-1">${article.title}</h2>
         <p>${article.subtitle}</p>
         <div class="faq-key-texts" aria-label="Key Bible passages">
           ${article.keyTexts.map(text => `<span>${text}</span>`).join("")}
@@ -913,7 +916,7 @@ function renderChronicleDeck(root) {
         </button>
         <section class="chronicle-story-panel chronicle-story-panel--text-only">
           <p class="chronicle-time">${sceneData.timeLabel} <span>Scene ${index + 1} of ${story.scenes.length}</span></p>
-          <h3>${sceneData.title}</h3>
+          <h3 tabindex="-1">${sceneData.title}</h3>
           <p class="chronicle-narrative">${sceneData.narrative}</p>
           <div class="chronicle-companion-notes">
             <aside class="chronicle-companion chronicle-companion--promise">
@@ -940,6 +943,7 @@ function setChronicleScene(index) {
   if (!story) return;
   chronicleState.sceneIndex = Math.max(0, Math.min(story.scenes.length - 1, index));
   renderChronicles();
+  focusAfterRender(`[data-chronicle-scene="${chronicleState.sceneIndex}"]`);
 }
 
 function renderFocusHeroChain() {
@@ -1085,7 +1089,7 @@ function renderFocusProphecyChart(activeMilestone) {
           .join("")}
       </div>
 
-      <div class="focus-timeline" role="tablist" aria-label="Daniel 8:14 prophecy timeline">
+      <div class="focus-timeline" role="group" aria-label="Daniel 8:14 prophecy timeline">
         ${focusTimeline
           .map(
             item => html`
@@ -1093,8 +1097,7 @@ function renderFocusProphecyChart(activeMilestone) {
                 type="button"
                 class="${item.id === activeMilestone.id ? "active" : ""}"
                 data-focus-milestone="${item.id}"
-                role="tab"
-                aria-selected="${item.id === activeMilestone.id ? "true" : "false"}"
+                aria-pressed="${item.id === activeMilestone.id ? "true" : "false"}"
               >
                 <i aria-hidden="true"></i>
                 <strong>${item.date}</strong>
@@ -1386,8 +1389,15 @@ function setView(requestedView) {
   }
 
   currentView = view;
-  qsa(".view-panel").forEach(panel => panel.classList.toggle("active", panel.id === view));
-  qsa(".nav-tab").forEach(tab => tab.classList.toggle("active", tab.dataset.view === view));
+  qsa(".view-panel").forEach(panel => {
+    const active = panel.id === view;
+    panel.classList.toggle("active", active);
+  });
+  qsa(".nav-tab").forEach(tab => {
+    const active = tab.dataset.view === view;
+    tab.classList.toggle("active", active);
+    tab.setAttribute("aria-pressed", active ? "true" : "false");
+  });
   history.replaceState(null, "", `#${view}`);
   window.scrollTo({ top: 0, behavior: "auto" });
   if (view === "map") {
@@ -1411,6 +1421,7 @@ function bindUi() {
     const faqSelect = event.target.closest("[data-faq-select]");
     if (faqSelect) {
       openFaqArticle(faqSelect.value);
+      focusAfterRender("[data-faq-select]");
     }
   });
 
@@ -1418,6 +1429,7 @@ function bindUi() {
     const faqTrigger = event.target.closest("[data-faq-open]");
     if (faqTrigger) {
       openFaqArticle(faqTrigger.dataset.faqOpen);
+      focusAfterRender(".faq-reader-header h2");
       return;
     }
 
@@ -1444,6 +1456,7 @@ function bindUi() {
         sceneIndex: 0
       };
       renderChronicles();
+      focusAfterRender("[data-chronicle-story]");
       return;
     }
 
@@ -1457,6 +1470,7 @@ function bindUi() {
           sceneIndex: 0
         };
         renderChronicles();
+        focusAfterRender(".chronicle-story-panel h3");
       }
       return;
     }
@@ -1469,6 +1483,7 @@ function bindUi() {
         chronicleState = { ...chronicleState, storyId: null, sceneIndex: 0 };
       }
       renderChronicles();
+      focusAfterRender(chronicleBack.dataset.chronicleBack === "perspectives" ? "[data-chronicle-perspective]" : "[data-chronicle-story]");
       return;
     }
 
@@ -1492,30 +1507,46 @@ function bindUi() {
 
     const focusMilestone = event.target.closest("[data-focus-milestone]");
     if (focusMilestone) {
-      renderFocus1844(focusMilestone.dataset.focusMilestone);
+      const milestoneId = focusMilestone.dataset.focusMilestone;
+      renderFocus1844(milestoneId);
+      focusAfterRender(`[data-focus-milestone="${milestoneId}"]`);
       return;
     }
 
     const feastLink = event.target.closest("[data-feast-link]");
     if (feastLink) {
-      setView(feastLink.dataset.view || "calendar");
-      renderFeastTabs(feastLink.dataset.feastLink);
+      const viewId = feastLink.dataset.view || "calendar";
+      const feastId = feastLink.dataset.feastLink;
+      setView(viewId);
+      renderFeastTabs(feastId);
+      focusAfterRender(`[data-feast="${feastId}"]`);
       return;
     }
 
     const navTrigger = event.target.closest("[data-view]");
     if (navTrigger) {
-      setView(navTrigger.dataset.view);
+      const viewId = navTrigger.dataset.view;
+      setView(viewId);
+      focusAfterRender(`.nav-tab[data-view="${normalizeViewRequest(viewId).view}"]`);
       return;
     }
 
     const ministryTrigger = event.target.closest("[data-ministry-view]");
     if (ministryTrigger) {
-      renderMinistry(ministryTrigger.dataset.ministryView);
+      const ministryId = ministryTrigger.dataset.ministryView;
+      renderMinistry(ministryId);
       currentView = "ministry";
-      qsa(".view-panel").forEach(panel => panel.classList.toggle("active", panel.id === "ministry"));
-      qsa(".nav-tab").forEach(tab => tab.classList.toggle("active", tab.dataset.view === "ministry"));
+      qsa(".view-panel").forEach(panel => {
+        const active = panel.id === "ministry";
+        panel.classList.toggle("active", active);
+      });
+      qsa(".nav-tab").forEach(tab => {
+        const active = tab.dataset.view === "ministry";
+        tab.classList.toggle("active", active);
+        tab.setAttribute("aria-pressed", active ? "true" : "false");
+      });
       history.replaceState(null, "", "#ministry");
+      focusAfterRender(`[data-ministry-view="${ministryId}"]`);
       return;
     }
 
@@ -1527,40 +1558,58 @@ function bindUi() {
 
     const offeringTrigger = event.target.closest("[data-offering]");
     if (offeringTrigger) {
-      qsa("#offering-tabs button").forEach(button => button.classList.toggle("active", button === offeringTrigger));
+      qsa("#offering-tabs button").forEach(button => {
+        const active = button === offeringTrigger;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
       renderOfferingDetail(offeringTrigger.dataset.offering);
       return;
     }
 
     const specialCeremonyTrigger = event.target.closest("[data-special-ceremony]");
     if (specialCeremonyTrigger) {
-      qsa("#special-ceremony-tabs button").forEach(button => button.classList.toggle("active", button === specialCeremonyTrigger));
+      qsa("#special-ceremony-tabs button").forEach(button => {
+        const active = button === specialCeremonyTrigger;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
       renderSpecialCeremonyDetail(specialCeremonyTrigger.dataset.specialCeremony);
       return;
     }
 
     const serviceTrigger = event.target.closest("[data-service]");
     if (serviceTrigger) {
-      renderServices(serviceTrigger.dataset.service);
+      const serviceId = serviceTrigger.dataset.service;
+      renderServices(serviceId);
+      focusAfterRender(`[data-service="${serviceId}"]`);
       return;
     }
 
     const attireGroupTrigger = event.target.closest("[data-attire-group]");
     if (attireGroupTrigger) {
-      const group = attireGroups.find(item => item.id === attireGroupTrigger.dataset.attireGroup);
+      const groupId = attireGroupTrigger.dataset.attireGroup;
+      const group = attireGroups.find(item => item.id === groupId);
       renderPriestlyAttire(group?.id, group?.defaultGarment);
+      focusAfterRender(`[data-attire-group="${groupId}"]`);
       return;
     }
 
     const attireGarmentTrigger = event.target.closest("[data-attire-garment]");
     if (attireGarmentTrigger) {
-      renderPriestlyAttire(attireState.group, attireGarmentTrigger.dataset.attireGarment);
+      const garmentId = attireGarmentTrigger.dataset.attireGarment;
+      renderPriestlyAttire(attireState.group, garmentId);
+      focusAfterRender(`[data-attire-garment="${garmentId}"]`);
       return;
     }
 
     const feastTrigger = event.target.closest("[data-feast]");
     if (feastTrigger) {
-      qsa("#feast-tabs button").forEach(button => button.classList.toggle("active", button === feastTrigger));
+      qsa("#feast-tabs button").forEach(button => {
+        const active = button === feastTrigger;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
       renderFeastDetail(feastTrigger.dataset.feast);
     }
   });

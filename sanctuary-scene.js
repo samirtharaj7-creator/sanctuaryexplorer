@@ -316,7 +316,6 @@ export class SanctuaryThreeScene {
       button.addEventListener("pointerdown", event => event.preventDefault());
       button.addEventListener("click", () => {
         this.handleSceneControl(button.dataset.sceneControl);
-        button.blur();
       });
     });
   }
@@ -1556,6 +1555,7 @@ export class SanctuaryThreeScene {
     if (group.visible) this.activeLayers.add(layer);
     else this.activeLayers.delete(layer);
     button?.classList.toggle("active", group.visible);
+    button?.setAttribute("aria-pressed", group.visible ? "true" : "false");
     this.needsRender = true;
   }
 
@@ -1563,7 +1563,11 @@ export class SanctuaryThreeScene {
     const preset = VIEW_PRESETS[viewId] || VIEW_PRESETS.side;
     this.stopPath();
     this.setVeilFocusMode(null);
-    this.viewButtons.forEach(button => button.classList.toggle("active", button.dataset.sceneView === viewId));
+    this.viewButtons.forEach(button => {
+      const active = button.dataset.sceneView === viewId;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
     this.moveCamera(vector(preset.camera), vector(preset.target), animate ? 0.7 : 0);
   }
 
@@ -1917,7 +1921,11 @@ export class SanctuaryThreeScene {
     const path = STUDY_PATHS[pathId];
     if (!path) return;
     this.stopPath(false);
-    this.pathButtons.forEach(button => button.classList.toggle("active", button.dataset.scenePath === pathId));
+    this.pathButtons.forEach(button => {
+      const active = button.dataset.scenePath === pathId;
+      button.classList.toggle("active", active);
+      if (button.hasAttribute("aria-pressed")) button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
     this.currentPath = path;
     this.currentPathSettings = STUDY_PATH_SETTINGS[pathId] || STUDY_PATH_SETTINGS.default;
     this.pathStep = 0;
@@ -1948,7 +1956,11 @@ export class SanctuaryThreeScene {
     const cinematic = CINEMATIC_PATHS[pathId];
     if (!cinematic) return;
     this.stopPath(false);
-    this.pathButtons.forEach(button => button.classList.toggle("active", button.dataset.scenePath === pathId));
+    this.pathButtons.forEach(button => {
+      const active = button.dataset.scenePath === pathId;
+      button.classList.toggle("active", active);
+      if (button.hasAttribute("aria-pressed")) button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
     this.currentCinematicPath = cinematic.steps;
     this.currentPathSettings = cinematic;
     this.pathStep = 0;
@@ -2041,7 +2053,10 @@ export class SanctuaryThreeScene {
     this.setGuidedCaptionMode(false);
     this.setVeilFocusMode(null);
     this.clearHighlight();
-    this.pathButtons.forEach(button => button.classList.remove("active"));
+    this.pathButtons.forEach(button => {
+      button.classList.remove("active");
+      if (button.hasAttribute("aria-pressed")) button.setAttribute("aria-pressed", "false");
+    });
     if (clearCaption && this.caption) {
       this.caption.hidden = true;
       this.caption.innerHTML = "";

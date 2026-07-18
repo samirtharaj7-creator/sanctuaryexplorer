@@ -5,6 +5,6 @@
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 3001",
-    "check": "node --check app.js && node --check sanctuary-scene.js"
+    "check": "node --check app.js && node --check sanctuary-scene.js && node scripts/validate-accessibility.mjs"
   }
 }
