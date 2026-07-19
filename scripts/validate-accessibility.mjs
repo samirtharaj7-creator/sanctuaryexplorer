@@ -24,7 +24,7 @@ const assertPressed = (attribute, expected) => {
   });
 };
 
-assertPressed("data-view", 8);
+assertPressed("data-view", 9);
 assertPressed("data-scene-view", 5);
 assertPressed("data-scene-layer", 6);
 const pathButtons = tagsWith("data-scene-path");
@@ -62,4 +62,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log("Sanctuary accessibility validation passed: 18 registered states expose truthful button state, inappropriate tab roles are absent, focus is preserved, and the visual scene is described.");
+console.log("Sanctuary accessibility validation passed: 20 registered states expose truthful button state, inappropriate tab roles are absent, focus is preserved, and the visual scene is described.");

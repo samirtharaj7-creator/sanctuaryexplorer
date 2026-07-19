@@ -1,20 +1,17 @@
 # Sanctuary Explorer
 
-A public static deployment package for Sanctuary Explorer.
+A public static deployment package for Sanctuary Explorer, hosted with GitHub Pages.
 
 ## What Is Included
 
-- `index.html`
-- `styles.css`
-- `app.js`
-- `sanctuary-scene.js`
-- local Three.js files under `vendor/three/`
+- `index.html`, `styles.css`, and `app.js`
+- `sanctuary-scene.js` and local Three.js files under `vendor/three/`
+- the public Explorer AI interface
+- the Cloudflare Worker source under `cloudflare-worker/`
 
-## What Is Not Included
+The private source books, `.sanctuary-ai` index, Ollama/local AI server files, and ingestion scripts are intentionally not included. Do not upload those private files to GitHub or Cloudflare.
 
-The private source books, `.sanctuary-ai` index, Ollama/local AI server files, and ingestion scripts are intentionally not included. Do not upload those private files to GitHub or Vercel.
-
-## Test Locally
+## Test The Static Site Locally
 
 From this folder:
 
@@ -22,35 +19,93 @@ From this folder:
 python3 -m http.server 3001
 ```
 
-Open:
+Open `http://127.0.0.1:3001`. The interface works through this static preview, but live AI answers require the deployed Worker or a separately running local Worker.
+
+## Deploy With GitHub Pages
+
+Push this repository to GitHub. In the repository, open **Settings > Pages**, select the branch and root folder containing `index.html`, and save. The `CNAME` file points the published site to `https://sanctuary.mybibleexplorer.com`.
+
+## Explorer AI Architecture
+
+Explorer AI uses the existing Pinecone Assistant named `sanctuary-assistant`:
 
 ```text
-http://127.0.0.1:3001
+GitHub Pages → Cloudflare Worker → Pinecone Assistant
 ```
 
-## Deploy With GitHub And Vercel
+The Worker in `cloudflare-worker/src/index.js` calls Pinecone with a server-side secret. The key is never placed in GitHub Pages or sent to visitors. Answers include source filenames and page numbers, while private signed file URLs are intentionally removed.
 
-1. Create a new empty GitHub repository.
-2. In Terminal, open this folder.
-3. Run:
+The Worker validates the requesting origin and conversation size. The included Wrangler configuration also creates a rate-limiting binding that allows ten chat requests per IP per minute in each Cloudflare location.
 
-```bash
-git init
-git add .
-git commit -m "Initial Sanctuary Explorer deployment"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-git push -u origin main
-```
+## Deploy The Worker With Wrangler
 
-4. Go to Vercel and choose **Add New Project**.
-5. Import the GitHub repository.
-6. Use these settings:
-   - Framework Preset: **Other**
-   - Build Command: leave blank
-   - Output Directory: leave blank or `.`
-7. Click **Deploy**.
+1. Create a free Cloudflare account if needed.
+2. In Terminal, open this repository and enter the Worker folder:
 
-## Explorer AI Note
+   ```bash
+   cd cloudflare-worker
+   ```
 
-The Explorer AI feature is local/private because it depends on Ollama and your private book index on your Mac. This public deployment package removes that tab so visitors do not see a broken AI feature. A public AI version would require a separate hosted backend and careful source/copyright handling.
+3. Sign in to Cloudflare:
+
+   ```bash
+   npx wrangler login
+   ```
+
+4. Add the Pinecone key as an encrypted Worker secret:
+
+   ```bash
+   npx wrangler secret put PINECONE_API_KEY
+   ```
+
+   Paste the complete `pckey_...` value only when Wrangler prompts for it. Never add the real value to a tracked file.
+
+5. Deploy the Worker:
+
+   ```bash
+   npx wrangler deploy
+   ```
+
+6. Copy the final address printed by Wrangler, for example:
+
+   ```text
+   https://sanctuary-explorer-ai.YOUR-SUBDOMAIN.workers.dev
+   ```
+
+7. Open `content/ai-config.js` and set it to the deployed Worker address:
+
+   ```js
+   export const explorerAiEndpoint = "https://sanctuary-explorer-ai.YOUR-SUBDOMAIN.workers.dev";
+   ```
+
+8. Commit and push that public configuration change to GitHub. The Worker URL is safe to publish; the Pinecone key is not.
+9. Open `https://sanctuary-explorer-ai.YOUR-SUBDOMAIN.workers.dev/health`. It should return `{"ready":true}`.
+
+## Configure Through The Cloudflare Dashboard
+
+If deploying by pasting code in the dashboard instead of Wrangler:
+
+1. Go to **Workers & Pages > Create > Worker** and name it `sanctuary-explorer-ai`.
+2. Open **Edit code**, replace the starter code with `cloudflare-worker/src/index.js`, and deploy.
+3. Open the Worker’s **Settings > Variables and Secrets > Add**.
+4. Add `PINECONE_API_KEY` as type **Secret** and paste the complete Pinecone key.
+5. Add these ordinary text variables:
+   - `PINECONE_ASSISTANT_NAME` = `sanctuary-assistant`
+   - `PINECONE_ASSISTANT_HOST` = `https://prod-1-data.ke.pinecone.io`
+   - `PINECONE_API_VERSION` = `2026-04`
+   - `ALLOWED_ORIGINS` = `https://sanctuary.mybibleexplorer.com,http://127.0.0.1:4178,http://localhost:4178,http://127.0.0.1:3001,http://localhost:3001`
+6. Deploy the settings, copy the Worker address, and complete Wrangler steps 7–9 above.
+
+The dashboard-only method works without a rate-limit binding. For the included ten-requests-per-minute rate limiter, deploy through Wrangler with `wrangler.jsonc`.
+
+## Local Worker Testing
+
+Copy `cloudflare-worker/.dev.vars.example` to `cloudflare-worker/.dev.vars`, add the real Pinecone key to that untracked file, and run `npx wrangler dev` inside `cloudflare-worker`. Continue serving the website separately on port 3001 or 4178.
+
+## Recommended Pinecone Assistant Instructions
+
+Add this under **Assistant instructions** in Pinecone for more consistent public answers:
+
+> You are Explorer AI, a source-aware study assistant for Sanctuary Explorer. Answer questions about the biblical sanctuary, its services and furnishings, Christ's priestly ministry, and related prophecy using the uploaded library. Write clearly for readers with varied Bible knowledge. Base factual and theological claims on the retrieved sources, preserve meaningful distinctions between Scripture and interpretation, and say when the library does not provide enough support. Never invent quotations, page numbers, or sources. Encourage readers to verify important claims with Scripture and the cited material. Stay focused on sanctuary study; politely redirect unrelated requests.
+
+Pinecone applies these instructions to every conversation. They do not require re-uploading or re-ingesting the existing books.

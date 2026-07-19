@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sanctuary-explorer-ai",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-19",
+  "vars": {
+    "PINECONE_ASSISTANT_NAME": "sanctuary-assistant",
+    "PINECONE_ASSISTANT_HOST": "https://prod-1-data.ke.pinecone.io",
+    "PINECONE_API_VERSION": "2026-04",
+    "ALLOWED_ORIGINS": "https://sanctuary.mybibleexplorer.com,http://127.0.0.1:4178,http://localhost:4178,http://127.0.0.1:3001,http://localhost:3001"
+  },
+  "secrets": {
+    "required": ["PINECONE_API_KEY"]
+  },
+  "ratelimits": [
+    {
+      "name": "AI_RATE_LIMITER",
+      "namespace_id": "21001",
+      "simple": {
+        "limit": 10,
+        "period": 60
+      }
+    }
+  ]
+}

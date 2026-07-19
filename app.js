@@ -8,6 +8,7 @@ import { chroniclePerspectiveInfo, chronicleStories, chronicleCompanionNotes, do
 import { focusTimeline, focusStudyCards, focusHeroChain, focusLogicSteps, focusDanielLinkSteps, focusChartSegments, focusAssuranceCards } from "./content/focus-1844.js";
 import { faqArticles, polishedFaqArticles } from "./content/faq.js";
 import { siteCopy } from "./content/site-copy.js";
+import { explorerAiEndpoint } from "./content/ai-config.js?v=worker-live-1";
 
 
 Object.entries(articleEnhancements).forEach(([id, enhancement]) => {
@@ -98,6 +99,17 @@ let chronicleState = {
 let faqState = {
   articleId: "feasts-keep"
 };
+const aiExamples = [
+  "What does the laver teach about cleansing?",
+  "How does Daniel 8:14 connect to the Day of Atonement?",
+  "What happened during the daily sanctuary service?",
+  "How does the sanctuary point to Christ?"
+];
+let aiState = {
+  messages: [],
+  asking: false,
+  error: ""
+};
 
 function qs(selector, root = document) {
   return root.querySelector(selector);
@@ -113,6 +125,148 @@ function focusAfterRender(selector) {
 
 function html(strings, ...values) {
   return strings.reduce((out, str, i) => out + str + (values[i] ?? ""), "");
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function formatAiAnswer(value) {
+  return escapeHtml(value)
+    .replace(/\*\*([^*\n]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/__([^_\n]+)__/g, "<strong>$1</strong>")
+    .split(/\n{2,}/)
+    .filter(Boolean)
+    .map(paragraph => `<p>${paragraph.replaceAll("\n", "<br>")}</p>`)
+    .join("");
+}
+
+function renderAiCitations(citations = []) {
+  if (!citations.length) return "";
+  return html`
+    <details class="ai-citations">
+      <summary>${citations.length} ${citations.length === 1 ? "source" : "sources"}</summary>
+      <ol>
+        ${citations
+          .map(citation => {
+            const pages = citation.pages?.length
+              ? ` · ${citation.pages.length === 1 ? "page" : "pages"} ${citation.pages.join(", ")}`
+              : "";
+            return `<li><span>${escapeHtml(citation.name)}</span>${escapeHtml(pages)}</li>`;
+          })
+          .join("")}
+      </ol>
+    </details>
+  `;
+}
+
+function renderExplorerAi() {
+  const root = qs("#ai-root");
+  if (!root) return;
+
+  const transcript = aiState.messages.length
+    ? aiState.messages
+        .map(
+          message => html`
+            <article class="ai-message ai-message--${message.role}">
+              <span class="ai-message-label">${message.role === "user" ? "You" : "Explorer AI"}</span>
+              <div class="ai-message-content">${formatAiAnswer(message.content)}</div>
+              ${message.role === "assistant" ? renderAiCitations(message.citations) : ""}
+            </article>
+          `
+        )
+        .join("")
+    : html`
+        <div class="ai-welcome">
+          <span class="ai-welcome-mark" aria-hidden="true">✦</span>
+          <h2>What would you like to explore?</h2>
+        </div>
+      `;
+
+  root.innerHTML = html`
+    <section id="ai-transcript" class="ai-transcript" aria-live="polite" aria-busy="${aiState.asking}">
+      ${transcript}
+      ${
+        aiState.asking
+          ? `<article class="ai-message ai-message--assistant ai-message--loading"><span class="ai-message-label">Explorer AI</span><p><span></span><span></span><span></span><span class="visually-hidden">Thinking</span></p></article>`
+          : ""
+      }
+    </section>
+    <div class="ai-composer-shell">
+      ${
+        aiState.messages.length
+          ? `<button class="ai-clear-button" type="button" data-ai-clear ${aiState.asking ? "disabled" : ""}>Start a new conversation</button>`
+          : html`
+              <div class="ai-example-grid" aria-label="Example questions">
+                ${aiExamples.map(example => `<button type="button" data-ai-example="${escapeHtml(example)}">${escapeHtml(example)}</button>`).join("")}
+              </div>
+            `
+      }
+      <form id="ai-form" class="ai-form">
+        <label class="visually-hidden" for="ai-question">Ask Explorer AI</label>
+        <textarea id="ai-question" name="question" rows="2" maxlength="1200" placeholder="Ask a sanctuary question…" ${aiState.asking ? "disabled" : ""}></textarea>
+        <button class="ai-submit-button" type="submit" ${aiState.asking ? "disabled" : ""} aria-label="Send question">
+          <span aria-hidden="true">↑</span>
+        </button>
+      </form>
+      <p class="ai-note">AI can make mistakes. Verify important claims with Scripture and the cited sources.</p>
+      ${aiState.error ? `<p class="ai-error" role="alert">${escapeHtml(aiState.error)}</p>` : ""}
+    </div>
+  `;
+
+  requestAnimationFrame(() => {
+    const transcriptElement = qs("#ai-transcript");
+    if (transcriptElement) transcriptElement.scrollTop = transcriptElement.scrollHeight;
+  });
+}
+
+async function askExplorerAi(question) {
+  const content = String(question || "").trim();
+  if (!content || aiState.asking) return;
+
+  aiState = {
+    ...aiState,
+    messages: [...aiState.messages, { role: "user", content }],
+    asking: true,
+    error: ""
+  };
+  renderExplorerAi();
+
+  try {
+    if (!explorerAiEndpoint) {
+      throw new Error("Explorer AI needs its Cloudflare Worker URL configured before it can answer.");
+    }
+    const response = await fetch(explorerAiEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: content })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.error || "Explorer AI is temporarily unavailable.");
+    if (!data.reply) throw new Error("Explorer AI returned an empty answer. Please try again.");
+
+    aiState = {
+      ...aiState,
+      messages: [
+        ...aiState.messages,
+        { role: "assistant", content: data.reply, citations: data.citations || [] }
+      ],
+      asking: false,
+      error: ""
+    };
+  } catch (error) {
+    aiState = {
+      ...aiState,
+      asking: false,
+      error: error instanceof Error ? error.message : "Explorer AI is temporarily unavailable."
+    };
+  }
+  renderExplorerAi();
 }
 
 function setEditableText(element, value) {
@@ -1398,6 +1552,13 @@ function setView(requestedView) {
     tab.classList.toggle("active", active);
     tab.setAttribute("aria-pressed", active ? "true" : "false");
   });
+  requestAnimationFrame(() => {
+    const activeTab = qs(`.nav-tab[data-view="${view}"]`);
+    const nav = activeTab?.closest(".tab-nav");
+    if (activeTab && nav) {
+      nav.scrollLeft = Math.max(0, activeTab.offsetLeft - (nav.clientWidth - activeTab.offsetWidth) / 2);
+    }
+  });
   history.replaceState(null, "", `#${view}`);
   window.scrollTo({ top: 0, behavior: "auto" });
   if (view === "map") {
@@ -1417,6 +1578,14 @@ function syncViewFromHash() {
 }
 
 function bindUi() {
+  document.addEventListener("submit", event => {
+    const aiForm = event.target.closest("#ai-form");
+    if (!aiForm) return;
+    event.preventDefault();
+    const question = new FormData(aiForm).get("question")?.toString().trim();
+    if (question) askExplorerAi(question);
+  });
+
   document.addEventListener("change", event => {
     const faqSelect = event.target.closest("[data-faq-select]");
     if (faqSelect) {
@@ -1426,6 +1595,21 @@ function bindUi() {
   });
 
   document.addEventListener("click", event => {
+    const aiExample = event.target.closest("[data-ai-example]");
+    if (aiExample) {
+      askExplorerAi(aiExample.dataset.aiExample);
+      return;
+    }
+
+    const aiClear = event.target.closest("[data-ai-clear]");
+    if (aiClear) {
+      if (aiState.asking) return;
+      aiState = { messages: [], asking: false, error: "" };
+      renderExplorerAi();
+      focusAfterRender("#ai-question");
+      return;
+    }
+
     const faqTrigger = event.target.closest("[data-faq-open]");
     if (faqTrigger) {
       openFaqArticle(faqTrigger.dataset.faqOpen);
@@ -2715,6 +2899,7 @@ function init() {
   renderChronicles();
   renderFocus1844();
   renderFaq();
+  renderExplorerAi();
   bindUi();
   scene = new SanctuaryThreeScene(qs("#sanctuary-canvas"), {
     openArticle,
