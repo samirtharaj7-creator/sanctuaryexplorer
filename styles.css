@@ -6388,9 +6388,10 @@ body {
 
 .tab-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 4px;
-  width: auto;
+  width: 100%;
+  min-width: 0;
   padding: 4px;
   border: 0;
   border-radius: 22px;
@@ -6399,6 +6400,7 @@ body {
 
 .nav-tab {
   justify-content: center;
+  flex: 0 1 auto;
   min-height: 42px;
   min-width: 0;
   padding: 0 12px;
