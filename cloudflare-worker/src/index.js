@@ -97,8 +97,7 @@ async function handleChat(request, env, origin) {
     return jsonResponse({ error: "Please send a valid sanctuary question." }, 400, origin, env);
   }
 
-  const userMessage = typeof body?.message === "string" ? body.message.trim() : "";
-  const messages = validateMessages(userMessage ? [{ role: "user", content: userMessage }] : null);
+  const messages = validateMessages(body?.messages);
   if (!messages) {
     return jsonResponse({ error: "Please send a valid sanctuary question." }, 400, origin, env);
   }

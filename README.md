@@ -27,15 +27,15 @@ Push this repository to GitHub. In the repository, open **Settings > Pages**, se
 
 ## Explorer AI Architecture
 
-Explorer AI uses the existing Pinecone Assistant named `sanctuary-assistant`:
+Explorer AI uses the public backend configured in `content/ai-config.js`, which connects to the existing Pinecone Assistant named `sanctuary-assistant`:
 
 ```text
-GitHub Pages → Cloudflare Worker → Pinecone Assistant
+GitHub Pages → Render backend → Pinecone Assistant
 ```
 
-The Worker in `cloudflare-worker/src/index.js` calls Pinecone with a server-side secret. The key is never placed in GitHub Pages or sent to visitors. Answers include source filenames and page numbers, while private signed file URLs are intentionally removed.
+The backend calls Pinecone with a server-side secret. The key is never placed in GitHub Pages or sent to visitors. Answers can include source filenames and page numbers, while private signed file URLs are intentionally omitted.
 
-The Worker validates the requesting origin and conversation size. The included Wrangler configuration also creates a rate-limiting binding that allows ten chat requests per IP per minute in each Cloudflare location.
+Follow-up requests send completed user and model turns in Gemini's `history` format so the backend can answer in context. Individual questions retain the 1,200-character limit, while a conversation can continue without a frontend turn or total-length cutoff. The Cloudflare Worker in `cloudflare-worker/src/index.js` remains available as an alternative deployment with server-side origin, conversation-size, and rate-limit enforcement.
 
 ## Deploy The Worker With Wrangler
 

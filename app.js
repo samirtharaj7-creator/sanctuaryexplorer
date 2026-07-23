@@ -8,7 +8,8 @@ import { chroniclePerspectiveInfo, chronicleStories, chronicleCompanionNotes, do
 import { focusTimeline, focusStudyCards, focusHeroChain, focusLogicSteps, focusDanielLinkSteps, focusChartSegments, focusAssuranceCards } from "./content/focus-1844.js";
 import { faqArticles, polishedFaqArticles } from "./content/faq.js";
 import { siteCopy } from "./content/site-copy.js";
-import { explorerAiEndpoint } from "./content/ai-config.js?v=worker-live-1";
+import { explorerAiEndpoint } from "./content/ai-config.js?v=render-api-1";
+import { appendExplorerAiHistory, createExplorerAiPayload } from "./content/ai-request.js?v=gemini-history-1";
 
 
 Object.entries(articleEnhancements).forEach(([id, enhancement]) => {
@@ -107,9 +108,12 @@ const aiExamples = [
 ];
 let aiState = {
   messages: [],
+  history: [],
+  draft: "",
   asking: false,
   error: ""
 };
+let aiRequestController = null;
 
 function qs(selector, root = document) {
   return root.querySelector(selector);
@@ -182,9 +186,15 @@ function renderExplorerAi() {
         )
         .join("")
     : html`
-        <div class="ai-welcome">
-          <span class="ai-welcome-mark" aria-hidden="true">✦</span>
-          <h2>What would you like to explore?</h2>
+        <div class="ai-empty-state">
+          <div class="ai-welcome">
+            <span class="ai-welcome-mark" aria-hidden="true">✦</span>
+            <h2>Where would you like to begin?</h2>
+          </div>
+          <div class="ai-example-bubbles" aria-label="Example questions">
+            <span class="ai-example-bubbles-label">Try asking</span>
+            ${aiExamples.map(example => `<button type="button" data-ai-example="${escapeHtml(example)}">${escapeHtml(example)}</button>`).join("")}
+          </div>
         </div>
       `;
 
@@ -200,17 +210,13 @@ function renderExplorerAi() {
     <div class="ai-composer-shell">
       ${
         aiState.messages.length
-          ? `<button class="ai-clear-button" type="button" data-ai-clear ${aiState.asking ? "disabled" : ""}>Start a new conversation</button>`
-          : html`
-              <div class="ai-example-grid" aria-label="Example questions">
-                ${aiExamples.map(example => `<button type="button" data-ai-example="${escapeHtml(example)}">${escapeHtml(example)}</button>`).join("")}
-              </div>
-            `
+          ? `<button class="ai-clear-button" type="button" data-ai-clear>Start a new conversation</button>`
+          : ""
       }
       <form id="ai-form" class="ai-form">
         <label class="visually-hidden" for="ai-question">Ask Explorer AI</label>
-        <textarea id="ai-question" name="question" rows="2" maxlength="1200" placeholder="Ask a sanctuary question…" ${aiState.asking ? "disabled" : ""}></textarea>
-        <button class="ai-submit-button" type="submit" ${aiState.asking ? "disabled" : ""} aria-label="Send question">
+        <textarea id="ai-question" name="question" rows="2" maxlength="1200" placeholder="Ask a sanctuary question…">${escapeHtml(aiState.draft)}</textarea>
+        <button class="ai-submit-button" type="submit" ${aiState.asking || !aiState.draft.trim() ? "disabled" : ""} aria-label="Send question">
           <span aria-hidden="true">↑</span>
         </button>
       </form>
@@ -228,10 +234,16 @@ function renderExplorerAi() {
 async function askExplorerAi(question) {
   const content = String(question || "").trim();
   if (!content || aiState.asking) return;
+  const requestHistory = aiState.history;
+  const requestPayload = createExplorerAiPayload(content, requestHistory);
+  if (!requestPayload) return;
+  const controller = new AbortController();
+  aiRequestController = controller;
 
   aiState = {
     ...aiState,
     messages: [...aiState.messages, { role: "user", content }],
+    draft: "",
     asking: true,
     error: ""
   };
@@ -239,32 +251,53 @@ async function askExplorerAi(question) {
 
   try {
     if (!explorerAiEndpoint) {
-      throw new Error("Explorer AI needs its Cloudflare Worker URL configured before it can answer.");
+      throw new Error("Explorer AI needs its backend URL configured before it can answer.");
     }
     const response = await fetch(explorerAiEndpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: content })
+      body: JSON.stringify(requestPayload),
+      signal: controller.signal
     });
     const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || "Explorer AI is temporarily unavailable.");
-    if (!data.reply) throw new Error("Explorer AI returned an empty answer. Please try again.");
+    if (controller !== aiRequestController) return;
+    const responseError = typeof data.error === "string"
+      ? data.error
+      : typeof data.detail === "string"
+        ? data.detail
+        : "Explorer AI is temporarily unavailable.";
+    if (!response.ok) throw new Error(responseError);
+    const reply = data.reply || data.answer || data.response;
+    if (typeof reply !== "string" || !reply.trim()) {
+      throw new Error("Explorer AI returned an empty answer. Please try again.");
+    }
+    const normalizedReply = reply.trim();
+    const history = appendExplorerAiHistory(requestHistory, content, normalizedReply);
+    if (!history) throw new Error("Explorer AI could not preserve this conversation. Please try again.");
 
     aiState = {
       ...aiState,
       messages: [
         ...aiState.messages,
-        { role: "assistant", content: data.reply, citations: data.citations || [] }
+        {
+          role: "assistant",
+          content: normalizedReply,
+          citations: Array.isArray(data.citations) ? data.citations : []
+        }
       ],
+      history,
       asking: false,
       error: ""
     };
   } catch (error) {
+    if (controller !== aiRequestController) return;
     aiState = {
       ...aiState,
       asking: false,
       error: error instanceof Error ? error.message : "Explorer AI is temporarily unavailable."
     };
+  } finally {
+    if (controller === aiRequestController) aiRequestController = null;
   }
   renderExplorerAi();
 }
@@ -1552,6 +1585,8 @@ function setView(requestedView) {
     tab.classList.toggle("active", active);
     tab.setAttribute("aria-pressed", active ? "true" : "false");
   });
+  const aiLauncher = qs("[data-ai-launcher]");
+  if (aiLauncher) aiLauncher.hidden = view === "ai";
   requestAnimationFrame(() => {
     const activeTab = qs(`.nav-tab[data-view="${view}"]`);
     const nav = activeTab?.closest(".tab-nav");
@@ -1578,11 +1613,28 @@ function syncViewFromHash() {
 }
 
 function bindUi() {
+  document.addEventListener("input", event => {
+    const questionField = event.target.closest("#ai-question");
+    if (!questionField) return;
+
+    aiState.draft = questionField.value;
+    const sendButton = questionField.form?.querySelector(".ai-submit-button");
+    if (sendButton) sendButton.disabled = aiState.asking || !aiState.draft.trim();
+  });
+
+  document.addEventListener("keydown", event => {
+    const questionField = event.target.closest("#ai-question");
+    if (!questionField || event.key !== "Enter" || event.shiftKey || event.isComposing) return;
+
+    event.preventDefault();
+    questionField.form?.requestSubmit();
+  });
+
   document.addEventListener("submit", event => {
     const aiForm = event.target.closest("#ai-form");
     if (!aiForm) return;
     event.preventDefault();
-    const question = new FormData(aiForm).get("question")?.toString().trim();
+    const question = aiState.draft.trim();
     if (question) askExplorerAi(question);
   });
 
@@ -1595,6 +1647,13 @@ function bindUi() {
   });
 
   document.addEventListener("click", event => {
+    const aiLauncher = event.target.closest("[data-ai-launcher]");
+    if (aiLauncher) {
+      setView("ai");
+      focusAfterRender("#ai-question");
+      return;
+    }
+
     const aiExample = event.target.closest("[data-ai-example]");
     if (aiExample) {
       askExplorerAi(aiExample.dataset.aiExample);
@@ -1603,8 +1662,9 @@ function bindUi() {
 
     const aiClear = event.target.closest("[data-ai-clear]");
     if (aiClear) {
-      if (aiState.asking) return;
-      aiState = { messages: [], asking: false, error: "" };
+      aiRequestController?.abort();
+      aiRequestController = null;
+      aiState = { messages: [], history: [], draft: "", asking: false, error: "" };
       renderExplorerAi();
       focusAfterRender("#ai-question");
       return;
