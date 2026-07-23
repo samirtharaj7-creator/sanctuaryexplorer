@@ -6321,12 +6321,12 @@ body {
   top: 14px;
   z-index: 80;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  align-items: stretch;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
   width: min(1280px, calc(100% - 32px));
   margin: 14px auto 0;
-  padding: 14px;
-  gap: 12px;
+  padding: 11px 14px;
+  gap: 18px;
   border: 1px solid rgba(255, 255, 255, 0.88);
   border-radius: 28px;
   background:
@@ -6387,15 +6387,13 @@ body {
 }
 
 .tab-nav {
-  display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-  justify-content: stretch;
-  gap: 6px;
-  width: 100%;
-  padding: 12px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  width: auto;
+  padding: 4px;
   border: 0;
-  border-top: 1px solid rgba(203, 213, 225, 0.65);
-  border-radius: 0;
+  border-radius: 22px;
   background: transparent;
 }
 
@@ -6403,7 +6401,7 @@ body {
   justify-content: center;
   min-height: 42px;
   min-width: 0;
-  padding: 0 8px;
+  padding: 0 12px;
   border: 0;
   border-radius: 15px;
   color: #64748b;
@@ -6616,8 +6614,12 @@ main {
 }
 
 @media (max-width: 1180px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
   .tab-nav {
-    display: flex;
     justify-content: flex-start;
     overflow-x: auto;
     scrollbar-width: none;
