@@ -7007,6 +7007,7 @@ main {
   font-size: 15px;
   font-weight: 560;
   line-height: 1.7;
+  overflow-wrap: anywhere;
   box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
 }
 
@@ -7023,6 +7024,162 @@ main {
 }
 
 .ai-message-content p:last-child {
+  margin-bottom: 0;
+}
+
+.ai-message--assistant .ai-message-content h1,
+.ai-message--assistant .ai-message-content h2,
+.ai-message--assistant .ai-message-content h3,
+.ai-message--assistant .ai-message-content h4,
+.ai-message--assistant .ai-message-content h5,
+.ai-message--assistant .ai-message-content h6 {
+  margin: 20px 0 8px;
+  color: #0f172a;
+  font-family: var(--sans);
+  font-weight: 850;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.ai-message--assistant .ai-message-content h1:first-child,
+.ai-message--assistant .ai-message-content h2:first-child,
+.ai-message--assistant .ai-message-content h3:first-child,
+.ai-message--assistant .ai-message-content h4:first-child,
+.ai-message--assistant .ai-message-content h5:first-child,
+.ai-message--assistant .ai-message-content h6:first-child {
+  margin-top: 0;
+}
+
+.ai-message--assistant .ai-message-content h1 {
+  font-size: 1.55em;
+}
+
+.ai-message--assistant .ai-message-content h2 {
+  font-size: 1.38em;
+}
+
+.ai-message--assistant .ai-message-content h3 {
+  font-size: 1.2em;
+}
+
+.ai-message--assistant .ai-message-content h4,
+.ai-message--assistant .ai-message-content h5,
+.ai-message--assistant .ai-message-content h6 {
+  font-size: 1em;
+}
+
+.ai-message--assistant .ai-message-content ul,
+.ai-message--assistant .ai-message-content ol {
+  display: grid;
+  gap: 5px;
+  margin: 10px 0 14px;
+  padding-left: 24px;
+}
+
+.ai-message--assistant .ai-message-content li > ul,
+.ai-message--assistant .ai-message-content li > ol {
+  margin: 5px 0 0;
+}
+
+.ai-message--assistant .ai-message-content li:has(> input[type="checkbox"]) {
+  list-style: none;
+}
+
+.ai-message--assistant .ai-message-content input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin: 0 7px 0 -22px;
+  accent-color: #2563eb;
+  vertical-align: -2px;
+}
+
+.ai-message--assistant .ai-message-content blockquote {
+  margin: 14px 0;
+  padding: 10px 14px;
+  border-left: 4px solid #60a5fa;
+  border-radius: 0 12px 12px 0;
+  background: #eff6ff;
+  color: #475569;
+}
+
+.ai-message--assistant .ai-message-content blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.ai-message--assistant .ai-message-content a {
+  color: #1d4ed8;
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 235, 0.35);
+  text-underline-offset: 3px;
+}
+
+.ai-message--assistant .ai-message-content a:hover,
+.ai-message--assistant .ai-message-content a:focus-visible {
+  color: #1e40af;
+  text-decoration-color: currentColor;
+}
+
+.ai-message--assistant .ai-message-content code {
+  padding: 2px 6px;
+  border-radius: 7px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+}
+
+.ai-message--assistant .ai-message-content pre {
+  max-width: 100%;
+  margin: 14px 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  border-radius: 14px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.ai-message--assistant .ai-message-content pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 0.84em;
+  white-space: pre;
+}
+
+.ai-message--assistant .ai-message-content table {
+  display: block;
+  max-width: 100%;
+  margin: 14px 0;
+  overflow-x: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 0.92em;
+}
+
+.ai-message--assistant .ai-message-content th,
+.ai-message--assistant .ai-message-content td {
+  min-width: 110px;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  text-align: left;
+  vertical-align: top;
+}
+
+.ai-message--assistant .ai-message-content th {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.ai-message--assistant .ai-message-content hr {
+  height: 1px;
+  margin: 18px 0;
+  border: 0;
+  background: #cbd5e1;
+}
+
+.ai-message--assistant .ai-message-content > :last-child {
   margin-bottom: 0;
 }
 

@@ -10,6 +10,7 @@ import { faqArticles, polishedFaqArticles } from "./content/faq.js";
 import { siteCopy } from "./content/site-copy.js";
 import { explorerAiEndpoint } from "./content/ai-config.js?v=render-api-1";
 import { appendExplorerAiHistory, createExplorerAiPayload } from "./content/ai-request.js?v=gemini-history-1";
+import { renderAssistantMarkdown, renderUserMessage } from "./content/ai-markdown.js?v=secure-gfm-1";
 
 
 Object.entries(articleEnhancements).forEach(([id, enhancement]) => {
@@ -140,16 +141,6 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
-function formatAiAnswer(value) {
-  return escapeHtml(value)
-    .replace(/\*\*([^*\n]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/__([^_\n]+)__/g, "<strong>$1</strong>")
-    .split(/\n{2,}/)
-    .filter(Boolean)
-    .map(paragraph => `<p>${paragraph.replaceAll("\n", "<br>")}</p>`)
-    .join("");
-}
-
 function renderAiCitations(citations = []) {
   if (!citations.length) return "";
   return html`
@@ -179,7 +170,11 @@ function renderExplorerAi() {
           message => html`
             <article class="ai-message ai-message--${message.role}">
               <span class="ai-message-label">${message.role === "user" ? "You" : "Explorer AI"}</span>
-              <div class="ai-message-content">${formatAiAnswer(message.content)}</div>
+              <div class="ai-message-content">${
+                message.role === "assistant"
+                  ? renderAssistantMarkdown(message.content)
+                  : renderUserMessage(message.content)
+              }</div>
               ${message.role === "assistant" ? renderAiCitations(message.citations) : ""}
             </article>
           `
