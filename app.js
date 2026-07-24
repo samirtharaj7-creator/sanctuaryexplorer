@@ -1580,6 +1580,7 @@ function setView(requestedView) {
     tab.classList.toggle("active", active);
     tab.setAttribute("aria-pressed", active ? "true" : "false");
   });
+  document.documentElement.classList.remove("route-boot-pending");
   const aiLauncher = qs("[data-ai-launcher]");
   if (aiLauncher) aiLauncher.hidden = view === "ai";
   requestAnimationFrame(() => {

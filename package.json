@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 3001",
-    "check": "node --check app.js && node --check sanctuary-scene.js && node --check cloudflare-worker/src/index.js && node --check content/ai-markdown.js && node scripts/validate-accessibility.mjs && node --test content/ai-markdown.test.js content/ai-request.test.js cloudflare-worker/src/index.test.js"
+    "check": "node --check app.js && node --check sanctuary-scene.js && node --check cloudflare-worker/src/index.js && node --check content/ai-markdown.js && node scripts/validate-accessibility.mjs && node --test content/ai-markdown.test.js content/ai-request.test.js content/initial-route.test.js cloudflare-worker/src/index.test.js"
   },
   "dependencies": {
     "dompurify": "3.4.12",
