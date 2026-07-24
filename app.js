@@ -1,4 +1,3 @@
-import { SanctuaryThreeScene } from "./sanctuary-scene.js?v=accessibility-2";
 import { iconSvg, feastProcedureIcons } from "./content/icons.js";
 import { articles, articleEnhancements, phases } from "./content/articles.js";
 import { offerings, specialCeremonies, serviceStudies, ministryViews } from "./content/ministry.js";
@@ -85,6 +84,7 @@ const sceneObjects = [
 
 let currentView = "structure";
 let scene;
+let sceneLoadPromise;
 const ministryLegacyViews = new Set(ministryViews.map(view => view.id));
 let ministryState = {
   active: "sacrifices"
@@ -126,6 +126,42 @@ function qsa(selector, root = document) {
 
 function focusAfterRender(selector) {
   requestAnimationFrame(() => qs(selector)?.focus({ preventScroll: true }));
+}
+
+function ensureSanctuaryScene() {
+  if (scene) return Promise.resolve(scene);
+  if (sceneLoadPromise) return sceneLoadPromise;
+
+  const canvas = qs("#sanctuary-canvas");
+  const status = qs("#scene-loading-status");
+  canvas?.setAttribute("aria-busy", "true");
+  if (status) {
+    status.hidden = false;
+    status.textContent = "Loading the interactive 3D sanctuary…";
+  }
+
+  sceneLoadPromise = import("./sanctuary-scene.js?v=startup-1")
+    .then(({ SanctuaryThreeScene }) => {
+      scene = new SanctuaryThreeScene(canvas, {
+        openArticle,
+        isActive: () => currentView === "map"
+      });
+      canvas?.removeAttribute("aria-busy");
+      if (status) status.hidden = true;
+      return scene;
+    })
+    .catch(error => {
+      sceneLoadPromise = undefined;
+      canvas?.removeAttribute("aria-busy");
+      if (status) {
+        status.hidden = false;
+        status.textContent = "The 3D view could not load. Please try again.";
+      }
+      console.error("Unable to load the 3D sanctuary", error);
+      throw error;
+    });
+
+  return sceneLoadPromise;
 }
 
 function html(strings, ...values) {
@@ -1580,7 +1616,7 @@ function setView(requestedView) {
     tab.classList.toggle("active", active);
     tab.setAttribute("aria-pressed", active ? "true" : "false");
   });
-  document.documentElement.classList.remove("route-boot-pending");
+  delete document.documentElement.dataset.initialView;
   const aiLauncher = qs("[data-ai-launcher]");
   if (aiLauncher) aiLauncher.hidden = view === "ai";
   requestAnimationFrame(() => {
@@ -1593,7 +1629,9 @@ function setView(requestedView) {
   history.replaceState(null, "", `#${view}`);
   window.scrollTo({ top: 0, behavior: "auto" });
   if (view === "map") {
-    requestAnimationFrame(() => scene?.resize());
+    ensureSanctuaryScene()
+      .then(activeScene => requestAnimationFrame(() => activeScene.resize()))
+      .catch(() => {});
   }
 }
 
@@ -2957,10 +2995,6 @@ function init() {
   renderFaq();
   renderExplorerAi();
   bindUi();
-  scene = new SanctuaryThreeScene(qs("#sanctuary-canvas"), {
-    openArticle,
-    isActive: () => currentView === "map"
-  });
 }
 
 init();

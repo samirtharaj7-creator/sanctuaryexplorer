@@ -9,9 +9,15 @@
     />
     <title>Sanctuary Explorer</title>
     <style>
-      html.route-boot-pending .app-shell {
-        visibility: hidden;
-      }
+      html[data-initial-view] .view-panel { display: none !important; }
+      html[data-initial-view="map"] #map,
+      html[data-initial-view="ministry"] #ministry,
+      html[data-initial-view="attire"] #attire,
+      html[data-initial-view="calendar"] #calendar,
+      html[data-initial-view="focus1844"] #focus1844,
+      html[data-initial-view="faq"] #faq,
+      html[data-initial-view="chronicles"] #chronicles,
+      html[data-initial-view="ai"] #ai { display: block !important; }
     </style>
     <script>
       (() => {
@@ -21,18 +27,14 @@
         const initialView = ministryViews.has(requestedView) ? "ministry" : requestedView;
 
         if (initialView !== "structure" && views.has(initialView)) {
-          document.documentElement.classList.add("route-boot-pending");
-          window.setTimeout(() => document.documentElement.classList.remove("route-boot-pending"), 3000);
+          document.documentElement.dataset.initialView = initialView;
         }
       })();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=secure-gfm-route-2" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&family=Literata:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&family=Literata:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=startup-1" />
     <link rel="stylesheet" href="/global-shell.css?v=shell-fix-2" />
     <script defer src="/mbe-unified.js?v=shell-links-2"></script>
   </head>
@@ -183,6 +185,7 @@
                   <span aria-hidden="true"></span>
                 </div>
                 <p id="sanctuary-canvas-description" class="visually-hidden">The 3D model is a visual companion. Use the labeled view, layer, orbit, and guided-path controls to explore it. The same sanctuary articles are available from the Structure section.</p>
+                <p id="scene-loading-status" class="scene-loading-status" role="status" aria-live="polite">Loading the interactive 3D sanctuary…</p>
                 <canvas id="sanctuary-canvas" width="1280" height="760" role="img" aria-label="Visual 3D model of the biblical sanctuary" aria-describedby="sanctuary-canvas-description"></canvas>
                 <div id="scene-tooltip" class="scene-tooltip" hidden></div>
               </div>
@@ -296,7 +299,7 @@
         }
       }
     </script>
-    <script type="module" src="app.js?v=secure-gfm-route-2"></script>
+    <script type="module" src="app.js?v=startup-1"></script>
     <footer class="mbe-global-footer" data-tool="sanctuary">
       <div class="mbe-shell-wrap mbe-footer-wrap">
         <a class="mbe-footer-brand" href="https://mybibleexplorer.com" aria-label="My Bible Explorer home"><img class="mbe-footer-logo" src="https://mybibleexplorer.com/assets/my-bible-explorer-logo.png?v=mbe-20260715-1" alt="My Bible Explorer" width="107" height="34"></a>
