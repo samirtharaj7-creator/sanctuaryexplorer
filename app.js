@@ -140,7 +140,7 @@ function ensureSanctuaryScene() {
     status.textContent = "Loading the interactive 3D sanctuary…";
   }
 
-  sceneLoadPromise = import("./sanctuary-scene.js?v=startup-1")
+  sceneLoadPromise = import("./sanctuary-scene.js?v=fullscreen-1")
     .then(({ SanctuaryThreeScene }) => {
       scene = new SanctuaryThreeScene(canvas, {
         openArticle,

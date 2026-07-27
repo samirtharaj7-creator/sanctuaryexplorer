@@ -35,7 +35,7 @@ test("does not use a timed full-page visibility guard", () => {
 
 test("defers the heavy 3D engine until the map is opened", () => {
   assert.doesNotMatch(appJavaScript, /^import .*sanctuary-scene/m);
-  assert.match(appJavaScript, /import\("\.\/sanctuary-scene\.js\?v=startup-1"\)/);
+  assert.match(appJavaScript, /import\("\.\/sanctuary-scene\.js\?v=fullscreen-1"\)/);
   assert.match(appJavaScript, /if \(view === "map"\) \{\s+ensureSanctuaryScene\(\)/);
 });
 

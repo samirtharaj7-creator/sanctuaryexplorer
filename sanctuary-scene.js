@@ -276,6 +276,10 @@ export class SanctuaryThreeScene {
 
   bind() {
     window.addEventListener("resize", () => this.resize());
+    if ("ResizeObserver" in window) {
+      this.resizeObserver = new ResizeObserver(() => this.resize());
+      this.resizeObserver.observe(this.frame);
+    }
     window.addEventListener("keydown", event => this.key(event));
     this.canvas.addEventListener("pointerdown", event => this.pointerDown(event));
     this.canvas.addEventListener("pointermove", event => this.pointerMove(event));
@@ -294,7 +298,27 @@ export class SanctuaryThreeScene {
     });
 
     document.querySelector("#reset-scene")?.addEventListener("click", () => this.applyView("side"));
-    document.querySelector("#fullscreen-scene")?.addEventListener("click", () => this.frame?.requestFullscreen?.());
+    const fullscreenButton = document.querySelector("#fullscreen-scene");
+    fullscreenButton?.addEventListener("click", async () => {
+      try {
+        if (document.fullscreenElement === this.frame) {
+          await document.exitFullscreen?.();
+        } else {
+          await this.frame?.requestFullscreen?.();
+        }
+      } catch (error) {
+        console.error("Unable to change fullscreen mode", error);
+      }
+    });
+    document.addEventListener("fullscreenchange", () => {
+      const fullscreenActive = document.fullscreenElement === this.frame;
+      if (fullscreenButton) {
+        fullscreenButton.textContent = fullscreenActive ? "Exit Fullscreen" : "Fullscreen";
+        fullscreenButton.title = fullscreenActive ? "Exit fullscreen" : "Fullscreen";
+        fullscreenButton.setAttribute("aria-pressed", fullscreenActive ? "true" : "false");
+      }
+      requestAnimationFrame(() => this.resize());
+    });
 
     this.viewButtons.forEach(button => {
       button.addEventListener("click", () => this.applyView(button.dataset.sceneView));

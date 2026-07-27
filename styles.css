@@ -625,6 +625,36 @@ main {
   cursor: grabbing;
 }
 
+.scene-frame:fullscreen,
+.scene-frame:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: #d8b176;
+  box-shadow: none;
+}
+
+.scene-frame:fullscreen #sanctuary-canvas,
+.scene-frame:-webkit-full-screen #sanctuary-canvas {
+  width: 100%;
+  height: 100% !important;
+  min-height: 0;
+}
+
+.scene-frame:fullscreen .scene-toolbar,
+.scene-frame:-webkit-full-screen .scene-toolbar {
+  top: max(16px, env(safe-area-inset-top));
+  right: max(16px, env(safe-area-inset-right));
+}
+
+.scene-frame:fullscreen .scene-orbit-pad,
+.scene-frame:-webkit-full-screen .scene-orbit-pad {
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
+}
+
 .scene-toolbar {
   position: absolute;
   top: 16px;
