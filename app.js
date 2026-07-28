@@ -233,7 +233,14 @@ function renderExplorerAi() {
       ${transcript}
       ${
         aiState.asking
-          ? `<article class="ai-message ai-message--assistant ai-message--loading"><span class="ai-message-label">Explorer AI</span><p><span></span><span></span><span></span><span class="visually-hidden">Thinking</span></p></article>`
+          ? `<article class="ai-message ai-message--assistant ai-message--loading">
+              <span class="ai-message-label">Explorer AI</span>
+              <div class="ai-loading-card">
+                <span class="ai-loading-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <p>Preparing a thoughtful answer. Please allow 1–2 minutes.</p>
+                <span class="visually-hidden">Explorer AI is generating an answer.</span>
+              </div>
+            </article>`
           : ""
       }
     </section>
