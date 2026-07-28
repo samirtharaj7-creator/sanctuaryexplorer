@@ -219,7 +219,6 @@ function renderExplorerAi() {
     : html`
         <div class="ai-empty-state">
           <div class="ai-welcome">
-            <span class="ai-welcome-mark" aria-hidden="true">✦</span>
             <h2>Where would you like to begin?</h2>
           </div>
           <div class="ai-example-bubbles" aria-label="Example questions">

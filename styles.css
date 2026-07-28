@@ -6950,18 +6950,6 @@ main {
   text-align: center;
 }
 
-.ai-welcome-mark {
-  display: grid;
-  width: 54px;
-  height: 54px;
-  place-items: center;
-  border-radius: 18px;
-  background: linear-gradient(145deg, #dbeafe, #eff6ff);
-  color: #2563eb;
-  font-size: 27px;
-  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.16);
-}
-
 .ai-example-bubbles {
   display: flex;
   flex-direction: column;
