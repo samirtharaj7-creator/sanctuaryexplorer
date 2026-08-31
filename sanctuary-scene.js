@@ -1586,7 +1586,7 @@ export class SanctuaryThreeScene {
   applyView(viewId, animate = true) {
     const preset = VIEW_PRESETS[viewId] || VIEW_PRESETS.side;
     this.stopPath();
-    this.setVeilFocusMode(null);
+    this.setVeilFocusMode(viewId === "mostHoly" ? "ark" : null);
     this.viewButtons.forEach(button => {
       const active = button.dataset.sceneView === viewId;
       button.classList.toggle("active", active);

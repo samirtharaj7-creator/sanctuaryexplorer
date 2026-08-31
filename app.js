@@ -140,7 +140,7 @@ function ensureSanctuaryScene() {
     status.textContent = "Loading the interactive 3D sanctuary…";
   }
 
-  sceneLoadPromise = import("./sanctuary-scene.js?v=fullscreen-1")
+  sceneLoadPromise = import("./sanctuary-scene.js?v=most-holy-1")
     .then(({ SanctuaryThreeScene }) => {
       scene = new SanctuaryThreeScene(canvas, {
         openArticle,
@@ -1569,19 +1569,29 @@ function articleTemplate(article) {
 function openArticle(id) {
   const article = articles[id];
   if (!article) return;
-  qs("#article-content").innerHTML = articleTemplate(article);
+  const content = qs("#article-content");
   const dialog = qs("#article-dialog");
+  content.innerHTML = articleTemplate(article);
+  dialog.scrollTop = 0;
+  content.scrollTop = 0;
   if (typeof dialog.showModal === "function") {
     dialog.showModal();
   } else {
     dialog.setAttribute("open", "");
   }
+  requestAnimationFrame(() => {
+    dialog.scrollTop = 0;
+    content.scrollTop = 0;
+  });
 }
 
 function closeArticle() {
   const dialog = qs("#article-dialog");
   if (dialog.open && typeof dialog.close === "function") dialog.close();
   else dialog.removeAttribute("open");
+  dialog.scrollTop = 0;
+  const content = qs("#article-content");
+  if (content) content.scrollTop = 0;
 }
 
 function openFaqArticle(id) {

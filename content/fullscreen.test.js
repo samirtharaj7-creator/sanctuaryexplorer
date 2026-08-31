@@ -24,3 +24,7 @@ test("the fullscreen control toggles entry, exit, and accessible state", () => {
   assert.match(sceneJavaScript, /document\.exitFullscreen/);
   assert.match(sceneJavaScript, /fullscreenButton\.setAttribute\("aria-pressed"/);
 });
+
+test("the Most Holy preset reveals the Ark through the veil", () => {
+  assert.match(sceneJavaScript, /setVeilFocusMode\(viewId === "mostHoly" \? "ark" : null\)/);
+});
