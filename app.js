@@ -140,7 +140,7 @@ function ensureSanctuaryScene() {
     status.textContent = "Loading the interactive 3D sanctuary…";
   }
 
-  sceneLoadPromise = import("./sanctuary-scene.js?v=most-holy-1")
+  sceneLoadPromise = import("./sanctuary-scene.js?v=scene-layers-1")
     .then(({ SanctuaryThreeScene }) => {
       scene = new SanctuaryThreeScene(canvas, {
         openArticle,

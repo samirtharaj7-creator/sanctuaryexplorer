@@ -28,3 +28,11 @@ test("the fullscreen control toggles entry, exit, and accessible state", () => {
 test("the Most Holy preset reveals the Ark through the veil", () => {
   assert.match(sceneJavaScript, /setVeilFocusMode\(viewId === "mostHoly" \? "ark" : null\)/);
 });
+
+test("the tabernacle walls remain independent of the Court layer", () => {
+  assert.match(sceneJavaScript, /this\.tabernacleStructure = new THREE\.Group\(\)/);
+  assert.match(sceneJavaScript, /const structure = this\.tabernacleStructure/);
+  assert.match(sceneJavaScript, /structure\.add\(northWall\)/);
+  assert.match(sceneJavaScript, /structure\.add\(westWall\)/);
+  assert.doesNotMatch(sceneJavaScript, /court\.add\((?:floor|northWall|westWall|board)\)/);
+});

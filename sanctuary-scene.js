@@ -238,6 +238,10 @@ export class SanctuaryThreeScene {
       this.scene.add(group);
     });
 
+    this.tabernacleStructure = new THREE.Group();
+    this.tabernacleStructure.name = "tabernacle-structure";
+    this.scene.add(this.tabernacleStructure);
+
     this.addLights();
     this.buildScene();
   }
@@ -567,7 +571,7 @@ export class SanctuaryThreeScene {
   }
 
   addTabernacle() {
-    const court = this.layers.get("court");
+    const structure = this.tabernacleStructure;
     const coverings = this.layers.get("coverings");
     const veils = this.layers.get("veils");
     const { west, east, north, south, veil } = BOUNDS.tabernacle;
@@ -577,23 +581,23 @@ export class SanctuaryThreeScene {
     const floor = this.makeBox(MODEL.tabernacle.length, 0.2, MODEL.tabernacle.width, 0xb9904f);
     floor.position.set(centerX, 0.12, 0);
     floor.receiveShadow = true;
-    court.add(floor);
+    structure.add(floor);
 
     const northWall = this.makeBox(MODEL.tabernacle.length, height, 0.24, 0xd3a239);
     northWall.position.set(centerX, height / 2, north);
     northWall.castShadow = true;
     northWall.receiveShadow = true;
-    court.add(northWall);
+    structure.add(northWall);
 
     const westWall = this.makeBox(0.24, height, MODEL.tabernacle.width, 0xc18b35);
     westWall.position.set(west, height / 2, 0);
     westWall.castShadow = true;
-    court.add(westWall);
+    structure.add(westWall);
 
     for (let x = west + 1; x <= east; x += 2) {
       const board = this.makeBox(0.12, height * 0.98, 0.16, 0xb1782d);
       board.position.set(x, height / 2, north + 0.2);
-      court.add(board);
+      structure.add(board);
     }
 
     this.addLayeredCoverings(coverings);
