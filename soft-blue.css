@@ -1,0 +1,121 @@
+/* Soft Blue: the selected background and typography treatment. */
+:root {
+  --sans: "Manrope", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --bg: #f7f9fd;
+  --text: #152039;
+  --ink: #152039;
+  --muted: #596b86;
+  --panel: #ffffff;
+  --panel-2: #edf3fe;
+  --panel-3: #f7f9fd;
+  --paper: #ffffff;
+  --paper-text: #152039;
+  --line: #dce3ef;
+  --blue: #2960cf;
+  --brand-600: #2960cf;
+  --shadow: 0 14px 32px rgba(48, 77, 118, 0.07);
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 4% 12%, #dfeaff, transparent 48%),
+    radial-gradient(ellipse at 100% 25%, #fff1e4, transparent 45%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+.site-header {
+  border-color: var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: var(--shadow);
+}
+
+.brand-word { font-weight: 800; letter-spacing: -0.025em; }
+.brand-mark { background: var(--blue); border-radius: 13px; box-shadow: 0 8px 20px rgba(41, 96, 207, 0.16); }
+.brand-mark .tabernacle-mark { width: 32px; height: 32px; padding: 0; stroke-width: 1.8; filter: none; }
+.nav-tab { font-weight: 700; color: var(--muted); border-radius: 11px; }
+.nav-tab.active { color: var(--blue); background: #edf3fe; box-shadow: inset 0 0 0 1px #dce7fa; }
+
+.hero-copy h1,
+.section-intro h1,
+.map-hero h1 {
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.hero-copy h1 { font-size: clamp(34px, 4.5vw, 56px); }
+.hero-copy p,
+.section-intro p,
+.map-hero p { color: var(--muted); font-weight: 500; line-height: 1.85; }
+.phase-section h2 { color: var(--text); font-weight: 700; letter-spacing: -0.035em; }
+
+.hint-pill,
+.eyebrow {
+  color: var(--blue);
+  border-color: var(--line);
+  background: #ffffff;
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.phase-summary,
+.article-card,
+.ministry-switch-card,
+.service-card,
+.feast-shell,
+.focus-hero,
+.attire-board,
+.chronicle-card,
+.chronicle-story-card,
+.article-compact-card {
+  background: #ffffff;
+  border-color: var(--line);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.phase-summary { color: var(--muted); font-weight: 500; line-height: 1.8; }
+.article-card h3 { color: var(--text); font-weight: 700; letter-spacing: -0.02em; }
+.article-card p { color: var(--muted); }
+.article-card:hover,
+.article-card:focus-visible { background: #f7faff; border-color: #a7c3f3; box-shadow: 0 18px 36px rgba(41, 96, 207, 0.12); }
+
+.article-dialog { border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 30px 90px rgba(21, 32, 57, 0.25); }
+.article-dialog::backdrop { background: rgba(21, 32, 57, 0.6); }
+.article-reader { background: #ffffff; }
+.article-reader :is(h1, h2, h3, h4) { font-family: var(--sans); letter-spacing: -0.025em; }
+.article-compact-header { background: linear-gradient(135deg, #2960cf, #244fa8); }
+.article-compact-header h1 { font-weight: 700; line-height: 1.2; text-shadow: none; }
+.dialog-close { background: #152039; }
+.article-summary-card,
+.article-glance-list,
+.article-section { background: #f9fbff; border-color: var(--line); box-shadow: 0 10px 24px rgba(48, 77, 118, 0.05); }
+.article-summary-card span,
+.article-glance-list strong { color: var(--blue); font-weight: 700; }
+.article-section h2 { color: var(--text); }
+.article-reader .section-glyph { color: var(--blue); background: #edf3fe; border-color: #dce7fa; }
+.article-reader .article-step-list span { color: #ffffff; background: var(--blue); box-shadow: none; }
+.article-reader .article-step-list li { color: var(--text); line-height: 1.7; }
+
+.ai-assistant { border-color: var(--line); border-radius: 22px; box-shadow: var(--shadow); }
+.ai-welcome h2 { font-weight: 700; }
+
+/* Match the selected light ribbon while retaining the library menu's own theme. */
+.mbe-global-shell {
+  --mbe-muted: #596b86;
+  --mbe-ink: #152039;
+  --mbe-navy: #152039;
+  --mbe-rule: #dce3ef;
+  --mbe-font-ui: var(--sans);
+  background: #ffffff;
+  color: var(--muted);
+  box-shadow: none;
+}
+.mbe-global-shell .mbe-ribbon-logo { filter: none; }
+
+@media (max-width: 760px) {
+  .site-header { border-radius: 0 0 22px 22px; }
+}
